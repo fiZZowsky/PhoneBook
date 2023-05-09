@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.5.33424.131
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PhoneBook_API", "PhoneBook_API\PhoneBook_API.csproj", "{17AB3FD8-3479-43D4-86E7-83C3C711A597}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PhoneBook_API", "PhoneBook_API\PhoneBook_API.csproj", "{17AB3FD8-3479-43D4-86E7-83C3C711A597}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PhoneBook_Web", "PhoneBook_Web\PhoneBook_Web.csproj", "{3CC5780D-E9BC-4449-93B3-E9A8EDD5BEAF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{17AB3FD8-3479-43D4-86E7-83C3C711A597}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{17AB3FD8-3479-43D4-86E7-83C3C711A597}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{17AB3FD8-3479-43D4-86E7-83C3C711A597}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3CC5780D-E9BC-4449-93B3-E9A8EDD5BEAF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3CC5780D-E9BC-4449-93B3-E9A8EDD5BEAF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3CC5780D-E9BC-4449-93B3-E9A8EDD5BEAF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3CC5780D-E9BC-4449-93B3-E9A8EDD5BEAF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
