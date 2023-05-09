@@ -10,7 +10,8 @@ namespace PhoneBook_API.Models
         public int Id { get; set; }
         [Required]
         public string Name { get; set; }
-        [Required]
-        public ICollection<ContactSubcategory> Subcategories { get; set; }
+        public virtual List<ContactSubcategory> ContactSubcategories { get; set; }
+
+        public static List<string> DefaultCategoryNames => new List<string> { "służbowy", "prywatny" };
     }
 }

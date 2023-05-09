@@ -10,9 +10,9 @@ namespace PhoneBook_API.Models
         public int Id { get; set; }
         [Required]
         public string Name { get; set; }
-        [Required]
+        [ForeignKey("ContactCategory")]
         public int CategoryId { get; set; }
-        [Required]
-        public ContactCategory Category { get; set; }
+
+        public virtual ContactCategory ContactCategory { get; set; }
     }
 }

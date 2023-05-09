@@ -1,0 +1,1233 @@
+2023-05-09 10:13:38.100 +02:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2023-05-09 10:13:38.238 +02:00 [DBG] Hosting starting
+2023-05-09 10:13:39.004 +02:00 [INF] Now listening on: http://localhost:5267
+2023-05-09 10:13:39.005 +02:00 [DBG] Loaded hosting startup assembly PhoneBook_API
+2023-05-09 10:13:39.005 +02:00 [DBG] Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2023-05-09 10:13:39.005 +02:00 [DBG] Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2023-05-09 10:13:39.005 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-05-09 10:13:39.006 +02:00 [INF] Hosting environment: Development
+2023-05-09 10:13:39.006 +02:00 [INF] Content root path: C:\Users\Pioter\Desktop\PhoneBook\PhoneBook_API
+2023-05-09 10:13:39.006 +02:00 [DBG] Hosting started
+2023-05-09 10:13:39.352 +02:00 [DBG] Connection id "0HMQGCL5POQAV" accepted.
+2023-05-09 10:13:39.354 +02:00 [DBG] Connection id "0HMQGCL5POQAV" started.
+2023-05-09 10:13:39.416 +02:00 [DBG] Connection id "0HMQGCL5POQB0" accepted.
+2023-05-09 10:13:39.416 +02:00 [DBG] Connection id "0HMQGCL5POQB0" started.
+2023-05-09 10:13:40.837 +02:00 [DBG] Connection id "0HMQGCL5POQB1" accepted.
+2023-05-09 10:13:40.838 +02:00 [DBG] Connection id "0HMQGCL5POQB1" started.
+2023-05-09 10:13:40.904 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5267/swagger/index.html - -
+2023-05-09 10:13:40.943 +02:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2023-05-09 10:13:40.977 +02:00 [DBG] No candidates found for the request path '/swagger/index.html'
+2023-05-09 10:13:40.978 +02:00 [DBG] Request did not match any endpoints
+2023-05-09 10:13:41.141 +02:00 [DBG] Response markup is scheduled to include browser refresh script injection.
+2023-05-09 10:13:41.348 +02:00 [DBG] Response markup was updated to include browser refresh script injection.
+2023-05-09 10:13:41.348 +02:00 [DBG] Connection id "0HMQGCL5POQB1" completed keep alive response.
+2023-05-09 10:13:41.350 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5267/swagger/index.html - - - 200 - text/html;charset=utf-8 451.1911ms
+2023-05-09 10:13:41.364 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5267/_framework/aspnetcore-browser-refresh.js - -
+2023-05-09 10:13:41.367 +02:00 [DBG] Connection id "0HMQGCL5POQB1" completed keep alive response.
+2023-05-09 10:13:41.368 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5267/_framework/aspnetcore-browser-refresh.js - - - 200 11996 application/javascript;+charset=utf-8 3.1262ms
+2023-05-09 10:13:41.635 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5267/_vs/browserLink - -
+2023-05-09 10:13:41.693 +02:00 [DBG] Connection id "0HMQGCL5POQB1" completed keep alive response.
+2023-05-09 10:13:41.693 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5267/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 58.0601ms
+2023-05-09 10:13:41.790 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5267/swagger/v1/swagger.json - -
+2023-05-09 10:13:41.790 +02:00 [DBG] No candidates found for the request path '/swagger/v1/swagger.json'
+2023-05-09 10:13:41.790 +02:00 [DBG] Request did not match any endpoints
+2023-05-09 10:13:42.021 +02:00 [DBG] Connection id "0HMQGCL5POQB1" completed keep alive response.
+2023-05-09 10:13:42.021 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5267/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 231.4831ms
+2023-05-09 10:18:42.250 +02:00 [DBG] Connection id "0HMQGCL5POQB1" received FIN.
+2023-05-09 10:18:42.274 +02:00 [DBG] Connection id "0HMQGCL5POQB1" disconnecting.
+2023-05-09 10:18:42.325 +02:00 [DBG] Connection id "0HMQGCL5POQB1" sending FIN because: "The client closed the connection."
+2023-05-09 10:18:42.342 +02:00 [DBG] Connection id "0HMQGCL5POQB1" stopped.
+2023-05-09 16:38:34.910 +02:00 [DBG] An 'IServiceProvider' was created for internal use by Entity Framework.
+2023-05-09 16:44:22.237 +02:00 [DBG] An 'IServiceProvider' was created for internal use by Entity Framework.
+2023-05-09 16:44:22.547 +02:00 [DBG] Entity Framework Core 7.0.5 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:7.0.5' with options: None
+2023-05-09 16:44:22.666 +02:00 [DBG] 'ApplicationDbContext' disposed.
+2023-05-09 16:46:59.845 +02:00 [DBG] An 'IServiceProvider' was created for internal use by Entity Framework.
+2023-05-09 16:47:00.151 +02:00 [DBG] Entity Framework Core 7.0.5 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:7.0.5' with options: None
+2023-05-09 16:47:00.166 +02:00 [DBG] Creating DbConnection.
+2023-05-09 16:47:00.215 +02:00 [DBG] Created DbConnection. (46ms).
+2023-05-09 16:47:00.217 +02:00 [DBG] Migrating using database 'PhoneBookStoreAPI' on server '(localdb)\MSSQLLocalDB'.
+2023-05-09 16:47:00.222 +02:00 [DBG] Opening connection to database 'PhoneBookStoreAPI' on server '(localdb)\MSSQLLocalDB'.
+2023-05-09 16:47:01.533 +02:00 [DBG] An error occurred using the connection to database 'PhoneBookStoreAPI' on server '(localdb)\MSSQLLocalDB'.
+2023-05-09 16:47:01.534 +02:00 [DBG] Opening connection to database 'PhoneBookStoreAPI' on server '(localdb)\MSSQLLocalDB'.
+2023-05-09 16:47:01.535 +02:00 [DBG] An error occurred using the connection to database 'PhoneBookStoreAPI' on server '(localdb)\MSSQLLocalDB'.
+2023-05-09 16:47:01.578 +02:00 [DBG] Creating DbConnection.
+2023-05-09 16:47:01.578 +02:00 [DBG] Created DbConnection. (0ms).
+2023-05-09 16:47:01.578 +02:00 [DBG] Opening connection to database 'master' on server '(localdb)\MSSQLLocalDB'.
+2023-05-09 16:47:01.593 +02:00 [DBG] Opened connection to database 'master' on server '(localdb)\MSSQLLocalDB'.
+2023-05-09 16:47:01.598 +02:00 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2023-05-09 16:47:01.603 +02:00 [DBG] Created DbCommand for 'ExecuteNonQuery' (5ms).
+2023-05-09 16:47:01.605 +02:00 [DBG] Initialized DbCommand for 'ExecuteNonQuery' (8ms).
+2023-05-09 16:47:01.611 +02:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='60']
+CREATE DATABASE [PhoneBookStoreAPI];
+2023-05-09 16:47:01.802 +02:00 [INF] Executed DbCommand (193ms) [Parameters=[], CommandType='"Text"', CommandTimeout='60']
+CREATE DATABASE [PhoneBookStoreAPI];
+2023-05-09 16:47:01.803 +02:00 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2023-05-09 16:47:01.803 +02:00 [DBG] Created DbCommand for 'ExecuteNonQuery' (0ms).
+2023-05-09 16:47:01.803 +02:00 [DBG] Initialized DbCommand for 'ExecuteNonQuery' (0ms).
+2023-05-09 16:47:01.804 +02:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='60']
+IF SERVERPROPERTY('EngineEdition') <> 5
+BEGIN
+    ALTER DATABASE [PhoneBookStoreAPI] SET READ_COMMITTED_SNAPSHOT ON;
+END;
+2023-05-09 16:47:01.882 +02:00 [INF] Executed DbCommand (79ms) [Parameters=[], CommandType='"Text"', CommandTimeout='60']
+IF SERVERPROPERTY('EngineEdition') <> 5
+BEGIN
+    ALTER DATABASE [PhoneBookStoreAPI] SET READ_COMMITTED_SNAPSHOT ON;
+END;
+2023-05-09 16:47:01.883 +02:00 [DBG] Closing connection to database 'master' on server '(localdb)\MSSQLLocalDB'.
+2023-05-09 16:47:01.890 +02:00 [DBG] Closed connection to database 'master' on server '(localdb)\MSSQLLocalDB' (3ms).
+2023-05-09 16:47:01.893 +02:00 [DBG] Disposing connection to database 'master' on server '(localdb)\MSSQLLocalDB'.
+2023-05-09 16:47:01.894 +02:00 [DBG] Disposed connection to database '' on server '' (0ms).
+2023-05-09 16:47:01.894 +02:00 [DBG] Opening connection to database 'PhoneBookStoreAPI' on server '(localdb)\MSSQLLocalDB'.
+2023-05-09 16:47:01.899 +02:00 [DBG] Opened connection to database 'PhoneBookStoreAPI' on server '(localdb)\MSSQLLocalDB'.
+2023-05-09 16:47:01.899 +02:00 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2023-05-09 16:47:01.899 +02:00 [DBG] Created DbCommand for 'ExecuteNonQuery' (0ms).
+2023-05-09 16:47:01.899 +02:00 [DBG] Initialized DbCommand for 'ExecuteNonQuery' (0ms).
+2023-05-09 16:47:01.899 +02:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2023-05-09 16:47:01.906 +02:00 [INF] Executed DbCommand (7ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2023-05-09 16:47:01.906 +02:00 [DBG] Closing connection to database 'PhoneBookStoreAPI' on server '(localdb)\MSSQLLocalDB'.
+2023-05-09 16:47:01.906 +02:00 [DBG] Closed connection to database 'PhoneBookStoreAPI' on server '(localdb)\MSSQLLocalDB' (0ms).
+2023-05-09 16:47:01.968 +02:00 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2023-05-09 16:47:01.968 +02:00 [DBG] Created DbCommand for 'ExecuteNonQuery' (0ms).
+2023-05-09 16:47:01.968 +02:00 [DBG] Initialized DbCommand for 'ExecuteNonQuery' (0ms).
+2023-05-09 16:47:01.968 +02:00 [DBG] Opening connection to database 'PhoneBookStoreAPI' on server '(localdb)\MSSQLLocalDB'.
+2023-05-09 16:47:01.969 +02:00 [DBG] Opened connection to database 'PhoneBookStoreAPI' on server '(localdb)\MSSQLLocalDB'.
+2023-05-09 16:47:01.969 +02:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [__EFMigrationsHistory] (
+    [MigrationId] nvarchar(150) NOT NULL,
+    [ProductVersion] nvarchar(32) NOT NULL,
+    CONSTRAINT [PK___EFMigrationsHistory] PRIMARY KEY ([MigrationId])
+);
+2023-05-09 16:47:01.975 +02:00 [INF] Executed DbCommand (7ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [__EFMigrationsHistory] (
+    [MigrationId] nvarchar(150) NOT NULL,
+    [ProductVersion] nvarchar(32) NOT NULL,
+    CONSTRAINT [PK___EFMigrationsHistory] PRIMARY KEY ([MigrationId])
+);
+2023-05-09 16:47:01.975 +02:00 [DBG] Closing connection to database 'PhoneBookStoreAPI' on server '(localdb)\MSSQLLocalDB'.
+2023-05-09 16:47:01.975 +02:00 [DBG] Closed connection to database 'PhoneBookStoreAPI' on server '(localdb)\MSSQLLocalDB' (0ms).
+2023-05-09 16:47:01.976 +02:00 [DBG] Opening connection to database 'PhoneBookStoreAPI' on server '(localdb)\MSSQLLocalDB'.
+2023-05-09 16:47:01.976 +02:00 [DBG] Opened connection to database 'PhoneBookStoreAPI' on server '(localdb)\MSSQLLocalDB'.
+2023-05-09 16:47:01.976 +02:00 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2023-05-09 16:47:01.976 +02:00 [DBG] Created DbCommand for 'ExecuteNonQuery' (0ms).
+2023-05-09 16:47:01.976 +02:00 [DBG] Initialized DbCommand for 'ExecuteNonQuery' (0ms).
+2023-05-09 16:47:01.976 +02:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2023-05-09 16:47:01.977 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2023-05-09 16:47:01.977 +02:00 [DBG] Closing connection to database 'PhoneBookStoreAPI' on server '(localdb)\MSSQLLocalDB'.
+2023-05-09 16:47:01.977 +02:00 [DBG] Closed connection to database 'PhoneBookStoreAPI' on server '(localdb)\MSSQLLocalDB' (0ms).
+2023-05-09 16:47:01.979 +02:00 [DBG] Creating DbCommand for 'ExecuteScalar'.
+2023-05-09 16:47:01.979 +02:00 [DBG] Created DbCommand for 'ExecuteScalar' (0ms).
+2023-05-09 16:47:01.979 +02:00 [DBG] Initialized DbCommand for 'ExecuteScalar' (0ms).
+2023-05-09 16:47:01.979 +02:00 [DBG] Opening connection to database 'PhoneBookStoreAPI' on server '(localdb)\MSSQLLocalDB'.
+2023-05-09 16:47:01.979 +02:00 [DBG] Opened connection to database 'PhoneBookStoreAPI' on server '(localdb)\MSSQLLocalDB'.
+2023-05-09 16:47:01.979 +02:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2023-05-09 16:47:01.989 +02:00 [INF] Executed DbCommand (10ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2023-05-09 16:47:01.989 +02:00 [DBG] Closing connection to database 'PhoneBookStoreAPI' on server '(localdb)\MSSQLLocalDB'.
+2023-05-09 16:47:01.989 +02:00 [DBG] Closed connection to database 'PhoneBookStoreAPI' on server '(localdb)\MSSQLLocalDB' (0ms).
+2023-05-09 16:47:01.991 +02:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2023-05-09 16:47:01.991 +02:00 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2023-05-09 16:47:01.991 +02:00 [DBG] Initialized DbCommand for 'ExecuteReader' (0ms).
+2023-05-09 16:47:01.991 +02:00 [DBG] Opening connection to database 'PhoneBookStoreAPI' on server '(localdb)\MSSQLLocalDB'.
+2023-05-09 16:47:01.991 +02:00 [DBG] Opened connection to database 'PhoneBookStoreAPI' on server '(localdb)\MSSQLLocalDB'.
+2023-05-09 16:47:01.991 +02:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2023-05-09 16:47:01.994 +02:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2023-05-09 16:47:01.995 +02:00 [DBG] Closing data reader to 'PhoneBookStoreAPI' on server '(localdb)\MSSQLLocalDB'.
+2023-05-09 16:47:01.996 +02:00 [DBG] A data reader for 'PhoneBookStoreAPI' on server '(localdb)\MSSQLLocalDB' is being disposed after spending 1ms reading results.
+2023-05-09 16:47:01.996 +02:00 [DBG] Closing connection to database 'PhoneBookStoreAPI' on server '(localdb)\MSSQLLocalDB'.
+2023-05-09 16:47:01.996 +02:00 [DBG] Closed connection to database 'PhoneBookStoreAPI' on server '(localdb)\MSSQLLocalDB' (0ms).
+2023-05-09 16:47:02.003 +02:00 [INF] Applying migration '20230509144422_AddContactTable'.
+2023-05-09 16:47:02.013 +02:00 [DBG] Opening connection to database 'PhoneBookStoreAPI' on server '(localdb)\MSSQLLocalDB'.
+2023-05-09 16:47:02.014 +02:00 [DBG] Opened connection to database 'PhoneBookStoreAPI' on server '(localdb)\MSSQLLocalDB'.
+2023-05-09 16:47:02.015 +02:00 [DBG] Beginning transaction with isolation level 'Unspecified'.
+2023-05-09 16:47:02.019 +02:00 [DBG] Began transaction with isolation level 'ReadCommitted'.
+2023-05-09 16:47:02.020 +02:00 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2023-05-09 16:47:02.020 +02:00 [DBG] Created DbCommand for 'ExecuteNonQuery' (0ms).
+2023-05-09 16:47:02.021 +02:00 [DBG] Initialized DbCommand for 'ExecuteNonQuery' (0ms).
+2023-05-09 16:47:02.021 +02:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [Contacts] (
+    [Id] int NOT NULL IDENTITY,
+    [FirstName] nvarchar(100) NOT NULL,
+    [LastName] nvarchar(100) NOT NULL,
+    [Email] nvarchar(max) NOT NULL,
+    [Password] nvarchar(100) NOT NULL,
+    [PhoneNumber] nvarchar(max) NOT NULL,
+    [BirhDate] datetime2 NOT NULL,
+    [CreatedDate] datetime2 NOT NULL,
+    [UpdatedDate] datetime2 NOT NULL,
+    CONSTRAINT [PK_Contacts] PRIMARY KEY ([Id])
+);
+2023-05-09 16:47:02.023 +02:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [Contacts] (
+    [Id] int NOT NULL IDENTITY,
+    [FirstName] nvarchar(100) NOT NULL,
+    [LastName] nvarchar(100) NOT NULL,
+    [Email] nvarchar(max) NOT NULL,
+    [Password] nvarchar(100) NOT NULL,
+    [PhoneNumber] nvarchar(max) NOT NULL,
+    [BirhDate] datetime2 NOT NULL,
+    [CreatedDate] datetime2 NOT NULL,
+    [UpdatedDate] datetime2 NOT NULL,
+    CONSTRAINT [PK_Contacts] PRIMARY KEY ([Id])
+);
+2023-05-09 16:47:02.023 +02:00 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2023-05-09 16:47:02.023 +02:00 [DBG] Created DbCommand for 'ExecuteNonQuery' (0ms).
+2023-05-09 16:47:02.023 +02:00 [DBG] Initialized DbCommand for 'ExecuteNonQuery' (0ms).
+2023-05-09 16:47:02.024 +02:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO [__EFMigrationsHistory] ([MigrationId], [ProductVersion])
+VALUES (N'20230509144422_AddContactTable', N'7.0.5');
+2023-05-09 16:47:02.026 +02:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO [__EFMigrationsHistory] ([MigrationId], [ProductVersion])
+VALUES (N'20230509144422_AddContactTable', N'7.0.5');
+2023-05-09 16:47:02.028 +02:00 [DBG] Committing transaction.
+2023-05-09 16:47:02.030 +02:00 [DBG] Committed transaction.
+2023-05-09 16:47:02.031 +02:00 [DBG] Disposing transaction.
+2023-05-09 16:47:02.031 +02:00 [DBG] Closing connection to database 'PhoneBookStoreAPI' on server '(localdb)\MSSQLLocalDB'.
+2023-05-09 16:47:02.032 +02:00 [DBG] Closed connection to database 'PhoneBookStoreAPI' on server '(localdb)\MSSQLLocalDB' (0ms).
+2023-05-09 16:47:02.033 +02:00 [DBG] 'ApplicationDbContext' disposed.
+2023-05-09 16:47:02.033 +02:00 [DBG] Disposing connection to database 'PhoneBookStoreAPI' on server '(localdb)\MSSQLLocalDB'.
+2023-05-09 16:47:02.033 +02:00 [DBG] Disposed connection to database '' on server '' (0ms).
+2023-05-09 19:00:58.243 +02:00 [DBG] An 'IServiceProvider' was created for internal use by Entity Framework.
+2023-05-09 19:00:58.568 +02:00 [DBG] Entity Framework Core 7.0.5 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:7.0.5' with options: None
+2023-05-09 19:00:58.701 +02:00 [DBG] 'ApplicationDbContext' disposed.
+2023-05-09 19:01:02.859 +02:00 [DBG] An 'IServiceProvider' was created for internal use by Entity Framework.
+2023-05-09 19:01:03.165 +02:00 [DBG] Entity Framework Core 7.0.5 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:7.0.5' with options: None
+2023-05-09 19:01:03.177 +02:00 [DBG] Creating DbConnection.
+2023-05-09 19:01:03.201 +02:00 [DBG] Created DbConnection. (22ms).
+2023-05-09 19:01:03.203 +02:00 [DBG] Migrating using database 'PhoneBookStoreAPI' on server '(localdb)\MSSQLLocalDB'.
+2023-05-09 19:01:03.207 +02:00 [DBG] Opening connection to database 'PhoneBookStoreAPI' on server '(localdb)\MSSQLLocalDB'.
+2023-05-09 19:01:03.331 +02:00 [DBG] Opened connection to database 'PhoneBookStoreAPI' on server '(localdb)\MSSQLLocalDB'.
+2023-05-09 19:01:03.335 +02:00 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2023-05-09 19:01:03.339 +02:00 [DBG] Created DbCommand for 'ExecuteNonQuery' (3ms).
+2023-05-09 19:01:03.340 +02:00 [DBG] Initialized DbCommand for 'ExecuteNonQuery' (6ms).
+2023-05-09 19:01:03.344 +02:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2023-05-09 19:01:03.358 +02:00 [INF] Executed DbCommand (15ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2023-05-09 19:01:03.360 +02:00 [DBG] Closing connection to database 'PhoneBookStoreAPI' on server '(localdb)\MSSQLLocalDB'.
+2023-05-09 19:01:03.365 +02:00 [DBG] Closed connection to database 'PhoneBookStoreAPI' on server '(localdb)\MSSQLLocalDB' (2ms).
+2023-05-09 19:01:03.367 +02:00 [DBG] Creating DbCommand for 'ExecuteScalar'.
+2023-05-09 19:01:03.367 +02:00 [DBG] Created DbCommand for 'ExecuteScalar' (0ms).
+2023-05-09 19:01:03.367 +02:00 [DBG] Initialized DbCommand for 'ExecuteScalar' (0ms).
+2023-05-09 19:01:03.367 +02:00 [DBG] Opening connection to database 'PhoneBookStoreAPI' on server '(localdb)\MSSQLLocalDB'.
+2023-05-09 19:01:03.367 +02:00 [DBG] Opened connection to database 'PhoneBookStoreAPI' on server '(localdb)\MSSQLLocalDB'.
+2023-05-09 19:01:03.368 +02:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2023-05-09 19:01:03.377 +02:00 [INF] Executed DbCommand (9ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2023-05-09 19:01:03.377 +02:00 [DBG] Closing connection to database 'PhoneBookStoreAPI' on server '(localdb)\MSSQLLocalDB'.
+2023-05-09 19:01:03.378 +02:00 [DBG] Closed connection to database 'PhoneBookStoreAPI' on server '(localdb)\MSSQLLocalDB' (0ms).
+2023-05-09 19:01:03.378 +02:00 [DBG] Opening connection to database 'PhoneBookStoreAPI' on server '(localdb)\MSSQLLocalDB'.
+2023-05-09 19:01:03.378 +02:00 [DBG] Opened connection to database 'PhoneBookStoreAPI' on server '(localdb)\MSSQLLocalDB'.
+2023-05-09 19:01:03.378 +02:00 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2023-05-09 19:01:03.378 +02:00 [DBG] Created DbCommand for 'ExecuteNonQuery' (0ms).
+2023-05-09 19:01:03.378 +02:00 [DBG] Initialized DbCommand for 'ExecuteNonQuery' (0ms).
+2023-05-09 19:01:03.378 +02:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2023-05-09 19:01:03.379 +02:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2023-05-09 19:01:03.379 +02:00 [DBG] Closing connection to database 'PhoneBookStoreAPI' on server '(localdb)\MSSQLLocalDB'.
+2023-05-09 19:01:03.380 +02:00 [DBG] Closed connection to database 'PhoneBookStoreAPI' on server '(localdb)\MSSQLLocalDB' (0ms).
+2023-05-09 19:01:03.380 +02:00 [DBG] Creating DbCommand for 'ExecuteScalar'.
+2023-05-09 19:01:03.380 +02:00 [DBG] Created DbCommand for 'ExecuteScalar' (0ms).
+2023-05-09 19:01:03.380 +02:00 [DBG] Initialized DbCommand for 'ExecuteScalar' (0ms).
+2023-05-09 19:01:03.380 +02:00 [DBG] Opening connection to database 'PhoneBookStoreAPI' on server '(localdb)\MSSQLLocalDB'.
+2023-05-09 19:01:03.380 +02:00 [DBG] Opened connection to database 'PhoneBookStoreAPI' on server '(localdb)\MSSQLLocalDB'.
+2023-05-09 19:01:03.380 +02:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2023-05-09 19:01:03.381 +02:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2023-05-09 19:01:03.381 +02:00 [DBG] Closing connection to database 'PhoneBookStoreAPI' on server '(localdb)\MSSQLLocalDB'.
+2023-05-09 19:01:03.381 +02:00 [DBG] Closed connection to database 'PhoneBookStoreAPI' on server '(localdb)\MSSQLLocalDB' (0ms).
+2023-05-09 19:01:03.394 +02:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2023-05-09 19:01:03.394 +02:00 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2023-05-09 19:01:03.394 +02:00 [DBG] Initialized DbCommand for 'ExecuteReader' (0ms).
+2023-05-09 19:01:03.394 +02:00 [DBG] Opening connection to database 'PhoneBookStoreAPI' on server '(localdb)\MSSQLLocalDB'.
+2023-05-09 19:01:03.394 +02:00 [DBG] Opened connection to database 'PhoneBookStoreAPI' on server '(localdb)\MSSQLLocalDB'.
+2023-05-09 19:01:03.395 +02:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2023-05-09 19:01:03.397 +02:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2023-05-09 19:01:03.399 +02:00 [DBG] Closing data reader to 'PhoneBookStoreAPI' on server '(localdb)\MSSQLLocalDB'.
+2023-05-09 19:01:03.400 +02:00 [DBG] A data reader for 'PhoneBookStoreAPI' on server '(localdb)\MSSQLLocalDB' is being disposed after spending 1ms reading results.
+2023-05-09 19:01:03.400 +02:00 [DBG] Closing connection to database 'PhoneBookStoreAPI' on server '(localdb)\MSSQLLocalDB'.
+2023-05-09 19:01:03.400 +02:00 [DBG] Closed connection to database 'PhoneBookStoreAPI' on server '(localdb)\MSSQLLocalDB' (0ms).
+2023-05-09 19:01:03.406 +02:00 [INF] Applying migration '20230509170058_SeedContactTable'.
+2023-05-09 19:01:03.427 +02:00 [DBG] Executing 2 update commands as a batch.
+2023-05-09 19:01:03.432 +02:00 [DBG] Opening connection to database 'PhoneBookStoreAPI' on server '(localdb)\MSSQLLocalDB'.
+2023-05-09 19:01:03.432 +02:00 [DBG] Opened connection to database 'PhoneBookStoreAPI' on server '(localdb)\MSSQLLocalDB'.
+2023-05-09 19:01:03.433 +02:00 [DBG] Beginning transaction with isolation level 'Unspecified'.
+2023-05-09 19:01:03.437 +02:00 [DBG] Began transaction with isolation level 'ReadCommitted'.
+2023-05-09 19:01:03.437 +02:00 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2023-05-09 19:01:03.438 +02:00 [DBG] Created DbCommand for 'ExecuteNonQuery' (0ms).
+2023-05-09 19:01:03.438 +02:00 [DBG] Initialized DbCommand for 'ExecuteNonQuery' (0ms).
+2023-05-09 19:01:03.438 +02:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+IF EXISTS (SELECT * FROM [sys].[identity_columns] WHERE [name] IN (N'Id', N'BirhDate', N'CreatedDate', N'Email', N'FirstName', N'LastName', N'Password', N'PhoneNumber', N'UpdatedDate') AND [object_id] = OBJECT_ID(N'[Contacts]'))
+    SET IDENTITY_INSERT [Contacts] ON;
+INSERT INTO [Contacts] ([Id], [BirhDate], [CreatedDate], [Email], [FirstName], [LastName], [Password], [PhoneNumber], [UpdatedDate])
+VALUES (1, '1989-07-20T00:00:00.0000000', '2023-05-09T19:00:58.5830539+02:00', N'example1@email.com', N'Jan', N'Kowalski', N'password', N'123456789', '0001-01-01T00:00:00.0000000'),
+(2, '1995-03-15T00:00:00.0000000', '2023-05-09T19:00:58.5830582+02:00', N'example2@mail.com', N'Anna', N'Nowak', N'password2', N'987654321', '0001-01-01T00:00:00.0000000');
+IF EXISTS (SELECT * FROM [sys].[identity_columns] WHERE [name] IN (N'Id', N'BirhDate', N'CreatedDate', N'Email', N'FirstName', N'LastName', N'Password', N'PhoneNumber', N'UpdatedDate') AND [object_id] = OBJECT_ID(N'[Contacts]'))
+    SET IDENTITY_INSERT [Contacts] OFF;
+2023-05-09 19:01:03.450 +02:00 [INF] Executed DbCommand (12ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+IF EXISTS (SELECT * FROM [sys].[identity_columns] WHERE [name] IN (N'Id', N'BirhDate', N'CreatedDate', N'Email', N'FirstName', N'LastName', N'Password', N'PhoneNumber', N'UpdatedDate') AND [object_id] = OBJECT_ID(N'[Contacts]'))
+    SET IDENTITY_INSERT [Contacts] ON;
+INSERT INTO [Contacts] ([Id], [BirhDate], [CreatedDate], [Email], [FirstName], [LastName], [Password], [PhoneNumber], [UpdatedDate])
+VALUES (1, '1989-07-20T00:00:00.0000000', '2023-05-09T19:00:58.5830539+02:00', N'example1@email.com', N'Jan', N'Kowalski', N'password', N'123456789', '0001-01-01T00:00:00.0000000'),
+(2, '1995-03-15T00:00:00.0000000', '2023-05-09T19:00:58.5830582+02:00', N'example2@mail.com', N'Anna', N'Nowak', N'password2', N'987654321', '0001-01-01T00:00:00.0000000');
+IF EXISTS (SELECT * FROM [sys].[identity_columns] WHERE [name] IN (N'Id', N'BirhDate', N'CreatedDate', N'Email', N'FirstName', N'LastName', N'Password', N'PhoneNumber', N'UpdatedDate') AND [object_id] = OBJECT_ID(N'[Contacts]'))
+    SET IDENTITY_INSERT [Contacts] OFF;
+2023-05-09 19:01:03.451 +02:00 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2023-05-09 19:01:03.451 +02:00 [DBG] Created DbCommand for 'ExecuteNonQuery' (0ms).
+2023-05-09 19:01:03.451 +02:00 [DBG] Initialized DbCommand for 'ExecuteNonQuery' (0ms).
+2023-05-09 19:01:03.451 +02:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO [__EFMigrationsHistory] ([MigrationId], [ProductVersion])
+VALUES (N'20230509170058_SeedContactTable', N'7.0.5');
+2023-05-09 19:01:03.452 +02:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO [__EFMigrationsHistory] ([MigrationId], [ProductVersion])
+VALUES (N'20230509170058_SeedContactTable', N'7.0.5');
+2023-05-09 19:01:03.453 +02:00 [DBG] Committing transaction.
+2023-05-09 19:01:03.456 +02:00 [DBG] Committed transaction.
+2023-05-09 19:01:03.457 +02:00 [DBG] Disposing transaction.
+2023-05-09 19:01:03.457 +02:00 [DBG] Closing connection to database 'PhoneBookStoreAPI' on server '(localdb)\MSSQLLocalDB'.
+2023-05-09 19:01:03.457 +02:00 [DBG] Closed connection to database 'PhoneBookStoreAPI' on server '(localdb)\MSSQLLocalDB' (0ms).
+2023-05-09 19:01:03.458 +02:00 [DBG] 'ApplicationDbContext' disposed.
+2023-05-09 19:01:03.459 +02:00 [DBG] Disposing connection to database 'PhoneBookStoreAPI' on server '(localdb)\MSSQLLocalDB'.
+2023-05-09 19:01:03.460 +02:00 [DBG] Disposed connection to database '' on server '' (0ms).
+2023-05-09 19:17:13.169 +02:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2023-05-09 19:17:13.885 +02:00 [DBG] Hosting starting
+2023-05-09 19:17:14.100 +02:00 [INF] Now listening on: http://localhost:5267
+2023-05-09 19:17:14.100 +02:00 [DBG] Loaded hosting startup assembly PhoneBook_API
+2023-05-09 19:17:14.100 +02:00 [DBG] Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2023-05-09 19:17:14.100 +02:00 [DBG] Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2023-05-09 19:17:14.101 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-05-09 19:17:14.102 +02:00 [INF] Hosting environment: Development
+2023-05-09 19:17:14.102 +02:00 [INF] Content root path: C:\Users\Pioter\Desktop\PhoneBook\PhoneBook_API
+2023-05-09 19:17:14.102 +02:00 [DBG] Hosting started
+2023-05-09 19:17:14.409 +02:00 [DBG] Connection id "0HMQGM4TR698F" accepted.
+2023-05-09 19:17:14.411 +02:00 [DBG] Connection id "0HMQGM4TR698F" started.
+2023-05-09 19:17:14.415 +02:00 [DBG] Connection id "0HMQGM4TR698G" accepted.
+2023-05-09 19:17:14.416 +02:00 [DBG] Connection id "0HMQGM4TR698G" started.
+2023-05-09 19:17:14.795 +02:00 [DBG] Connection id "0HMQGM4TR698H" accepted.
+2023-05-09 19:17:14.796 +02:00 [DBG] Connection id "0HMQGM4TR698H" started.
+2023-05-09 19:17:14.839 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5267/swagger/index.html - -
+2023-05-09 19:17:14.886 +02:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2023-05-09 19:17:14.915 +02:00 [DBG] No candidates found for the request path '/swagger/index.html'
+2023-05-09 19:17:14.916 +02:00 [DBG] Request did not match any endpoints
+2023-05-09 19:17:15.068 +02:00 [DBG] Response markup is scheduled to include browser refresh script injection.
+2023-05-09 19:17:15.227 +02:00 [DBG] Response markup was updated to include browser refresh script injection.
+2023-05-09 19:17:15.228 +02:00 [DBG] Connection id "0HMQGM4TR698H" completed keep alive response.
+2023-05-09 19:17:15.231 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5267/swagger/index.html - - - 200 - text/html;charset=utf-8 394.4080ms
+2023-05-09 19:17:15.244 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5267/_framework/aspnetcore-browser-refresh.js - -
+2023-05-09 19:17:15.247 +02:00 [DBG] Connection id "0HMQGM4TR698H" completed keep alive response.
+2023-05-09 19:17:15.248 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5267/_framework/aspnetcore-browser-refresh.js - - - 200 11996 application/javascript;+charset=utf-8 3.4621ms
+2023-05-09 19:17:15.507 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5267/_vs/browserLink - -
+2023-05-09 19:17:15.563 +02:00 [DBG] Connection id "0HMQGM4TR698H" completed keep alive response.
+2023-05-09 19:17:15.563 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5267/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 55.3577ms
+2023-05-09 19:17:15.637 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5267/swagger/v1/swagger.json - -
+2023-05-09 19:17:15.638 +02:00 [DBG] No candidates found for the request path '/swagger/v1/swagger.json'
+2023-05-09 19:17:15.638 +02:00 [DBG] Request did not match any endpoints
+2023-05-09 19:17:15.834 +02:00 [DBG] Connection id "0HMQGM4TR698H" completed keep alive response.
+2023-05-09 19:17:15.835 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5267/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 198.0014ms
+2023-05-09 19:17:22.100 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5267/api/PhoneBookApi - -
+2023-05-09 19:17:22.104 +02:00 [DBG] 1 candidate(s) found for the request path '/api/PhoneBookApi'
+2023-05-09 19:17:22.105 +02:00 [DBG] Endpoint 'PhoneBook_API.Controllers.PhoneBookApiController.GetContacts (PhoneBook_API)' with route pattern 'api/PhoneBookApi' is valid for the request path '/api/PhoneBookApi'
+2023-05-09 19:17:22.106 +02:00 [DBG] Request matched endpoint 'PhoneBook_API.Controllers.PhoneBookApiController.GetContacts (PhoneBook_API)'
+2023-05-09 19:17:22.108 +02:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2023-05-09 19:17:22.109 +02:00 [WRN] Failed to determine the https port for redirect.
+2023-05-09 19:17:22.111 +02:00 [INF] Executing endpoint 'PhoneBook_API.Controllers.PhoneBookApiController.GetContacts (PhoneBook_API)'
+2023-05-09 19:17:22.120 +02:00 [INF] Route matched with {action = "GetContacts", controller = "PhoneBookApi"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[PhoneBook_API.Models.Dto.ContactDTO]] GetContacts() on controller PhoneBook_API.Controllers.PhoneBookApiController (PhoneBook_API).
+2023-05-09 19:17:22.122 +02:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2023-05-09 19:17:22.123 +02:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2023-05-09 19:17:22.123 +02:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2023-05-09 19:17:22.123 +02:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2023-05-09 19:17:22.123 +02:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2023-05-09 19:17:22.124 +02:00 [DBG] Executing controller factory for controller PhoneBook_API.Controllers.PhoneBookApiController (PhoneBook_API)
+2023-05-09 19:17:22.370 +02:00 [DBG] An 'IServiceProvider' was created for internal use by Entity Framework.
+2023-05-09 19:17:22.386 +02:00 [DBG] Executed controller factory for controller PhoneBook_API.Controllers.PhoneBookApiController (PhoneBook_API)
+2023-05-09 19:17:22.508 +02:00 [INF] Executing action method PhoneBook_API.Controllers.PhoneBookApiController.GetContacts (PhoneBook_API) - Validation state: "Valid"
+2023-05-09 19:17:22.876 +02:00 [DBG] Entity Framework Core 7.0.5 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:7.0.5' with options: None
+2023-05-09 19:17:23.046 +02:00 [DBG] Compiling query expression: 
+'DbSet<Contact>()'
+2023-05-09 19:17:23.162 +02:00 [DBG] Generated query execution expression: 
+'queryContext => new SingleQueryingEnumerable<Contact>(
+    (RelationalQueryContext)queryContext, 
+    RelationalCommandCache.QueryExpression(
+        Projection Mapping:
+            EmptyProjectionMember -> Dictionary<IProperty, int> { [Property: Contact.Id (int) Required PK AfterSave:Throw ValueGenerated.OnAdd, 0], [Property: Contact.BirhDate (DateTime) Required, 1], [Property: Contact.CreatedDate (DateTime) Required, 2], [Property: Contact.Email (string) Required, 3], [Property: Contact.FirstName (string) Required MaxLength(100), 4], [Property: Contact.LastName (string) Required MaxLength(100), 5], [Property: Contact.Password (string) Required MaxLength(100), 6], [Property: Contact.PhoneNumber (string) Required, 7], [Property: Contact.UpdatedDate (DateTime) Required, 8] }
+        SELECT c.Id, c.BirhDate, c.CreatedDate, c.Email, c.FirstName, c.LastName, c.Password, c.PhoneNumber, c.UpdatedDate
+        FROM Contacts AS c), 
+    null, 
+    Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, Contact>, 
+    PhoneBook_API.Data.ApplicationDbContext, 
+    False, 
+    False, 
+    True
+)'
+2023-05-09 19:17:23.182 +02:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2023-05-09 19:17:23.183 +02:00 [DBG] Creating DbConnection.
+2023-05-09 19:17:23.207 +02:00 [DBG] Created DbConnection. (21ms).
+2023-05-09 19:17:23.214 +02:00 [DBG] Created DbCommand for 'ExecuteReader' (30ms).
+2023-05-09 19:17:23.215 +02:00 [DBG] Initialized DbCommand for 'ExecuteReader' (34ms).
+2023-05-09 19:17:23.217 +02:00 [DBG] Opening connection to database 'PhoneBookStoreAPI' on server '(localdb)\MSSQLLocalDB'.
+2023-05-09 19:17:23.731 +02:00 [DBG] Opened connection to database 'PhoneBookStoreAPI' on server '(localdb)\MSSQLLocalDB'.
+2023-05-09 19:17:23.737 +02:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id], [c].[BirhDate], [c].[CreatedDate], [c].[Email], [c].[FirstName], [c].[LastName], [c].[Password], [c].[PhoneNumber], [c].[UpdatedDate]
+FROM [Contacts] AS [c]
+2023-05-09 19:17:23.757 +02:00 [INF] Executed DbCommand (21ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id], [c].[BirhDate], [c].[CreatedDate], [c].[Email], [c].[FirstName], [c].[LastName], [c].[Password], [c].[PhoneNumber], [c].[UpdatedDate]
+FROM [Contacts] AS [c]
+2023-05-09 19:17:23.774 +02:00 [DBG] Context 'ApplicationDbContext' started tracking 'Contact' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-05-09 19:17:23.797 +02:00 [DBG] Context 'ApplicationDbContext' started tracking 'Contact' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-05-09 19:17:23.799 +02:00 [DBG] Closing data reader to 'PhoneBookStoreAPI' on server '(localdb)\MSSQLLocalDB'.
+2023-05-09 19:17:23.805 +02:00 [DBG] A data reader for 'PhoneBookStoreAPI' on server '(localdb)\MSSQLLocalDB' is being disposed after spending 43ms reading results.
+2023-05-09 19:17:23.806 +02:00 [DBG] Closing connection to database 'PhoneBookStoreAPI' on server '(localdb)\MSSQLLocalDB'.
+2023-05-09 19:17:23.810 +02:00 [DBG] Closed connection to database 'PhoneBookStoreAPI' on server '(localdb)\MSSQLLocalDB' (3ms).
+2023-05-09 19:17:23.813 +02:00 [INF] Executed action method PhoneBook_API.Controllers.PhoneBookApiController.GetContacts (PhoneBook_API), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 1302.4587ms.
+2023-05-09 19:17:23.816 +02:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.XmlDataContractSerializerOutputFormatter"]
+2023-05-09 19:17:23.818 +02:00 [DBG] Attempting to select an output formatter based on Accept header '["text/plain"]'.
+2023-05-09 19:17:23.820 +02:00 [DBG] Could not find an output formatter based on content negotiation. Accepted types were (["text/plain"])
+2023-05-09 19:17:23.820 +02:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2023-05-09 19:17:23.820 +02:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2023-05-09 19:17:23.821 +02:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter' and content type 'application/json' to write the response.
+2023-05-09 19:17:23.821 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[PhoneBook_API.Models.Contact, PhoneBook_API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-05-09 19:17:23.910 +02:00 [INF] Executed action PhoneBook_API.Controllers.PhoneBookApiController.GetContacts (PhoneBook_API) in 1784.9213ms
+2023-05-09 19:17:23.911 +02:00 [INF] Executed endpoint 'PhoneBook_API.Controllers.PhoneBookApiController.GetContacts (PhoneBook_API)'
+2023-05-09 19:17:23.911 +02:00 [DBG] Connection id "0HMQGM4TR698H" completed keep alive response.
+2023-05-09 19:17:23.912 +02:00 [DBG] 'ApplicationDbContext' disposed.
+2023-05-09 19:17:23.915 +02:00 [DBG] Disposing connection to database 'PhoneBookStoreAPI' on server '(localdb)\MSSQLLocalDB'.
+2023-05-09 19:17:23.917 +02:00 [DBG] Disposed connection to database '' on server '' (1ms).
+2023-05-09 19:17:23.917 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5267/api/PhoneBookApi - - - 200 477 application/json;+charset=utf-8 1816.9295ms
+2023-05-09 19:21:42.773 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5267/api/PhoneBookApi application/json-patch+json 174
+2023-05-09 19:21:42.773 +02:00 [DBG] 1 candidate(s) found for the request path '/api/PhoneBookApi'
+2023-05-09 19:21:42.773 +02:00 [DBG] Endpoint 'PhoneBook_API.Controllers.PhoneBookApiController.CreateContact (PhoneBook_API)' with route pattern 'api/PhoneBookApi' is valid for the request path '/api/PhoneBookApi'
+2023-05-09 19:21:42.774 +02:00 [DBG] Request matched endpoint 'PhoneBook_API.Controllers.PhoneBookApiController.CreateContact (PhoneBook_API)'
+2023-05-09 19:21:42.774 +02:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2023-05-09 19:21:42.774 +02:00 [INF] Executing endpoint 'PhoneBook_API.Controllers.PhoneBookApiController.CreateContact (PhoneBook_API)'
+2023-05-09 19:21:42.780 +02:00 [INF] Route matched with {action = "CreateContact", controller = "PhoneBookApi"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[PhoneBook_API.Models.Dto.ContactDTO] CreateContact(PhoneBook_API.Models.Dto.ContactDTO) on controller PhoneBook_API.Controllers.PhoneBookApiController (PhoneBook_API).
+2023-05-09 19:21:42.780 +02:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2023-05-09 19:21:42.780 +02:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2023-05-09 19:21:42.780 +02:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2023-05-09 19:21:42.780 +02:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2023-05-09 19:21:42.780 +02:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2023-05-09 19:21:42.780 +02:00 [DBG] Executing controller factory for controller PhoneBook_API.Controllers.PhoneBookApiController (PhoneBook_API)
+2023-05-09 19:21:42.781 +02:00 [DBG] Executed controller factory for controller PhoneBook_API.Controllers.PhoneBookApiController (PhoneBook_API)
+2023-05-09 19:21:42.785 +02:00 [DBG] Attempting to bind parameter 'contactDTO' of type 'PhoneBook_API.Models.Dto.ContactDTO' ...
+2023-05-09 19:21:42.787 +02:00 [DBG] Attempting to bind parameter 'contactDTO' of type 'PhoneBook_API.Models.Dto.ContactDTO' using the name '' in request data ...
+2023-05-09 19:21:42.789 +02:00 [DBG] Rejected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonPatchInputFormatter' for content type 'application/json-patch+json'.
+2023-05-09 19:21:42.789 +02:00 [DBG] Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonInputFormatter' for content type 'application/json-patch+json'.
+2023-05-09 19:21:42.793 +02:00 [DBG] Connection id "0HMQGM4TR698H", Request id "0HMQGM4TR698H:00000006": started reading request body.
+2023-05-09 19:21:42.793 +02:00 [DBG] Connection id "0HMQGM4TR698H", Request id "0HMQGM4TR698H:00000006": done reading request body.
+2023-05-09 19:21:42.817 +02:00 [DBG] Done attempting to bind parameter 'contactDTO' of type 'PhoneBook_API.Models.Dto.ContactDTO'.
+2023-05-09 19:21:42.817 +02:00 [DBG] Done attempting to bind parameter 'contactDTO' of type 'PhoneBook_API.Models.Dto.ContactDTO'.
+2023-05-09 19:21:42.817 +02:00 [DBG] Attempting to validate the bound parameter 'contactDTO' of type 'PhoneBook_API.Models.Dto.ContactDTO' ...
+2023-05-09 19:21:42.828 +02:00 [DBG] Done attempting to validate the bound parameter 'contactDTO' of type 'PhoneBook_API.Models.Dto.ContactDTO'.
+2023-05-09 19:21:42.830 +02:00 [DBG] The request has model state errors, returning an error response.
+2023-05-09 19:21:42.831 +02:00 [DBG] Request was short circuited at action filter 'Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter'.
+2023-05-09 19:21:42.831 +02:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.XmlDataContractSerializerOutputFormatter"]
+2023-05-09 19:21:42.832 +02:00 [DBG] Attempting to select an output formatter based on Accept header '["text/plain"]' and explicitly specified content types '["application/problem+json","application/problem+xml","application/problem+json","application/problem+xml"]'. The content types in the accept header must be a subset of the explicitly set content types.
+2023-05-09 19:21:42.832 +02:00 [DBG] Could not find an output formatter based on content negotiation. Accepted types were (["text/plain"])
+2023-05-09 19:21:42.832 +02:00 [DBG] Attempting to select the first output formatter in the output formatters list which supports a content type from the explicitly specified content types '["application/problem+json","application/problem+xml","application/problem+json","application/problem+xml"]'.
+2023-05-09 19:21:42.832 +02:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter' and content type 'application/problem+json' to write the response.
+2023-05-09 19:21:42.832 +02:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2023-05-09 19:21:42.851 +02:00 [INF] Executed action PhoneBook_API.Controllers.PhoneBookApiController.CreateContact (PhoneBook_API) in 70.6333ms
+2023-05-09 19:21:42.851 +02:00 [INF] Executed endpoint 'PhoneBook_API.Controllers.PhoneBookApiController.CreateContact (PhoneBook_API)'
+2023-05-09 19:21:42.851 +02:00 [DBG] Connection id "0HMQGM4TR698H" completed keep alive response.
+2023-05-09 19:21:42.851 +02:00 [INF] Request finished HTTP/1.1 POST http://localhost:5267/api/PhoneBookApi application/json-patch+json 174 - 400 309 application/problem+json;+charset=utf-8 77.9617ms
+2023-05-09 19:21:53.205 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5267/api/PhoneBookApi application/json-patch+json 163
+2023-05-09 19:21:53.205 +02:00 [DBG] 1 candidate(s) found for the request path '/api/PhoneBookApi'
+2023-05-09 19:21:53.205 +02:00 [DBG] Endpoint 'PhoneBook_API.Controllers.PhoneBookApiController.CreateContact (PhoneBook_API)' with route pattern 'api/PhoneBookApi' is valid for the request path '/api/PhoneBookApi'
+2023-05-09 19:21:53.205 +02:00 [DBG] Request matched endpoint 'PhoneBook_API.Controllers.PhoneBookApiController.CreateContact (PhoneBook_API)'
+2023-05-09 19:21:53.205 +02:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2023-05-09 19:21:53.205 +02:00 [INF] Executing endpoint 'PhoneBook_API.Controllers.PhoneBookApiController.CreateContact (PhoneBook_API)'
+2023-05-09 19:21:53.206 +02:00 [INF] Route matched with {action = "CreateContact", controller = "PhoneBookApi"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[PhoneBook_API.Models.Dto.ContactDTO] CreateContact(PhoneBook_API.Models.Dto.ContactDTO) on controller PhoneBook_API.Controllers.PhoneBookApiController (PhoneBook_API).
+2023-05-09 19:21:53.206 +02:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2023-05-09 19:21:53.206 +02:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2023-05-09 19:21:53.206 +02:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2023-05-09 19:21:53.206 +02:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2023-05-09 19:21:53.206 +02:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2023-05-09 19:21:53.206 +02:00 [DBG] Executing controller factory for controller PhoneBook_API.Controllers.PhoneBookApiController (PhoneBook_API)
+2023-05-09 19:21:53.207 +02:00 [DBG] Executed controller factory for controller PhoneBook_API.Controllers.PhoneBookApiController (PhoneBook_API)
+2023-05-09 19:21:53.213 +02:00 [DBG] Attempting to bind parameter 'contactDTO' of type 'PhoneBook_API.Models.Dto.ContactDTO' ...
+2023-05-09 19:21:53.214 +02:00 [DBG] Attempting to bind parameter 'contactDTO' of type 'PhoneBook_API.Models.Dto.ContactDTO' using the name '' in request data ...
+2023-05-09 19:21:53.214 +02:00 [DBG] Rejected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonPatchInputFormatter' for content type 'application/json-patch+json'.
+2023-05-09 19:21:53.214 +02:00 [DBG] Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonInputFormatter' for content type 'application/json-patch+json'.
+2023-05-09 19:21:53.214 +02:00 [DBG] Connection id "0HMQGM4TR698H", Request id "0HMQGM4TR698H:00000007": started reading request body.
+2023-05-09 19:21:53.214 +02:00 [DBG] Connection id "0HMQGM4TR698H", Request id "0HMQGM4TR698H:00000007": done reading request body.
+2023-05-09 19:21:53.214 +02:00 [DBG] Done attempting to bind parameter 'contactDTO' of type 'PhoneBook_API.Models.Dto.ContactDTO'.
+2023-05-09 19:21:53.214 +02:00 [DBG] Done attempting to bind parameter 'contactDTO' of type 'PhoneBook_API.Models.Dto.ContactDTO'.
+2023-05-09 19:21:53.214 +02:00 [DBG] Attempting to validate the bound parameter 'contactDTO' of type 'PhoneBook_API.Models.Dto.ContactDTO' ...
+2023-05-09 19:21:53.215 +02:00 [DBG] Done attempting to validate the bound parameter 'contactDTO' of type 'PhoneBook_API.Models.Dto.ContactDTO'.
+2023-05-09 19:21:53.215 +02:00 [DBG] The request has model state errors, returning an error response.
+2023-05-09 19:21:53.215 +02:00 [DBG] Request was short circuited at action filter 'Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter'.
+2023-05-09 19:21:53.215 +02:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.XmlDataContractSerializerOutputFormatter"]
+2023-05-09 19:21:53.216 +02:00 [DBG] Attempting to select an output formatter based on Accept header '["text/plain"]' and explicitly specified content types '["application/problem+json","application/problem+xml","application/problem+json","application/problem+xml"]'. The content types in the accept header must be a subset of the explicitly set content types.
+2023-05-09 19:21:53.216 +02:00 [DBG] Could not find an output formatter based on content negotiation. Accepted types were (["text/plain"])
+2023-05-09 19:21:53.216 +02:00 [DBG] Attempting to select the first output formatter in the output formatters list which supports a content type from the explicitly specified content types '["application/problem+json","application/problem+xml","application/problem+json","application/problem+xml"]'.
+2023-05-09 19:21:53.216 +02:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter' and content type 'application/problem+json' to write the response.
+2023-05-09 19:21:53.216 +02:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2023-05-09 19:21:53.216 +02:00 [INF] Executed action PhoneBook_API.Controllers.PhoneBookApiController.CreateContact (PhoneBook_API) in 10.2066ms
+2023-05-09 19:21:53.216 +02:00 [INF] Executed endpoint 'PhoneBook_API.Controllers.PhoneBookApiController.CreateContact (PhoneBook_API)'
+2023-05-09 19:21:53.216 +02:00 [DBG] Connection id "0HMQGM4TR698H" completed keep alive response.
+2023-05-09 19:21:53.216 +02:00 [INF] Request finished HTTP/1.1 POST http://localhost:5267/api/PhoneBookApi application/json-patch+json 163 - 400 309 application/problem+json;+charset=utf-8 11.2188ms
+2023-05-09 19:21:59.204 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5267/api/PhoneBookApi application/json-patch+json 163
+2023-05-09 19:21:59.204 +02:00 [DBG] 1 candidate(s) found for the request path '/api/PhoneBookApi'
+2023-05-09 19:21:59.204 +02:00 [DBG] Endpoint 'PhoneBook_API.Controllers.PhoneBookApiController.CreateContact (PhoneBook_API)' with route pattern 'api/PhoneBookApi' is valid for the request path '/api/PhoneBookApi'
+2023-05-09 19:21:59.204 +02:00 [DBG] Request matched endpoint 'PhoneBook_API.Controllers.PhoneBookApiController.CreateContact (PhoneBook_API)'
+2023-05-09 19:21:59.204 +02:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2023-05-09 19:21:59.205 +02:00 [INF] Executing endpoint 'PhoneBook_API.Controllers.PhoneBookApiController.CreateContact (PhoneBook_API)'
+2023-05-09 19:21:59.205 +02:00 [INF] Route matched with {action = "CreateContact", controller = "PhoneBookApi"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[PhoneBook_API.Models.Dto.ContactDTO] CreateContact(PhoneBook_API.Models.Dto.ContactDTO) on controller PhoneBook_API.Controllers.PhoneBookApiController (PhoneBook_API).
+2023-05-09 19:21:59.205 +02:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2023-05-09 19:21:59.205 +02:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2023-05-09 19:21:59.205 +02:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2023-05-09 19:21:59.205 +02:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2023-05-09 19:21:59.205 +02:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2023-05-09 19:21:59.205 +02:00 [DBG] Executing controller factory for controller PhoneBook_API.Controllers.PhoneBookApiController (PhoneBook_API)
+2023-05-09 19:21:59.205 +02:00 [DBG] Executed controller factory for controller PhoneBook_API.Controllers.PhoneBookApiController (PhoneBook_API)
+2023-05-09 19:21:59.205 +02:00 [DBG] Attempting to bind parameter 'contactDTO' of type 'PhoneBook_API.Models.Dto.ContactDTO' ...
+2023-05-09 19:21:59.205 +02:00 [DBG] Attempting to bind parameter 'contactDTO' of type 'PhoneBook_API.Models.Dto.ContactDTO' using the name '' in request data ...
+2023-05-09 19:21:59.205 +02:00 [DBG] Rejected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonPatchInputFormatter' for content type 'application/json-patch+json'.
+2023-05-09 19:21:59.205 +02:00 [DBG] Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonInputFormatter' for content type 'application/json-patch+json'.
+2023-05-09 19:21:59.205 +02:00 [DBG] Connection id "0HMQGM4TR698H", Request id "0HMQGM4TR698H:00000008": started reading request body.
+2023-05-09 19:21:59.205 +02:00 [DBG] Connection id "0HMQGM4TR698H", Request id "0HMQGM4TR698H:00000008": done reading request body.
+2023-05-09 19:21:59.206 +02:00 [DBG] Done attempting to bind parameter 'contactDTO' of type 'PhoneBook_API.Models.Dto.ContactDTO'.
+2023-05-09 19:21:59.206 +02:00 [DBG] Done attempting to bind parameter 'contactDTO' of type 'PhoneBook_API.Models.Dto.ContactDTO'.
+2023-05-09 19:21:59.206 +02:00 [DBG] Attempting to validate the bound parameter 'contactDTO' of type 'PhoneBook_API.Models.Dto.ContactDTO' ...
+2023-05-09 19:21:59.206 +02:00 [DBG] Done attempting to validate the bound parameter 'contactDTO' of type 'PhoneBook_API.Models.Dto.ContactDTO'.
+2023-05-09 19:21:59.206 +02:00 [DBG] The request has model state errors, returning an error response.
+2023-05-09 19:21:59.206 +02:00 [DBG] Request was short circuited at action filter 'Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter'.
+2023-05-09 19:21:59.206 +02:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.XmlDataContractSerializerOutputFormatter"]
+2023-05-09 19:21:59.206 +02:00 [DBG] Attempting to select an output formatter based on Accept header '["text/plain"]' and explicitly specified content types '["application/problem+json","application/problem+xml","application/problem+json","application/problem+xml"]'. The content types in the accept header must be a subset of the explicitly set content types.
+2023-05-09 19:21:59.206 +02:00 [DBG] Could not find an output formatter based on content negotiation. Accepted types were (["text/plain"])
+2023-05-09 19:21:59.206 +02:00 [DBG] Attempting to select the first output formatter in the output formatters list which supports a content type from the explicitly specified content types '["application/problem+json","application/problem+xml","application/problem+json","application/problem+xml"]'.
+2023-05-09 19:21:59.206 +02:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter' and content type 'application/problem+json' to write the response.
+2023-05-09 19:21:59.206 +02:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2023-05-09 19:21:59.206 +02:00 [INF] Executed action PhoneBook_API.Controllers.PhoneBookApiController.CreateContact (PhoneBook_API) in 1.3098ms
+2023-05-09 19:21:59.206 +02:00 [INF] Executed endpoint 'PhoneBook_API.Controllers.PhoneBookApiController.CreateContact (PhoneBook_API)'
+2023-05-09 19:21:59.206 +02:00 [DBG] Connection id "0HMQGM4TR698H" completed keep alive response.
+2023-05-09 19:21:59.206 +02:00 [INF] Request finished HTTP/1.1 POST http://localhost:5267/api/PhoneBookApi application/json-patch+json 163 - 400 309 application/problem+json;+charset=utf-8 2.4483ms
+2023-05-09 19:22:42.195 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5267/api/PhoneBookApi application/json-patch+json 165
+2023-05-09 19:22:42.197 +02:00 [DBG] 1 candidate(s) found for the request path '/api/PhoneBookApi'
+2023-05-09 19:22:42.197 +02:00 [DBG] Endpoint 'PhoneBook_API.Controllers.PhoneBookApiController.CreateContact (PhoneBook_API)' with route pattern 'api/PhoneBookApi' is valid for the request path '/api/PhoneBookApi'
+2023-05-09 19:22:42.205 +02:00 [DBG] Request matched endpoint 'PhoneBook_API.Controllers.PhoneBookApiController.CreateContact (PhoneBook_API)'
+2023-05-09 19:22:42.206 +02:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2023-05-09 19:22:42.206 +02:00 [INF] Executing endpoint 'PhoneBook_API.Controllers.PhoneBookApiController.CreateContact (PhoneBook_API)'
+2023-05-09 19:22:42.206 +02:00 [INF] Route matched with {action = "CreateContact", controller = "PhoneBookApi"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[PhoneBook_API.Models.Dto.ContactDTO] CreateContact(PhoneBook_API.Models.Dto.ContactDTO) on controller PhoneBook_API.Controllers.PhoneBookApiController (PhoneBook_API).
+2023-05-09 19:22:42.206 +02:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2023-05-09 19:22:42.209 +02:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2023-05-09 19:22:42.209 +02:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2023-05-09 19:22:42.209 +02:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2023-05-09 19:22:42.209 +02:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2023-05-09 19:22:42.209 +02:00 [DBG] Executing controller factory for controller PhoneBook_API.Controllers.PhoneBookApiController (PhoneBook_API)
+2023-05-09 19:22:42.209 +02:00 [DBG] Executed controller factory for controller PhoneBook_API.Controllers.PhoneBookApiController (PhoneBook_API)
+2023-05-09 19:22:42.209 +02:00 [DBG] Attempting to bind parameter 'contactDTO' of type 'PhoneBook_API.Models.Dto.ContactDTO' ...
+2023-05-09 19:22:42.209 +02:00 [DBG] Attempting to bind parameter 'contactDTO' of type 'PhoneBook_API.Models.Dto.ContactDTO' using the name '' in request data ...
+2023-05-09 19:22:42.209 +02:00 [DBG] Rejected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonPatchInputFormatter' for content type 'application/json-patch+json'.
+2023-05-09 19:22:42.209 +02:00 [DBG] Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonInputFormatter' for content type 'application/json-patch+json'.
+2023-05-09 19:22:42.209 +02:00 [DBG] Connection id "0HMQGM4TR698H", Request id "0HMQGM4TR698H:00000009": started reading request body.
+2023-05-09 19:22:42.209 +02:00 [DBG] Connection id "0HMQGM4TR698H", Request id "0HMQGM4TR698H:00000009": done reading request body.
+2023-05-09 19:22:42.209 +02:00 [DBG] Done attempting to bind parameter 'contactDTO' of type 'PhoneBook_API.Models.Dto.ContactDTO'.
+2023-05-09 19:22:42.209 +02:00 [DBG] Done attempting to bind parameter 'contactDTO' of type 'PhoneBook_API.Models.Dto.ContactDTO'.
+2023-05-09 19:22:42.209 +02:00 [DBG] Attempting to validate the bound parameter 'contactDTO' of type 'PhoneBook_API.Models.Dto.ContactDTO' ...
+2023-05-09 19:22:42.209 +02:00 [DBG] Done attempting to validate the bound parameter 'contactDTO' of type 'PhoneBook_API.Models.Dto.ContactDTO'.
+2023-05-09 19:22:42.234 +02:00 [INF] Executing action method PhoneBook_API.Controllers.PhoneBookApiController.CreateContact (PhoneBook_API) - Validation state: "Valid"
+2023-05-09 19:22:42.260 +02:00 [DBG] Entity Framework Core 7.0.5 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:7.0.5' with options: None
+2023-05-09 19:22:42.270 +02:00 [DBG] Compiling query expression: 
+'DbSet<Contact>()
+    .FirstOrDefault(u => u.Email.ToLower() == __ToLower_0)'
+2023-05-09 19:22:42.339 +02:00 [DBG] Generated query execution expression: 
+'queryContext => new SingleQueryingEnumerable<Contact>(
+    (RelationalQueryContext)queryContext, 
+    RelationalCommandCache.QueryExpression(
+        Projection Mapping:
+            EmptyProjectionMember -> Dictionary<IProperty, int> { [Property: Contact.Id (int) Required PK AfterSave:Throw ValueGenerated.OnAdd, 0], [Property: Contact.BirhDate (DateTime) Required, 1], [Property: Contact.CreatedDate (DateTime) Required, 2], [Property: Contact.Email (string) Required, 3], [Property: Contact.FirstName (string) Required MaxLength(100), 4], [Property: Contact.LastName (string) Required MaxLength(100), 5], [Property: Contact.Password (string) Required MaxLength(100), 6], [Property: Contact.PhoneNumber (string) Required, 7], [Property: Contact.UpdatedDate (DateTime) Required, 8] }
+        SELECT TOP(1) c.Id, c.BirhDate, c.CreatedDate, c.Email, c.FirstName, c.LastName, c.Password, c.PhoneNumber, c.UpdatedDate
+        FROM Contacts AS c
+        WHERE LOWER(c.Email) == @__ToLower_0), 
+    null, 
+    Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, Contact>, 
+    PhoneBook_API.Data.ApplicationDbContext, 
+    False, 
+    False, 
+    True
+)
+    .SingleOrDefault()'
+2023-05-09 19:22:42.348 +02:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2023-05-09 19:22:42.348 +02:00 [DBG] Creating DbConnection.
+2023-05-09 19:22:42.348 +02:00 [DBG] Created DbConnection. (0ms).
+2023-05-09 19:22:42.348 +02:00 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2023-05-09 19:22:42.351 +02:00 [DBG] Initialized DbCommand for 'ExecuteReader' (3ms).
+2023-05-09 19:22:42.352 +02:00 [DBG] Opening connection to database 'PhoneBookStoreAPI' on server '(localdb)\MSSQLLocalDB'.
+2023-05-09 19:22:42.352 +02:00 [DBG] Opened connection to database 'PhoneBookStoreAPI' on server '(localdb)\MSSQLLocalDB'.
+2023-05-09 19:22:42.354 +02:00 [DBG] Executing DbCommand [Parameters=[@__ToLower_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[BirhDate], [c].[CreatedDate], [c].[Email], [c].[FirstName], [c].[LastName], [c].[Password], [c].[PhoneNumber], [c].[UpdatedDate]
+FROM [Contacts] AS [c]
+WHERE LOWER([c].[Email]) = @__ToLower_0
+2023-05-09 19:22:42.403 +02:00 [INF] Executed DbCommand (50ms) [Parameters=[@__ToLower_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[BirhDate], [c].[CreatedDate], [c].[Email], [c].[FirstName], [c].[LastName], [c].[Password], [c].[PhoneNumber], [c].[UpdatedDate]
+FROM [Contacts] AS [c]
+WHERE LOWER([c].[Email]) = @__ToLower_0
+2023-05-09 19:22:42.403 +02:00 [DBG] Closing data reader to 'PhoneBookStoreAPI' on server '(localdb)\MSSQLLocalDB'.
+2023-05-09 19:22:42.404 +02:00 [DBG] A data reader for 'PhoneBookStoreAPI' on server '(localdb)\MSSQLLocalDB' is being disposed after spending 0ms reading results.
+2023-05-09 19:22:42.404 +02:00 [DBG] Closing connection to database 'PhoneBookStoreAPI' on server '(localdb)\MSSQLLocalDB'.
+2023-05-09 19:22:42.404 +02:00 [DBG] Closed connection to database 'PhoneBookStoreAPI' on server '(localdb)\MSSQLLocalDB' (0ms).
+2023-05-09 19:22:42.420 +02:00 [DBG] 'ApplicationDbContext' generated a temporary value for the property 'Id.Contact'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-05-09 19:22:42.426 +02:00 [DBG] Context 'ApplicationDbContext' started tracking 'Contact' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-05-09 19:22:42.428 +02:00 [DBG] SaveChanges starting for 'ApplicationDbContext'.
+2023-05-09 19:22:42.429 +02:00 [DBG] DetectChanges starting for 'ApplicationDbContext'.
+2023-05-09 19:22:42.439 +02:00 [DBG] DetectChanges completed for 'ApplicationDbContext'.
+2023-05-09 19:22:42.483 +02:00 [DBG] Opening connection to database 'PhoneBookStoreAPI' on server '(localdb)\MSSQLLocalDB'.
+2023-05-09 19:22:42.483 +02:00 [DBG] Opened connection to database 'PhoneBookStoreAPI' on server '(localdb)\MSSQLLocalDB'.
+2023-05-09 19:22:42.484 +02:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2023-05-09 19:22:42.484 +02:00 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2023-05-09 19:22:42.484 +02:00 [DBG] Initialized DbCommand for 'ExecuteReader' (0ms).
+2023-05-09 19:22:42.485 +02:00 [DBG] Executing DbCommand [Parameters=[@p0='?' (DbType = DateTime2), @p1='?' (DbType = DateTime2), @p2='?' (Size = 4000), @p3='?' (Size = 100), @p4='?' (Size = 100), @p5='?' (Size = 100), @p6='?' (Size = 4000), @p7='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Contacts] ([BirhDate], [CreatedDate], [Email], [FirstName], [LastName], [Password], [PhoneNumber], [UpdatedDate])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7);
+2023-05-09 19:22:42.487 +02:00 [INF] Executed DbCommand (3ms) [Parameters=[@p0='?' (DbType = DateTime2), @p1='?' (DbType = DateTime2), @p2='?' (Size = 4000), @p3='?' (Size = 100), @p4='?' (Size = 100), @p5='?' (Size = 100), @p6='?' (Size = 4000), @p7='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Contacts] ([BirhDate], [CreatedDate], [Email], [FirstName], [LastName], [Password], [PhoneNumber], [UpdatedDate])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7);
+2023-05-09 19:22:42.496 +02:00 [DBG] The foreign key property 'Contact.Id' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see property values.
+2023-05-09 19:22:42.500 +02:00 [DBG] Closing data reader to 'PhoneBookStoreAPI' on server '(localdb)\MSSQLLocalDB'.
+2023-05-09 19:22:42.500 +02:00 [DBG] A data reader for 'PhoneBookStoreAPI' on server '(localdb)\MSSQLLocalDB' is being disposed after spending 12ms reading results.
+2023-05-09 19:22:42.500 +02:00 [DBG] Closing connection to database 'PhoneBookStoreAPI' on server '(localdb)\MSSQLLocalDB'.
+2023-05-09 19:22:42.500 +02:00 [DBG] Closed connection to database 'PhoneBookStoreAPI' on server '(localdb)\MSSQLLocalDB' (0ms).
+2023-05-09 19:22:42.507 +02:00 [DBG] An entity of type 'Contact' tracked by 'ApplicationDbContext' changed state from '"Added"' to '"Unchanged"'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-05-09 19:22:42.508 +02:00 [DBG] SaveChanges completed for 'ApplicationDbContext' with 1 entities written to the database.
+2023-05-09 19:22:42.509 +02:00 [INF] Executed action method PhoneBook_API.Controllers.PhoneBookApiController.CreateContact (PhoneBook_API), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 274.0443ms.
+2023-05-09 19:22:42.509 +02:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.XmlDataContractSerializerOutputFormatter"]
+2023-05-09 19:22:42.509 +02:00 [DBG] Attempting to select an output formatter based on Accept header '["text/plain"]'.
+2023-05-09 19:22:42.509 +02:00 [DBG] Could not find an output formatter based on content negotiation. Accepted types were (["text/plain"])
+2023-05-09 19:22:42.509 +02:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2023-05-09 19:22:42.509 +02:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2023-05-09 19:22:42.509 +02:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter' and content type 'application/json' to write the response.
+2023-05-09 19:22:42.509 +02:00 [INF] Executing OkObjectResult, writing value of type 'PhoneBook_API.Models.Dto.ContactDTO'.
+2023-05-09 19:22:42.511 +02:00 [INF] Executed action PhoneBook_API.Controllers.PhoneBookApiController.CreateContact (PhoneBook_API) in 301.8983ms
+2023-05-09 19:22:42.511 +02:00 [INF] Executed endpoint 'PhoneBook_API.Controllers.PhoneBookApiController.CreateContact (PhoneBook_API)'
+2023-05-09 19:22:42.511 +02:00 [DBG] Connection id "0HMQGM4TR698H" completed keep alive response.
+2023-05-09 19:22:42.511 +02:00 [DBG] 'ApplicationDbContext' disposed.
+2023-05-09 19:22:42.511 +02:00 [DBG] Disposing connection to database 'PhoneBookStoreAPI' on server '(localdb)\MSSQLLocalDB'.
+2023-05-09 19:22:42.511 +02:00 [DBG] Disposed connection to database '' on server '' (0ms).
+2023-05-09 19:22:42.511 +02:00 [INF] Request finished HTTP/1.1 POST http://localhost:5267/api/PhoneBookApi application/json-patch+json 165 - 200 227 application/json;+charset=utf-8 315.6575ms
+2023-05-09 19:23:06.835 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5267/api/PhoneBookApi/3 - -
+2023-05-09 19:23:06.835 +02:00 [DBG] 1 candidate(s) found for the request path '/api/PhoneBookApi/3'
+2023-05-09 19:23:06.846 +02:00 [DBG] Endpoint 'PhoneBook_API.Controllers.PhoneBookApiController.GetContact (PhoneBook_API)' with route pattern 'api/PhoneBookApi/{id:int}' is valid for the request path '/api/PhoneBookApi/3'
+2023-05-09 19:23:06.846 +02:00 [DBG] Request matched endpoint 'PhoneBook_API.Controllers.PhoneBookApiController.GetContact (PhoneBook_API)'
+2023-05-09 19:23:06.846 +02:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2023-05-09 19:23:06.848 +02:00 [INF] Executing endpoint 'PhoneBook_API.Controllers.PhoneBookApiController.GetContact (PhoneBook_API)'
+2023-05-09 19:23:06.852 +02:00 [INF] Route matched with {action = "GetContact", controller = "PhoneBookApi"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[PhoneBook_API.Models.Dto.ContactDTO] GetContact(Int32) on controller PhoneBook_API.Controllers.PhoneBookApiController (PhoneBook_API).
+2023-05-09 19:23:06.852 +02:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2023-05-09 19:23:06.852 +02:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2023-05-09 19:23:06.852 +02:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2023-05-09 19:23:06.852 +02:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2023-05-09 19:23:06.852 +02:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2023-05-09 19:23:06.852 +02:00 [DBG] Executing controller factory for controller PhoneBook_API.Controllers.PhoneBookApiController (PhoneBook_API)
+2023-05-09 19:23:06.853 +02:00 [DBG] Executed controller factory for controller PhoneBook_API.Controllers.PhoneBookApiController (PhoneBook_API)
+2023-05-09 19:23:06.853 +02:00 [DBG] Attempting to bind parameter 'id' of type 'System.Int32' ...
+2023-05-09 19:23:06.853 +02:00 [DBG] Attempting to bind parameter 'id' of type 'System.Int32' using the name 'id' in request data ...
+2023-05-09 19:23:06.853 +02:00 [DBG] Done attempting to bind parameter 'id' of type 'System.Int32'.
+2023-05-09 19:23:06.853 +02:00 [DBG] Done attempting to bind parameter 'id' of type 'System.Int32'.
+2023-05-09 19:23:06.853 +02:00 [DBG] Attempting to validate the bound parameter 'id' of type 'System.Int32' ...
+2023-05-09 19:23:06.854 +02:00 [DBG] Done attempting to validate the bound parameter 'id' of type 'System.Int32'.
+2023-05-09 19:23:06.876 +02:00 [INF] Executing action method PhoneBook_API.Controllers.PhoneBookApiController.GetContact (PhoneBook_API) - Validation state: "Valid"
+2023-05-09 19:23:06.915 +02:00 [DBG] Entity Framework Core 7.0.5 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:7.0.5' with options: None
+2023-05-09 19:23:06.916 +02:00 [DBG] Compiling query expression: 
+'DbSet<Contact>()
+    .FirstOrDefault(x => x.Id == __id_0)'
+2023-05-09 19:23:06.920 +02:00 [DBG] Generated query execution expression: 
+'queryContext => new SingleQueryingEnumerable<Contact>(
+    (RelationalQueryContext)queryContext, 
+    RelationalCommandCache.QueryExpression(
+        Projection Mapping:
+            EmptyProjectionMember -> Dictionary<IProperty, int> { [Property: Contact.Id (int) Required PK AfterSave:Throw ValueGenerated.OnAdd, 0], [Property: Contact.BirhDate (DateTime) Required, 1], [Property: Contact.CreatedDate (DateTime) Required, 2], [Property: Contact.Email (string) Required, 3], [Property: Contact.FirstName (string) Required MaxLength(100), 4], [Property: Contact.LastName (string) Required MaxLength(100), 5], [Property: Contact.Password (string) Required MaxLength(100), 6], [Property: Contact.PhoneNumber (string) Required, 7], [Property: Contact.UpdatedDate (DateTime) Required, 8] }
+        SELECT TOP(1) c.Id, c.BirhDate, c.CreatedDate, c.Email, c.FirstName, c.LastName, c.Password, c.PhoneNumber, c.UpdatedDate
+        FROM Contacts AS c
+        WHERE c.Id == @__id_0), 
+    null, 
+    Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, Contact>, 
+    PhoneBook_API.Data.ApplicationDbContext, 
+    False, 
+    False, 
+    True
+)
+    .SingleOrDefault()'
+2023-05-09 19:23:06.920 +02:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2023-05-09 19:23:06.920 +02:00 [DBG] Creating DbConnection.
+2023-05-09 19:23:06.920 +02:00 [DBG] Created DbConnection. (0ms).
+2023-05-09 19:23:06.920 +02:00 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2023-05-09 19:23:06.920 +02:00 [DBG] Initialized DbCommand for 'ExecuteReader' (0ms).
+2023-05-09 19:23:06.921 +02:00 [DBG] Opening connection to database 'PhoneBookStoreAPI' on server '(localdb)\MSSQLLocalDB'.
+2023-05-09 19:23:06.921 +02:00 [DBG] Opened connection to database 'PhoneBookStoreAPI' on server '(localdb)\MSSQLLocalDB'.
+2023-05-09 19:23:06.921 +02:00 [DBG] Executing DbCommand [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[BirhDate], [c].[CreatedDate], [c].[Email], [c].[FirstName], [c].[LastName], [c].[Password], [c].[PhoneNumber], [c].[UpdatedDate]
+FROM [Contacts] AS [c]
+WHERE [c].[Id] = @__id_0
+2023-05-09 19:23:06.922 +02:00 [INF] Executed DbCommand (1ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[BirhDate], [c].[CreatedDate], [c].[Email], [c].[FirstName], [c].[LastName], [c].[Password], [c].[PhoneNumber], [c].[UpdatedDate]
+FROM [Contacts] AS [c]
+WHERE [c].[Id] = @__id_0
+2023-05-09 19:23:06.922 +02:00 [DBG] Context 'ApplicationDbContext' started tracking 'Contact' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-05-09 19:23:06.922 +02:00 [DBG] Closing data reader to 'PhoneBookStoreAPI' on server '(localdb)\MSSQLLocalDB'.
+2023-05-09 19:23:06.922 +02:00 [DBG] A data reader for 'PhoneBookStoreAPI' on server '(localdb)\MSSQLLocalDB' is being disposed after spending 0ms reading results.
+2023-05-09 19:23:06.922 +02:00 [DBG] Closing connection to database 'PhoneBookStoreAPI' on server '(localdb)\MSSQLLocalDB'.
+2023-05-09 19:23:06.922 +02:00 [DBG] Closed connection to database 'PhoneBookStoreAPI' on server '(localdb)\MSSQLLocalDB' (0ms).
+2023-05-09 19:23:06.922 +02:00 [INF] Executed action method PhoneBook_API.Controllers.PhoneBookApiController.GetContact (PhoneBook_API), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 46.2682ms.
+2023-05-09 19:23:06.922 +02:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.XmlDataContractSerializerOutputFormatter"]
+2023-05-09 19:23:06.922 +02:00 [DBG] Attempting to select an output formatter based on Accept header '["text/plain"]'.
+2023-05-09 19:23:06.923 +02:00 [DBG] Could not find an output formatter based on content negotiation. Accepted types were (["text/plain"])
+2023-05-09 19:23:06.923 +02:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2023-05-09 19:23:06.923 +02:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2023-05-09 19:23:06.923 +02:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter' and content type 'application/json' to write the response.
+2023-05-09 19:23:06.923 +02:00 [INF] Executing OkObjectResult, writing value of type 'PhoneBook_API.Models.Contact'.
+2023-05-09 19:23:06.923 +02:00 [INF] Executed action PhoneBook_API.Controllers.PhoneBookApiController.GetContact (PhoneBook_API) in 70.4925ms
+2023-05-09 19:23:06.923 +02:00 [INF] Executed endpoint 'PhoneBook_API.Controllers.PhoneBookApiController.GetContact (PhoneBook_API)'
+2023-05-09 19:23:06.923 +02:00 [DBG] Connection id "0HMQGM4TR698H" completed keep alive response.
+2023-05-09 19:23:06.923 +02:00 [DBG] 'ApplicationDbContext' disposed.
+2023-05-09 19:23:06.923 +02:00 [DBG] Disposing connection to database 'PhoneBookStoreAPI' on server '(localdb)\MSSQLLocalDB'.
+2023-05-09 19:23:06.923 +02:00 [DBG] Disposed connection to database '' on server '' (0ms).
+2023-05-09 19:23:06.923 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5267/api/PhoneBookApi/3 - - - 200 227 application/json;+charset=utf-8 88.1733ms
+2023-05-09 19:29:15.545 +02:00 [DBG] Connection id "0HMQGM4TR698H" received FIN.
+2023-05-09 19:29:15.573 +02:00 [DBG] Connection id "0HMQGM4TR698H" disconnecting.
+2023-05-09 19:29:15.575 +02:00 [DBG] Connection id "0HMQGM4TR698H" sending FIN because: "The client closed the connection."
+2023-05-09 19:29:15.587 +02:00 [DBG] Connection id "0HMQGM4TR698H" stopped.
+2023-05-09 19:36:56.304 +02:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2023-05-09 19:36:56.473 +02:00 [DBG] Hosting starting
+2023-05-09 19:36:56.677 +02:00 [INF] Now listening on: http://localhost:5267
+2023-05-09 19:36:56.678 +02:00 [DBG] Loaded hosting startup assembly PhoneBook_API
+2023-05-09 19:36:56.678 +02:00 [DBG] Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2023-05-09 19:36:56.678 +02:00 [DBG] Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2023-05-09 19:36:56.679 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-05-09 19:36:56.680 +02:00 [INF] Hosting environment: Development
+2023-05-09 19:36:56.680 +02:00 [INF] Content root path: C:\Users\Pioter\Desktop\PhoneBook\PhoneBook_API
+2023-05-09 19:36:56.680 +02:00 [DBG] Hosting started
+2023-05-09 19:36:57.052 +02:00 [DBG] Connection id "0HMQGMFU9ODM3" accepted.
+2023-05-09 19:36:57.052 +02:00 [DBG] Connection id "0HMQGMFU9ODM4" accepted.
+2023-05-09 19:36:57.054 +02:00 [DBG] Connection id "0HMQGMFU9ODM4" started.
+2023-05-09 19:36:57.054 +02:00 [DBG] Connection id "0HMQGMFU9ODM3" started.
+2023-05-09 19:36:57.085 +02:00 [DBG] Connection id "0HMQGMFU9ODM4" received FIN.
+2023-05-09 19:36:57.085 +02:00 [DBG] Connection id "0HMQGMFU9ODM3" received FIN.
+2023-05-09 19:36:57.104 +02:00 [DBG] Connection id "0HMQGMFU9ODM3" sending FIN because: "The client closed the connection."
+2023-05-09 19:36:57.104 +02:00 [DBG] Connection id "0HMQGMFU9ODM4" sending FIN because: "The client closed the connection."
+2023-05-09 19:36:57.107 +02:00 [DBG] Connection id "0HMQGMFU9ODM3" disconnecting.
+2023-05-09 19:36:57.107 +02:00 [DBG] Connection id "0HMQGMFU9ODM4" disconnecting.
+2023-05-09 19:36:57.109 +02:00 [DBG] Connection id "0HMQGMFU9ODM4" stopped.
+2023-05-09 19:36:57.109 +02:00 [DBG] Connection id "0HMQGMFU9ODM3" stopped.
+2023-05-09 19:36:57.179 +02:00 [DBG] Connection id "0HMQGMFU9ODM5" accepted.
+2023-05-09 19:36:57.179 +02:00 [DBG] Connection id "0HMQGMFU9ODM5" started.
+2023-05-09 19:36:57.244 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5267/swagger/index.html - -
+2023-05-09 19:36:57.293 +02:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2023-05-09 19:36:57.352 +02:00 [DBG] No candidates found for the request path '/swagger/index.html'
+2023-05-09 19:36:57.353 +02:00 [DBG] Request did not match any endpoints
+2023-05-09 19:36:57.512 +02:00 [DBG] Response markup is scheduled to include browser refresh script injection.
+2023-05-09 19:36:57.635 +02:00 [DBG] Response markup was updated to include browser refresh script injection.
+2023-05-09 19:36:57.635 +02:00 [DBG] Connection id "0HMQGMFU9ODM5" completed keep alive response.
+2023-05-09 19:36:57.637 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5267/swagger/index.html - - - 200 - text/html;charset=utf-8 400.8380ms
+2023-05-09 19:36:57.663 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5267/_framework/aspnetcore-browser-refresh.js - -
+2023-05-09 19:36:57.665 +02:00 [DBG] Connection id "0HMQGMFU9ODM5" completed keep alive response.
+2023-05-09 19:36:57.666 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5267/_framework/aspnetcore-browser-refresh.js - - - 200 11996 application/javascript;+charset=utf-8 3.0570ms
+2023-05-09 19:36:57.913 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5267/_vs/browserLink - -
+2023-05-09 19:36:57.940 +02:00 [DBG] Connection id "0HMQGMFU9ODM5" completed keep alive response.
+2023-05-09 19:36:57.940 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5267/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 27.3687ms
+2023-05-09 19:36:58.126 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5267/swagger/v1/swagger.json - -
+2023-05-09 19:36:58.126 +02:00 [DBG] No candidates found for the request path '/swagger/v1/swagger.json'
+2023-05-09 19:36:58.127 +02:00 [DBG] Request did not match any endpoints
+2023-05-09 19:36:58.393 +02:00 [DBG] Connection id "0HMQGMFU9ODM5" completed keep alive response.
+2023-05-09 19:36:58.393 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5267/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 267.5420ms
+2023-05-09 19:40:06.183 +02:00 [INF] Request starting HTTP/1.1 PATCH http://localhost:5267/api/PhoneBookApi/3 application/json-patch+json 79
+2023-05-09 19:40:06.188 +02:00 [DBG] 1 candidate(s) found for the request path '/api/PhoneBookApi/3'
+2023-05-09 19:40:06.190 +02:00 [DBG] Endpoint 'PhoneBook_API.Controllers.PhoneBookApiController.UpdatePartialContact (PhoneBook_API)' with route pattern 'api/PhoneBookApi/{id:int}' is valid for the request path '/api/PhoneBookApi/3'
+2023-05-09 19:40:06.190 +02:00 [DBG] Request matched endpoint 'PhoneBook_API.Controllers.PhoneBookApiController.UpdatePartialContact (PhoneBook_API)'
+2023-05-09 19:40:06.193 +02:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2023-05-09 19:40:06.194 +02:00 [WRN] Failed to determine the https port for redirect.
+2023-05-09 19:40:06.196 +02:00 [INF] Executing endpoint 'PhoneBook_API.Controllers.PhoneBookApiController.UpdatePartialContact (PhoneBook_API)'
+2023-05-09 19:40:06.218 +02:00 [INF] Route matched with {action = "UpdatePartialContact", controller = "PhoneBookApi"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult UpdatePartialContact(Int32, Microsoft.AspNetCore.JsonPatch.JsonPatchDocument`1[PhoneBook_API.Models.Dto.ContactDTO]) on controller PhoneBook_API.Controllers.PhoneBookApiController (PhoneBook_API).
+2023-05-09 19:40:06.220 +02:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2023-05-09 19:40:06.220 +02:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2023-05-09 19:40:06.220 +02:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2023-05-09 19:40:06.221 +02:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2023-05-09 19:40:06.221 +02:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2023-05-09 19:40:06.222 +02:00 [DBG] Executing controller factory for controller PhoneBook_API.Controllers.PhoneBookApiController (PhoneBook_API)
+2023-05-09 19:40:06.354 +02:00 [DBG] An 'IServiceProvider' was created for internal use by Entity Framework.
+2023-05-09 19:40:06.369 +02:00 [DBG] Executed controller factory for controller PhoneBook_API.Controllers.PhoneBookApiController (PhoneBook_API)
+2023-05-09 19:40:06.373 +02:00 [DBG] Attempting to bind parameter 'id' of type 'System.Int32' ...
+2023-05-09 19:40:06.375 +02:00 [DBG] Attempting to bind parameter 'id' of type 'System.Int32' using the name 'id' in request data ...
+2023-05-09 19:40:06.375 +02:00 [DBG] Done attempting to bind parameter 'id' of type 'System.Int32'.
+2023-05-09 19:40:06.376 +02:00 [DBG] Done attempting to bind parameter 'id' of type 'System.Int32'.
+2023-05-09 19:40:06.376 +02:00 [DBG] Attempting to validate the bound parameter 'id' of type 'System.Int32' ...
+2023-05-09 19:40:06.377 +02:00 [DBG] Done attempting to validate the bound parameter 'id' of type 'System.Int32'.
+2023-05-09 19:40:06.378 +02:00 [DBG] Attempting to bind parameter 'patchDTO' of type 'Microsoft.AspNetCore.JsonPatch.JsonPatchDocument`1[PhoneBook_API.Models.Dto.ContactDTO]' ...
+2023-05-09 19:40:06.379 +02:00 [DBG] Attempting to bind parameter 'patchDTO' of type 'Microsoft.AspNetCore.JsonPatch.JsonPatchDocument`1[PhoneBook_API.Models.Dto.ContactDTO]' using the name '' in request data ...
+2023-05-09 19:40:06.380 +02:00 [DBG] Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonPatchInputFormatter' for content type 'application/json-patch+json'.
+2023-05-09 19:40:06.393 +02:00 [DBG] Connection id "0HMQGMFU9ODM5", Request id "0HMQGMFU9ODM5:00000005": started reading request body.
+2023-05-09 19:40:06.394 +02:00 [DBG] Connection id "0HMQGMFU9ODM5", Request id "0HMQGMFU9ODM5:00000005": done reading request body.
+2023-05-09 19:40:06.483 +02:00 [DBG] Done attempting to bind parameter 'patchDTO' of type 'Microsoft.AspNetCore.JsonPatch.JsonPatchDocument`1[PhoneBook_API.Models.Dto.ContactDTO]'.
+2023-05-09 19:40:06.483 +02:00 [DBG] Done attempting to bind parameter 'patchDTO' of type 'Microsoft.AspNetCore.JsonPatch.JsonPatchDocument`1[PhoneBook_API.Models.Dto.ContactDTO]'.
+2023-05-09 19:40:06.483 +02:00 [DBG] Attempting to validate the bound parameter 'patchDTO' of type 'Microsoft.AspNetCore.JsonPatch.JsonPatchDocument`1[PhoneBook_API.Models.Dto.ContactDTO]' ...
+2023-05-09 19:40:06.487 +02:00 [DBG] Done attempting to validate the bound parameter 'patchDTO' of type 'Microsoft.AspNetCore.JsonPatch.JsonPatchDocument`1[PhoneBook_API.Models.Dto.ContactDTO]'.
+2023-05-09 19:40:06.603 +02:00 [INF] Executing action method PhoneBook_API.Controllers.PhoneBookApiController.UpdatePartialContact (PhoneBook_API) - Validation state: "Valid"
+2023-05-09 19:40:06.999 +02:00 [DBG] Entity Framework Core 7.0.5 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:7.0.5' with options: None
+2023-05-09 19:40:07.050 +02:00 [DBG] Compiling query expression: 
+'DbSet<Contact>()
+    .AsNoTracking()
+    .FirstOrDefault(u => u.Id == __id_0)'
+2023-05-09 19:40:07.202 +02:00 [DBG] Generated query execution expression: 
+'queryContext => new SingleQueryingEnumerable<Contact>(
+    (RelationalQueryContext)queryContext, 
+    RelationalCommandCache.QueryExpression(
+        Projection Mapping:
+            EmptyProjectionMember -> Dictionary<IProperty, int> { [Property: Contact.Id (int) Required PK AfterSave:Throw ValueGenerated.OnAdd, 0], [Property: Contact.BirhDate (DateTime) Required, 1], [Property: Contact.CreatedDate (DateTime) Required, 2], [Property: Contact.Email (string) Required, 3], [Property: Contact.FirstName (string) Required MaxLength(100), 4], [Property: Contact.LastName (string) Required MaxLength(100), 5], [Property: Contact.Password (string) Required MaxLength(100), 6], [Property: Contact.PhoneNumber (string) Required, 7], [Property: Contact.UpdatedDate (DateTime) Required, 8] }
+        SELECT TOP(1) c.Id, c.BirhDate, c.CreatedDate, c.Email, c.FirstName, c.LastName, c.Password, c.PhoneNumber, c.UpdatedDate
+        FROM Contacts AS c
+        WHERE c.Id == @__id_0), 
+    null, 
+    Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, Contact>, 
+    PhoneBook_API.Data.ApplicationDbContext, 
+    False, 
+    False, 
+    True
+)
+    .SingleOrDefault()'
+2023-05-09 19:40:07.228 +02:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2023-05-09 19:40:07.229 +02:00 [DBG] Creating DbConnection.
+2023-05-09 19:40:07.254 +02:00 [DBG] Created DbConnection. (22ms).
+2023-05-09 19:40:07.260 +02:00 [DBG] Created DbCommand for 'ExecuteReader' (32ms).
+2023-05-09 19:40:07.267 +02:00 [DBG] Initialized DbCommand for 'ExecuteReader' (41ms).
+2023-05-09 19:40:07.269 +02:00 [DBG] Opening connection to database 'PhoneBookStoreAPI' on server '(localdb)\MSSQLLocalDB'.
+2023-05-09 19:40:07.508 +02:00 [DBG] Opened connection to database 'PhoneBookStoreAPI' on server '(localdb)\MSSQLLocalDB'.
+2023-05-09 19:40:07.515 +02:00 [DBG] Executing DbCommand [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[BirhDate], [c].[CreatedDate], [c].[Email], [c].[FirstName], [c].[LastName], [c].[Password], [c].[PhoneNumber], [c].[UpdatedDate]
+FROM [Contacts] AS [c]
+WHERE [c].[Id] = @__id_0
+2023-05-09 19:40:07.550 +02:00 [INF] Executed DbCommand (36ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[BirhDate], [c].[CreatedDate], [c].[Email], [c].[FirstName], [c].[LastName], [c].[Password], [c].[PhoneNumber], [c].[UpdatedDate]
+FROM [Contacts] AS [c]
+WHERE [c].[Id] = @__id_0
+2023-05-09 19:40:07.558 +02:00 [DBG] Closing data reader to 'PhoneBookStoreAPI' on server '(localdb)\MSSQLLocalDB'.
+2023-05-09 19:40:07.564 +02:00 [DBG] A data reader for 'PhoneBookStoreAPI' on server '(localdb)\MSSQLLocalDB' is being disposed after spending 10ms reading results.
+2023-05-09 19:40:07.566 +02:00 [DBG] Closing connection to database 'PhoneBookStoreAPI' on server '(localdb)\MSSQLLocalDB'.
+2023-05-09 19:40:07.571 +02:00 [DBG] Closed connection to database 'PhoneBookStoreAPI' on server '(localdb)\MSSQLLocalDB' (4ms).
+2023-05-09 19:40:07.619 +02:00 [DBG] Context 'ApplicationDbContext' started tracking 'Contact' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-05-09 19:40:07.621 +02:00 [DBG] SaveChanges starting for 'ApplicationDbContext'.
+2023-05-09 19:40:07.622 +02:00 [DBG] DetectChanges starting for 'ApplicationDbContext'.
+2023-05-09 19:40:07.627 +02:00 [DBG] DetectChanges completed for 'ApplicationDbContext'.
+2023-05-09 19:40:07.670 +02:00 [DBG] Opening connection to database 'PhoneBookStoreAPI' on server '(localdb)\MSSQLLocalDB'.
+2023-05-09 19:40:07.671 +02:00 [DBG] Opened connection to database 'PhoneBookStoreAPI' on server '(localdb)\MSSQLLocalDB'.
+2023-05-09 19:40:07.672 +02:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2023-05-09 19:40:07.672 +02:00 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2023-05-09 19:40:07.673 +02:00 [DBG] Initialized DbCommand for 'ExecuteReader' (1ms).
+2023-05-09 19:40:07.673 +02:00 [DBG] Executing DbCommand [Parameters=[@p8='?' (DbType = Int32), @p0='?' (DbType = DateTime2), @p1='?' (DbType = DateTime2), @p2='?' (Size = 4000), @p3='?' (Size = 100), @p4='?' (Size = 100), @p5='?' (Size = 100), @p6='?' (Size = 4000), @p7='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [Contacts] SET [BirhDate] = @p0, [CreatedDate] = @p1, [Email] = @p2, [FirstName] = @p3, [LastName] = @p4, [Password] = @p5, [PhoneNumber] = @p6, [UpdatedDate] = @p7
+OUTPUT 1
+WHERE [Id] = @p8;
+2023-05-09 19:40:07.677 +02:00 [INF] Executed DbCommand (4ms) [Parameters=[@p8='?' (DbType = Int32), @p0='?' (DbType = DateTime2), @p1='?' (DbType = DateTime2), @p2='?' (Size = 4000), @p3='?' (Size = 100), @p4='?' (Size = 100), @p5='?' (Size = 100), @p6='?' (Size = 4000), @p7='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [Contacts] SET [BirhDate] = @p0, [CreatedDate] = @p1, [Email] = @p2, [FirstName] = @p3, [LastName] = @p4, [Password] = @p5, [PhoneNumber] = @p6, [UpdatedDate] = @p7
+OUTPUT 1
+WHERE [Id] = @p8;
+2023-05-09 19:40:07.679 +02:00 [DBG] Closing data reader to 'PhoneBookStoreAPI' on server '(localdb)\MSSQLLocalDB'.
+2023-05-09 19:40:07.679 +02:00 [DBG] A data reader for 'PhoneBookStoreAPI' on server '(localdb)\MSSQLLocalDB' is being disposed after spending 1ms reading results.
+2023-05-09 19:40:07.679 +02:00 [DBG] Closing connection to database 'PhoneBookStoreAPI' on server '(localdb)\MSSQLLocalDB'.
+2023-05-09 19:40:07.680 +02:00 [DBG] Closed connection to database 'PhoneBookStoreAPI' on server '(localdb)\MSSQLLocalDB' (0ms).
+2023-05-09 19:40:07.685 +02:00 [DBG] An entity of type 'Contact' tracked by 'ApplicationDbContext' changed state from '"Modified"' to '"Unchanged"'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-05-09 19:40:07.686 +02:00 [DBG] SaveChanges completed for 'ApplicationDbContext' with 1 entities written to the database.
+2023-05-09 19:40:07.689 +02:00 [INF] Executed action method PhoneBook_API.Controllers.PhoneBookApiController.UpdatePartialContact (PhoneBook_API), returned result Microsoft.AspNetCore.Mvc.NoContentResult in 1083.1988ms.
+2023-05-09 19:40:07.691 +02:00 [INF] Executing StatusCodeResult, setting HTTP status code 204
+2023-05-09 19:40:07.695 +02:00 [INF] Executed action PhoneBook_API.Controllers.PhoneBookApiController.UpdatePartialContact (PhoneBook_API) in 1471.4208ms
+2023-05-09 19:40:07.695 +02:00 [INF] Executed endpoint 'PhoneBook_API.Controllers.PhoneBookApiController.UpdatePartialContact (PhoneBook_API)'
+2023-05-09 19:40:07.695 +02:00 [DBG] Connection id "0HMQGMFU9ODM5" completed keep alive response.
+2023-05-09 19:40:07.697 +02:00 [DBG] 'ApplicationDbContext' disposed.
+2023-05-09 19:40:07.700 +02:00 [DBG] Disposing connection to database 'PhoneBookStoreAPI' on server '(localdb)\MSSQLLocalDB'.
+2023-05-09 19:40:07.702 +02:00 [DBG] Disposed connection to database '' on server '' (1ms).
+2023-05-09 19:40:07.703 +02:00 [INF] Request finished HTTP/1.1 PATCH http://localhost:5267/api/PhoneBookApi/3 application/json-patch+json 79 - 204 - - 1520.0280ms
+2023-05-09 19:46:15.522 +02:00 [DBG] Connection id "0HMQGMFU9ODM5" received FIN.
+2023-05-09 19:46:15.523 +02:00 [DBG] Connection id "0HMQGMFU9ODM5" disconnecting.
+2023-05-09 19:46:15.523 +02:00 [DBG] Connection id "0HMQGMFU9ODM5" sending FIN because: "The client closed the connection."
+2023-05-09 19:46:15.536 +02:00 [DBG] Connection id "0HMQGMFU9ODM5" stopped.
+2023-05-09 20:55:40.081 +02:00 [DBG] An 'IServiceProvider' was created for internal use by Entity Framework.
+2023-05-09 20:55:40.490 +02:00 [DBG] Entity Framework Core 7.0.5 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:7.0.5' with options: None
+2023-05-09 20:55:40.669 +02:00 [DBG] 'ApplicationDbContext' disposed.
+2023-05-09 20:55:46.909 +02:00 [DBG] An 'IServiceProvider' was created for internal use by Entity Framework.
+2023-05-09 20:55:47.286 +02:00 [DBG] Entity Framework Core 7.0.5 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:7.0.5' with options: None
+2023-05-09 20:55:47.298 +02:00 [DBG] Creating DbConnection.
+2023-05-09 20:55:47.326 +02:00 [DBG] Created DbConnection. (25ms).
+2023-05-09 20:55:47.328 +02:00 [DBG] Migrating using database 'PhoneBookStoreAPI' on server '(localdb)\MSSQLLocalDB'.
+2023-05-09 20:55:47.332 +02:00 [DBG] Opening connection to database 'PhoneBookStoreAPI' on server '(localdb)\MSSQLLocalDB'.
+2023-05-09 20:55:47.458 +02:00 [DBG] Opened connection to database 'PhoneBookStoreAPI' on server '(localdb)\MSSQLLocalDB'.
+2023-05-09 20:55:47.462 +02:00 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2023-05-09 20:55:47.467 +02:00 [DBG] Created DbCommand for 'ExecuteNonQuery' (4ms).
+2023-05-09 20:55:47.469 +02:00 [DBG] Initialized DbCommand for 'ExecuteNonQuery' (8ms).
+2023-05-09 20:55:47.474 +02:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2023-05-09 20:55:47.490 +02:00 [INF] Executed DbCommand (18ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2023-05-09 20:55:47.491 +02:00 [DBG] Closing connection to database 'PhoneBookStoreAPI' on server '(localdb)\MSSQLLocalDB'.
+2023-05-09 20:55:47.497 +02:00 [DBG] Closed connection to database 'PhoneBookStoreAPI' on server '(localdb)\MSSQLLocalDB' (3ms).
+2023-05-09 20:55:47.499 +02:00 [DBG] Creating DbCommand for 'ExecuteScalar'.
+2023-05-09 20:55:47.499 +02:00 [DBG] Created DbCommand for 'ExecuteScalar' (0ms).
+2023-05-09 20:55:47.499 +02:00 [DBG] Initialized DbCommand for 'ExecuteScalar' (0ms).
+2023-05-09 20:55:47.499 +02:00 [DBG] Opening connection to database 'PhoneBookStoreAPI' on server '(localdb)\MSSQLLocalDB'.
+2023-05-09 20:55:47.500 +02:00 [DBG] Opened connection to database 'PhoneBookStoreAPI' on server '(localdb)\MSSQLLocalDB'.
+2023-05-09 20:55:47.500 +02:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2023-05-09 20:55:47.509 +02:00 [INF] Executed DbCommand (9ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2023-05-09 20:55:47.509 +02:00 [DBG] Closing connection to database 'PhoneBookStoreAPI' on server '(localdb)\MSSQLLocalDB'.
+2023-05-09 20:55:47.510 +02:00 [DBG] Closed connection to database 'PhoneBookStoreAPI' on server '(localdb)\MSSQLLocalDB' (0ms).
+2023-05-09 20:55:47.510 +02:00 [DBG] Opening connection to database 'PhoneBookStoreAPI' on server '(localdb)\MSSQLLocalDB'.
+2023-05-09 20:55:47.510 +02:00 [DBG] Opened connection to database 'PhoneBookStoreAPI' on server '(localdb)\MSSQLLocalDB'.
+2023-05-09 20:55:47.510 +02:00 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2023-05-09 20:55:47.510 +02:00 [DBG] Created DbCommand for 'ExecuteNonQuery' (0ms).
+2023-05-09 20:55:47.511 +02:00 [DBG] Initialized DbCommand for 'ExecuteNonQuery' (0ms).
+2023-05-09 20:55:47.511 +02:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2023-05-09 20:55:47.512 +02:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2023-05-09 20:55:47.512 +02:00 [DBG] Closing connection to database 'PhoneBookStoreAPI' on server '(localdb)\MSSQLLocalDB'.
+2023-05-09 20:55:47.512 +02:00 [DBG] Closed connection to database 'PhoneBookStoreAPI' on server '(localdb)\MSSQLLocalDB' (0ms).
+2023-05-09 20:55:47.512 +02:00 [DBG] Creating DbCommand for 'ExecuteScalar'.
+2023-05-09 20:55:47.512 +02:00 [DBG] Created DbCommand for 'ExecuteScalar' (0ms).
+2023-05-09 20:55:47.512 +02:00 [DBG] Initialized DbCommand for 'ExecuteScalar' (0ms).
+2023-05-09 20:55:47.512 +02:00 [DBG] Opening connection to database 'PhoneBookStoreAPI' on server '(localdb)\MSSQLLocalDB'.
+2023-05-09 20:55:47.512 +02:00 [DBG] Opened connection to database 'PhoneBookStoreAPI' on server '(localdb)\MSSQLLocalDB'.
+2023-05-09 20:55:47.512 +02:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2023-05-09 20:55:47.512 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2023-05-09 20:55:47.512 +02:00 [DBG] Closing connection to database 'PhoneBookStoreAPI' on server '(localdb)\MSSQLLocalDB'.
+2023-05-09 20:55:47.512 +02:00 [DBG] Closed connection to database 'PhoneBookStoreAPI' on server '(localdb)\MSSQLLocalDB' (0ms).
+2023-05-09 20:55:47.526 +02:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2023-05-09 20:55:47.526 +02:00 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2023-05-09 20:55:47.526 +02:00 [DBG] Initialized DbCommand for 'ExecuteReader' (0ms).
+2023-05-09 20:55:47.526 +02:00 [DBG] Opening connection to database 'PhoneBookStoreAPI' on server '(localdb)\MSSQLLocalDB'.
+2023-05-09 20:55:47.526 +02:00 [DBG] Opened connection to database 'PhoneBookStoreAPI' on server '(localdb)\MSSQLLocalDB'.
+2023-05-09 20:55:47.526 +02:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2023-05-09 20:55:47.528 +02:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2023-05-09 20:55:47.530 +02:00 [DBG] Closing data reader to 'PhoneBookStoreAPI' on server '(localdb)\MSSQLLocalDB'.
+2023-05-09 20:55:47.530 +02:00 [DBG] A data reader for 'PhoneBookStoreAPI' on server '(localdb)\MSSQLLocalDB' is being disposed after spending 1ms reading results.
+2023-05-09 20:55:47.531 +02:00 [DBG] Closing connection to database 'PhoneBookStoreAPI' on server '(localdb)\MSSQLLocalDB'.
+2023-05-09 20:55:47.531 +02:00 [DBG] Closed connection to database 'PhoneBookStoreAPI' on server '(localdb)\MSSQLLocalDB' (0ms).
+2023-05-09 20:55:47.538 +02:00 [INF] Applying migration '20230509185540_AddContactCategoryTableAndContactSubcategoryTable'.
+2023-05-09 20:55:47.575 +02:00 [DBG] Opening connection to database 'PhoneBookStoreAPI' on server '(localdb)\MSSQLLocalDB'.
+2023-05-09 20:55:47.576 +02:00 [DBG] Opened connection to database 'PhoneBookStoreAPI' on server '(localdb)\MSSQLLocalDB'.
+2023-05-09 20:55:47.577 +02:00 [DBG] Beginning transaction with isolation level 'Unspecified'.
+2023-05-09 20:55:47.580 +02:00 [DBG] Began transaction with isolation level 'ReadCommitted'.
+2023-05-09 20:55:47.581 +02:00 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2023-05-09 20:55:47.581 +02:00 [DBG] Created DbCommand for 'ExecuteNonQuery' (0ms).
+2023-05-09 20:55:47.581 +02:00 [DBG] Initialized DbCommand for 'ExecuteNonQuery' (0ms).
+2023-05-09 20:55:47.581 +02:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DELETE FROM [Contacts]
+WHERE [Id] = 1;
+SELECT @@ROWCOUNT;
+2023-05-09 20:55:47.584 +02:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DELETE FROM [Contacts]
+WHERE [Id] = 1;
+SELECT @@ROWCOUNT;
+2023-05-09 20:55:47.584 +02:00 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2023-05-09 20:55:47.584 +02:00 [DBG] Created DbCommand for 'ExecuteNonQuery' (0ms).
+2023-05-09 20:55:47.584 +02:00 [DBG] Initialized DbCommand for 'ExecuteNonQuery' (0ms).
+2023-05-09 20:55:47.584 +02:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DELETE FROM [Contacts]
+WHERE [Id] = 2;
+SELECT @@ROWCOUNT;
+2023-05-09 20:55:47.585 +02:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DELETE FROM [Contacts]
+WHERE [Id] = 2;
+SELECT @@ROWCOUNT;
+2023-05-09 20:55:47.585 +02:00 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2023-05-09 20:55:47.585 +02:00 [DBG] Created DbCommand for 'ExecuteNonQuery' (0ms).
+2023-05-09 20:55:47.585 +02:00 [DBG] Initialized DbCommand for 'ExecuteNonQuery' (0ms).
+2023-05-09 20:55:47.585 +02:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+EXEC sp_rename N'[Contacts].[BirhDate]', N'BirthDate', N'COLUMN';
+2023-05-09 20:55:47.704 +02:00 [INF] Executed DbCommand (119ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+EXEC sp_rename N'[Contacts].[BirhDate]', N'BirthDate', N'COLUMN';
+2023-05-09 20:55:47.704 +02:00 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2023-05-09 20:55:47.704 +02:00 [DBG] Created DbCommand for 'ExecuteNonQuery' (0ms).
+2023-05-09 20:55:47.704 +02:00 [DBG] Initialized DbCommand for 'ExecuteNonQuery' (0ms).
+2023-05-09 20:55:47.704 +02:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+ALTER TABLE [Contacts] ADD [CategoryId] int NOT NULL DEFAULT 0;
+2023-05-09 20:55:47.709 +02:00 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+ALTER TABLE [Contacts] ADD [CategoryId] int NOT NULL DEFAULT 0;
+2023-05-09 20:55:47.710 +02:00 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2023-05-09 20:55:47.710 +02:00 [DBG] Created DbCommand for 'ExecuteNonQuery' (0ms).
+2023-05-09 20:55:47.710 +02:00 [DBG] Initialized DbCommand for 'ExecuteNonQuery' (0ms).
+2023-05-09 20:55:47.710 +02:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+ALTER TABLE [Contacts] ADD [Subcategory] nvarchar(max) NOT NULL DEFAULT N'';
+2023-05-09 20:55:47.712 +02:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+ALTER TABLE [Contacts] ADD [Subcategory] nvarchar(max) NOT NULL DEFAULT N'';
+2023-05-09 20:55:47.712 +02:00 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2023-05-09 20:55:47.712 +02:00 [DBG] Created DbCommand for 'ExecuteNonQuery' (0ms).
+2023-05-09 20:55:47.712 +02:00 [DBG] Initialized DbCommand for 'ExecuteNonQuery' (0ms).
+2023-05-09 20:55:47.712 +02:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [ContactCategories] (
+    [Id] int NOT NULL IDENTITY,
+    [Name] nvarchar(max) NOT NULL,
+    CONSTRAINT [PK_ContactCategories] PRIMARY KEY ([Id])
+);
+2023-05-09 20:55:47.714 +02:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [ContactCategories] (
+    [Id] int NOT NULL IDENTITY,
+    [Name] nvarchar(max) NOT NULL,
+    CONSTRAINT [PK_ContactCategories] PRIMARY KEY ([Id])
+);
+2023-05-09 20:55:47.714 +02:00 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2023-05-09 20:55:47.714 +02:00 [DBG] Created DbCommand for 'ExecuteNonQuery' (0ms).
+2023-05-09 20:55:47.714 +02:00 [DBG] Initialized DbCommand for 'ExecuteNonQuery' (0ms).
+2023-05-09 20:55:47.715 +02:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [ContactSubcategories] (
+    [Id] int NOT NULL IDENTITY,
+    [Name] nvarchar(max) NOT NULL,
+    [CategoryId] int NOT NULL,
+    CONSTRAINT [PK_ContactSubcategories] PRIMARY KEY ([Id]),
+    CONSTRAINT [FK_ContactSubcategories_ContactCategories_CategoryId] FOREIGN KEY ([CategoryId]) REFERENCES [ContactCategories] ([Id]) ON DELETE CASCADE
+);
+2023-05-09 20:55:47.716 +02:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [ContactSubcategories] (
+    [Id] int NOT NULL IDENTITY,
+    [Name] nvarchar(max) NOT NULL,
+    [CategoryId] int NOT NULL,
+    CONSTRAINT [PK_ContactSubcategories] PRIMARY KEY ([Id]),
+    CONSTRAINT [FK_ContactSubcategories_ContactCategories_CategoryId] FOREIGN KEY ([CategoryId]) REFERENCES [ContactCategories] ([Id]) ON DELETE CASCADE
+);
+2023-05-09 20:55:47.716 +02:00 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2023-05-09 20:55:47.716 +02:00 [DBG] Created DbCommand for 'ExecuteNonQuery' (0ms).
+2023-05-09 20:55:47.716 +02:00 [DBG] Initialized DbCommand for 'ExecuteNonQuery' (0ms).
+2023-05-09 20:55:47.716 +02:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX [IX_Contacts_CategoryId] ON [Contacts] ([CategoryId]);
+2023-05-09 20:55:47.719 +02:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX [IX_Contacts_CategoryId] ON [Contacts] ([CategoryId]);
+2023-05-09 20:55:47.719 +02:00 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2023-05-09 20:55:47.719 +02:00 [DBG] Created DbCommand for 'ExecuteNonQuery' (0ms).
+2023-05-09 20:55:47.719 +02:00 [DBG] Initialized DbCommand for 'ExecuteNonQuery' (0ms).
+2023-05-09 20:55:47.719 +02:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX [IX_ContactSubcategories_CategoryId] ON [ContactSubcategories] ([CategoryId]);
+2023-05-09 20:55:47.720 +02:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX [IX_ContactSubcategories_CategoryId] ON [ContactSubcategories] ([CategoryId]);
+2023-05-09 20:55:47.720 +02:00 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2023-05-09 20:55:47.720 +02:00 [DBG] Created DbCommand for 'ExecuteNonQuery' (0ms).
+2023-05-09 20:55:47.720 +02:00 [DBG] Initialized DbCommand for 'ExecuteNonQuery' (0ms).
+2023-05-09 20:55:47.720 +02:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+ALTER TABLE [Contacts] ADD CONSTRAINT [FK_Contacts_ContactCategories_CategoryId] FOREIGN KEY ([CategoryId]) REFERENCES [ContactCategories] ([Id]) ON DELETE CASCADE;
+2023-05-09 20:55:47.726 +02:00 [ERR] Failed executing DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+ALTER TABLE [Contacts] ADD CONSTRAINT [FK_Contacts_ContactCategories_CategoryId] FOREIGN KEY ([CategoryId]) REFERENCES [ContactCategories] ([Id]) ON DELETE CASCADE;
+2023-05-09 20:55:47.727 +02:00 [DBG] Disposing transaction.
+2023-05-09 20:55:47.727 +02:00 [DBG] Closing connection to database 'PhoneBookStoreAPI' on server '(localdb)\MSSQLLocalDB'.
+2023-05-09 20:55:47.727 +02:00 [DBG] Closed connection to database 'PhoneBookStoreAPI' on server '(localdb)\MSSQLLocalDB' (0ms).
+2023-05-09 20:55:47.729 +02:00 [DBG] 'ApplicationDbContext' disposed.
+2023-05-09 20:55:47.730 +02:00 [DBG] Disposing connection to database 'PhoneBookStoreAPI' on server '(localdb)\MSSQLLocalDB'.
+2023-05-09 20:55:47.730 +02:00 [DBG] Disposed connection to database '' on server '' (0ms).
+2023-05-09 20:57:30.854 +02:00 [DBG] An 'IServiceProvider' was created for internal use by Entity Framework.
+2023-05-09 20:57:31.248 +02:00 [DBG] Entity Framework Core 7.0.5 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:7.0.5' with options: None
+2023-05-09 20:57:31.260 +02:00 [DBG] Creating DbConnection.
+2023-05-09 20:57:31.283 +02:00 [DBG] Created DbConnection. (21ms).
+2023-05-09 20:57:31.285 +02:00 [DBG] Migrating using database 'PhoneBookStoreAPI' on server '(localdb)\MSSQLLocalDB'.
+2023-05-09 20:57:31.289 +02:00 [DBG] Opening connection to database 'PhoneBookStoreAPI' on server '(localdb)\MSSQLLocalDB'.
+2023-05-09 20:57:31.412 +02:00 [DBG] Opened connection to database 'PhoneBookStoreAPI' on server '(localdb)\MSSQLLocalDB'.
+2023-05-09 20:57:31.416 +02:00 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2023-05-09 20:57:31.420 +02:00 [DBG] Created DbCommand for 'ExecuteNonQuery' (3ms).
+2023-05-09 20:57:31.422 +02:00 [DBG] Initialized DbCommand for 'ExecuteNonQuery' (6ms).
+2023-05-09 20:57:31.426 +02:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2023-05-09 20:57:31.442 +02:00 [INF] Executed DbCommand (17ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2023-05-09 20:57:31.444 +02:00 [DBG] Closing connection to database 'PhoneBookStoreAPI' on server '(localdb)\MSSQLLocalDB'.
+2023-05-09 20:57:31.449 +02:00 [DBG] Closed connection to database 'PhoneBookStoreAPI' on server '(localdb)\MSSQLLocalDB' (3ms).
+2023-05-09 20:57:31.451 +02:00 [DBG] Creating DbCommand for 'ExecuteScalar'.
+2023-05-09 20:57:31.451 +02:00 [DBG] Created DbCommand for 'ExecuteScalar' (0ms).
+2023-05-09 20:57:31.451 +02:00 [DBG] Initialized DbCommand for 'ExecuteScalar' (0ms).
+2023-05-09 20:57:31.451 +02:00 [DBG] Opening connection to database 'PhoneBookStoreAPI' on server '(localdb)\MSSQLLocalDB'.
+2023-05-09 20:57:31.452 +02:00 [DBG] Opened connection to database 'PhoneBookStoreAPI' on server '(localdb)\MSSQLLocalDB'.
+2023-05-09 20:57:31.452 +02:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2023-05-09 20:57:31.460 +02:00 [INF] Executed DbCommand (8ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2023-05-09 20:57:31.460 +02:00 [DBG] Closing connection to database 'PhoneBookStoreAPI' on server '(localdb)\MSSQLLocalDB'.
+2023-05-09 20:57:31.461 +02:00 [DBG] Closed connection to database 'PhoneBookStoreAPI' on server '(localdb)\MSSQLLocalDB' (0ms).
+2023-05-09 20:57:31.461 +02:00 [DBG] Opening connection to database 'PhoneBookStoreAPI' on server '(localdb)\MSSQLLocalDB'.
+2023-05-09 20:57:31.461 +02:00 [DBG] Opened connection to database 'PhoneBookStoreAPI' on server '(localdb)\MSSQLLocalDB'.
+2023-05-09 20:57:31.461 +02:00 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2023-05-09 20:57:31.461 +02:00 [DBG] Created DbCommand for 'ExecuteNonQuery' (0ms).
+2023-05-09 20:57:31.461 +02:00 [DBG] Initialized DbCommand for 'ExecuteNonQuery' (0ms).
+2023-05-09 20:57:31.462 +02:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2023-05-09 20:57:31.463 +02:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2023-05-09 20:57:31.463 +02:00 [DBG] Closing connection to database 'PhoneBookStoreAPI' on server '(localdb)\MSSQLLocalDB'.
+2023-05-09 20:57:31.463 +02:00 [DBG] Closed connection to database 'PhoneBookStoreAPI' on server '(localdb)\MSSQLLocalDB' (0ms).
+2023-05-09 20:57:31.463 +02:00 [DBG] Creating DbCommand for 'ExecuteScalar'.
+2023-05-09 20:57:31.463 +02:00 [DBG] Created DbCommand for 'ExecuteScalar' (0ms).
+2023-05-09 20:57:31.463 +02:00 [DBG] Initialized DbCommand for 'ExecuteScalar' (0ms).
+2023-05-09 20:57:31.463 +02:00 [DBG] Opening connection to database 'PhoneBookStoreAPI' on server '(localdb)\MSSQLLocalDB'.
+2023-05-09 20:57:31.463 +02:00 [DBG] Opened connection to database 'PhoneBookStoreAPI' on server '(localdb)\MSSQLLocalDB'.
+2023-05-09 20:57:31.463 +02:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2023-05-09 20:57:31.464 +02:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2023-05-09 20:57:31.464 +02:00 [DBG] Closing connection to database 'PhoneBookStoreAPI' on server '(localdb)\MSSQLLocalDB'.
+2023-05-09 20:57:31.464 +02:00 [DBG] Closed connection to database 'PhoneBookStoreAPI' on server '(localdb)\MSSQLLocalDB' (0ms).
+2023-05-09 20:57:31.478 +02:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2023-05-09 20:57:31.478 +02:00 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2023-05-09 20:57:31.478 +02:00 [DBG] Initialized DbCommand for 'ExecuteReader' (0ms).
+2023-05-09 20:57:31.478 +02:00 [DBG] Opening connection to database 'PhoneBookStoreAPI' on server '(localdb)\MSSQLLocalDB'.
+2023-05-09 20:57:31.478 +02:00 [DBG] Opened connection to database 'PhoneBookStoreAPI' on server '(localdb)\MSSQLLocalDB'.
+2023-05-09 20:57:31.479 +02:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2023-05-09 20:57:31.481 +02:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2023-05-09 20:57:31.482 +02:00 [DBG] Closing data reader to 'PhoneBookStoreAPI' on server '(localdb)\MSSQLLocalDB'.
+2023-05-09 20:57:31.483 +02:00 [DBG] A data reader for 'PhoneBookStoreAPI' on server '(localdb)\MSSQLLocalDB' is being disposed after spending 1ms reading results.
+2023-05-09 20:57:31.483 +02:00 [DBG] Closing connection to database 'PhoneBookStoreAPI' on server '(localdb)\MSSQLLocalDB'.
+2023-05-09 20:57:31.483 +02:00 [DBG] Closed connection to database 'PhoneBookStoreAPI' on server '(localdb)\MSSQLLocalDB' (0ms).
+2023-05-09 20:57:31.491 +02:00 [INF] Applying migration '20230509185540_AddContactCategoryTableAndContactSubcategoryTable'.
+2023-05-09 20:57:31.531 +02:00 [DBG] Opening connection to database 'PhoneBookStoreAPI' on server '(localdb)\MSSQLLocalDB'.
+2023-05-09 20:57:31.532 +02:00 [DBG] Opened connection to database 'PhoneBookStoreAPI' on server '(localdb)\MSSQLLocalDB'.
+2023-05-09 20:57:31.533 +02:00 [DBG] Beginning transaction with isolation level 'Unspecified'.
+2023-05-09 20:57:31.539 +02:00 [DBG] Began transaction with isolation level 'ReadCommitted'.
+2023-05-09 20:57:31.539 +02:00 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2023-05-09 20:57:31.539 +02:00 [DBG] Created DbCommand for 'ExecuteNonQuery' (0ms).
+2023-05-09 20:57:31.540 +02:00 [DBG] Initialized DbCommand for 'ExecuteNonQuery' (0ms).
+2023-05-09 20:57:31.540 +02:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DELETE FROM [Contacts]
+WHERE [Id] = 1;
+SELECT @@ROWCOUNT;
+2023-05-09 20:57:31.542 +02:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DELETE FROM [Contacts]
+WHERE [Id] = 1;
+SELECT @@ROWCOUNT;
+2023-05-09 20:57:31.543 +02:00 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2023-05-09 20:57:31.543 +02:00 [DBG] Created DbCommand for 'ExecuteNonQuery' (0ms).
+2023-05-09 20:57:31.543 +02:00 [DBG] Initialized DbCommand for 'ExecuteNonQuery' (0ms).
+2023-05-09 20:57:31.543 +02:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DELETE FROM [Contacts]
+WHERE [Id] = 2;
+SELECT @@ROWCOUNT;
+2023-05-09 20:57:31.544 +02:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DELETE FROM [Contacts]
+WHERE [Id] = 2;
+SELECT @@ROWCOUNT;
+2023-05-09 20:57:31.544 +02:00 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2023-05-09 20:57:31.544 +02:00 [DBG] Created DbCommand for 'ExecuteNonQuery' (0ms).
+2023-05-09 20:57:31.544 +02:00 [DBG] Initialized DbCommand for 'ExecuteNonQuery' (0ms).
+2023-05-09 20:57:31.544 +02:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+EXEC sp_rename N'[Contacts].[BirhDate]', N'BirthDate', N'COLUMN';
+2023-05-09 20:57:31.642 +02:00 [INF] Executed DbCommand (99ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+EXEC sp_rename N'[Contacts].[BirhDate]', N'BirthDate', N'COLUMN';
+2023-05-09 20:57:31.643 +02:00 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2023-05-09 20:57:31.643 +02:00 [DBG] Created DbCommand for 'ExecuteNonQuery' (0ms).
+2023-05-09 20:57:31.643 +02:00 [DBG] Initialized DbCommand for 'ExecuteNonQuery' (0ms).
+2023-05-09 20:57:31.643 +02:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+ALTER TABLE [Contacts] ADD [CategoryId] int NOT NULL DEFAULT 0;
+2023-05-09 20:57:31.645 +02:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+ALTER TABLE [Contacts] ADD [CategoryId] int NOT NULL DEFAULT 0;
+2023-05-09 20:57:31.646 +02:00 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2023-05-09 20:57:31.646 +02:00 [DBG] Created DbCommand for 'ExecuteNonQuery' (0ms).
+2023-05-09 20:57:31.646 +02:00 [DBG] Initialized DbCommand for 'ExecuteNonQuery' (0ms).
+2023-05-09 20:57:31.646 +02:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+ALTER TABLE [Contacts] ADD [Subcategory] nvarchar(max) NOT NULL DEFAULT N'';
+2023-05-09 20:57:31.648 +02:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+ALTER TABLE [Contacts] ADD [Subcategory] nvarchar(max) NOT NULL DEFAULT N'';
+2023-05-09 20:57:31.648 +02:00 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2023-05-09 20:57:31.648 +02:00 [DBG] Created DbCommand for 'ExecuteNonQuery' (0ms).
+2023-05-09 20:57:31.648 +02:00 [DBG] Initialized DbCommand for 'ExecuteNonQuery' (0ms).
+2023-05-09 20:57:31.648 +02:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [ContactCategories] (
+    [Id] int NOT NULL IDENTITY,
+    [Name] nvarchar(max) NOT NULL,
+    CONSTRAINT [PK_ContactCategories] PRIMARY KEY ([Id])
+);
+2023-05-09 20:57:31.650 +02:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [ContactCategories] (
+    [Id] int NOT NULL IDENTITY,
+    [Name] nvarchar(max) NOT NULL,
+    CONSTRAINT [PK_ContactCategories] PRIMARY KEY ([Id])
+);
+2023-05-09 20:57:31.650 +02:00 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2023-05-09 20:57:31.650 +02:00 [DBG] Created DbCommand for 'ExecuteNonQuery' (0ms).
+2023-05-09 20:57:31.650 +02:00 [DBG] Initialized DbCommand for 'ExecuteNonQuery' (0ms).
+2023-05-09 20:57:31.650 +02:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [ContactSubcategories] (
+    [Id] int NOT NULL IDENTITY,
+    [Name] nvarchar(max) NOT NULL,
+    [CategoryId] int NOT NULL,
+    CONSTRAINT [PK_ContactSubcategories] PRIMARY KEY ([Id]),
+    CONSTRAINT [FK_ContactSubcategories_ContactCategories_CategoryId] FOREIGN KEY ([CategoryId]) REFERENCES [ContactCategories] ([Id]) ON DELETE CASCADE
+);
+2023-05-09 20:57:31.651 +02:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [ContactSubcategories] (
+    [Id] int NOT NULL IDENTITY,
+    [Name] nvarchar(max) NOT NULL,
+    [CategoryId] int NOT NULL,
+    CONSTRAINT [PK_ContactSubcategories] PRIMARY KEY ([Id]),
+    CONSTRAINT [FK_ContactSubcategories_ContactCategories_CategoryId] FOREIGN KEY ([CategoryId]) REFERENCES [ContactCategories] ([Id]) ON DELETE CASCADE
+);
+2023-05-09 20:57:31.651 +02:00 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2023-05-09 20:57:31.651 +02:00 [DBG] Created DbCommand for 'ExecuteNonQuery' (0ms).
+2023-05-09 20:57:31.651 +02:00 [DBG] Initialized DbCommand for 'ExecuteNonQuery' (0ms).
+2023-05-09 20:57:31.651 +02:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX [IX_Contacts_CategoryId] ON [Contacts] ([CategoryId]);
+2023-05-09 20:57:31.653 +02:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX [IX_Contacts_CategoryId] ON [Contacts] ([CategoryId]);
+2023-05-09 20:57:31.653 +02:00 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2023-05-09 20:57:31.653 +02:00 [DBG] Created DbCommand for 'ExecuteNonQuery' (0ms).
+2023-05-09 20:57:31.653 +02:00 [DBG] Initialized DbCommand for 'ExecuteNonQuery' (0ms).
+2023-05-09 20:57:31.653 +02:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX [IX_ContactSubcategories_CategoryId] ON [ContactSubcategories] ([CategoryId]);
+2023-05-09 20:57:31.654 +02:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX [IX_ContactSubcategories_CategoryId] ON [ContactSubcategories] ([CategoryId]);
+2023-05-09 20:57:31.654 +02:00 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2023-05-09 20:57:31.654 +02:00 [DBG] Created DbCommand for 'ExecuteNonQuery' (0ms).
+2023-05-09 20:57:31.654 +02:00 [DBG] Initialized DbCommand for 'ExecuteNonQuery' (0ms).
+2023-05-09 20:57:31.654 +02:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+ALTER TABLE [Contacts] ADD CONSTRAINT [FK_Contacts_ContactCategories_CategoryId] FOREIGN KEY ([CategoryId]) REFERENCES [ContactCategories] ([Id]) ON DELETE CASCADE;
+2023-05-09 20:57:31.655 +02:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+ALTER TABLE [Contacts] ADD CONSTRAINT [FK_Contacts_ContactCategories_CategoryId] FOREIGN KEY ([CategoryId]) REFERENCES [ContactCategories] ([Id]) ON DELETE CASCADE;
+2023-05-09 20:57:31.656 +02:00 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2023-05-09 20:57:31.656 +02:00 [DBG] Created DbCommand for 'ExecuteNonQuery' (0ms).
+2023-05-09 20:57:31.656 +02:00 [DBG] Initialized DbCommand for 'ExecuteNonQuery' (0ms).
+2023-05-09 20:57:31.656 +02:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO [__EFMigrationsHistory] ([MigrationId], [ProductVersion])
+VALUES (N'20230509185540_AddContactCategoryTableAndContactSubcategoryTable', N'7.0.5');
+2023-05-09 20:57:31.657 +02:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO [__EFMigrationsHistory] ([MigrationId], [ProductVersion])
+VALUES (N'20230509185540_AddContactCategoryTableAndContactSubcategoryTable', N'7.0.5');
+2023-05-09 20:57:31.657 +02:00 [DBG] Committing transaction.
+2023-05-09 20:57:31.660 +02:00 [DBG] Committed transaction.
+2023-05-09 20:57:31.661 +02:00 [DBG] Disposing transaction.
+2023-05-09 20:57:31.661 +02:00 [DBG] Closing connection to database 'PhoneBookStoreAPI' on server '(localdb)\MSSQLLocalDB'.
+2023-05-09 20:57:31.661 +02:00 [DBG] Closed connection to database 'PhoneBookStoreAPI' on server '(localdb)\MSSQLLocalDB' (0ms).
+2023-05-09 20:57:31.662 +02:00 [DBG] 'ApplicationDbContext' disposed.
+2023-05-09 20:57:31.663 +02:00 [DBG] Disposing connection to database 'PhoneBookStoreAPI' on server '(localdb)\MSSQLLocalDB'.
+2023-05-09 20:57:31.664 +02:00 [DBG] Disposed connection to database '' on server '' (0ms).

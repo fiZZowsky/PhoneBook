@@ -18,18 +18,19 @@ namespace PhoneBook_API.Models
         [EmailAddress]
         public string Email { get; set; }
         [Required]
-        [MaxLength(100)]
+        [StringLength(100, MinimumLength = 8)]
         public string Password { get; set; }
-        [Required]
-        public ContactCategory Category { get; set; }
-        [Required] 
+        [ForeignKey("ContactCategory")]
+        public int CategoryId { get; set; }
+
+        public virtual ContactCategory ContactCategory { get; set; }
         public string Subcategory { get; set; }
         [Required]
         [Phone]
         public string PhoneNumber { get; set; }
         [Required]
         [Range(0, 130)]
-        public DateOnly BirhDate { get; set; }
+        public DateTime BirthDate { get; set; }
         public DateTime CreatedDate { get ; set; }
         public DateTime UpdatedDate { get; set;}
     }
