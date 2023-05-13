@@ -1,0 +1,37 @@
+﻿@page "/create-contact"
+@inherits ContactsBase
+
+<h3>Create Contact</h3>
+
+<div class="row">
+  <div class="form-group">
+        <div class="input-group">
+            <label for="firstName">First Name:</label>
+            @*<input id="firstName" @bind-value="@contactDto.FirstName" />*@
+        </div>
+        <div class="input-group">
+            <label for="lastName">Last Name:</label>
+            @*<input id="lastName" @bind-value="@contactDto.LastName" />*@
+        </div>
+        <div class="input-group">
+            <label for="email">Email:</label>
+            @*<input id="email" @bind-value="@contactDto.Email" />*@
+        </div>
+        <div class="input-group">
+            <label for="password">Password:</label>
+            @*<input id="password" type="password" @bind-value="@contactDto.Password" />*@
+        </div>
+        <div class="input-group">
+            <label for="phoneNumber">Phone Number:</label>
+            @*<input id="phoneNumber" @bind-value="@contactDto.PhoneNumber" />*@
+        </div>
+        <div class="input-group">
+            <label for="birthDate">Birth Date:</label>
+            @*<input id="birthDate" type="date" @bind-value="@contactDto.BirthDate" />*@
+        </div>
+    </div>
+    <button class="btn btn-success">
+        @*@onclick="() => AddNewContact_Click(new ContactDto{"*@
+    Create
+    </button>
+</div>

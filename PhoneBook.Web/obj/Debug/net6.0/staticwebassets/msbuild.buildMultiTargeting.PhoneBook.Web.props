@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\PhoneBook.Web.props" />
+</Project>
