@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "emVdx80Rq6jcnUo91qPQLKBa3sTyce+mmAItzDdJ+HmfjE9AqYUHk6L8R4X2fWjBpqnd46L1WZ49e6gH5ybBYA==",
+  "dgSpecHash": "A0vZFEsn4yPGxWuk3wpi3PTxH+PywySMYyRyspO2QgB2os6XUyzhqN4tuOM/1+z4X2CZWl6fJLObEgn/K6+ihg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Pioter\\Documents\\PhoneBook\\PhoneBook.Web\\PhoneBook.Web.csproj",
+  "projectFilePath": "C:\\Users\\Pioter\\Desktop\\PhoneBook\\PhoneBook.Web\\PhoneBook.Web.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Pioter\\.nuget\\packages\\microsoft.aspnetcore.authorization\\6.0.13\\microsoft.aspnetcore.authorization.6.0.13.nupkg.sha512",
     "C:\\Users\\Pioter\\.nuget\\packages\\microsoft.aspnetcore.components\\6.0.13\\microsoft.aspnetcore.components.6.0.13.nupkg.sha512",

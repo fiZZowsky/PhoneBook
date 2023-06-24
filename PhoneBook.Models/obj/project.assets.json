@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Pioter\\Documents\\PhoneBook\\PhoneBook.Models\\PhoneBook.Models.csproj",
+      "projectUniqueName": "C:\\Users\\Pioter\\Desktop\\PhoneBook\\PhoneBook.Models\\PhoneBook.Models.csproj",
       "projectName": "PhoneBook.Models",
-      "projectPath": "C:\\Users\\Pioter\\Documents\\PhoneBook\\PhoneBook.Models\\PhoneBook.Models.csproj",
+      "projectPath": "C:\\Users\\Pioter\\Desktop\\PhoneBook\\PhoneBook.Models\\PhoneBook.Models.csproj",
       "packagesPath": "C:\\Users\\Pioter\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Pioter\\Documents\\PhoneBook\\PhoneBook.Models\\obj\\",
+      "outputPath": "C:\\Users\\Pioter\\Desktop\\PhoneBook\\PhoneBook.Models\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

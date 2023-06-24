@@ -1,37 +1,63 @@
 ﻿@page "/create-contact"
 @inherits ContactsBase
+@inject NavigationManager NavigationManager
 
 <h3>Create Contact</h3>
-
 <div class="row">
-  <div class="form-group">
+    <div class="form-group">
         <div class="input-group">
             <label for="firstName">First Name:</label>
-            @*<input id="firstName" @bind-value="@contactDto.FirstName" />*@
+            <input id="firstName" @bind="contact.FirstName" />
         </div>
         <div class="input-group">
             <label for="lastName">Last Name:</label>
-            @*<input id="lastName" @bind-value="@contactDto.LastName" />*@
+            <input id="lastName" @bind="contact.LastName" />
         </div>
         <div class="input-group">
             <label for="email">Email:</label>
-            @*<input id="email" @bind-value="@contactDto.Email" />*@
+            <input id="email" @bind="contact.Email" />
         </div>
         <div class="input-group">
             <label for="password">Password:</label>
-            @*<input id="password" type="password" @bind-value="@contactDto.Password" />*@
+            <input id="password" type="password" @bind="contact.Password" />
         </div>
         <div class="input-group">
             <label for="phoneNumber">Phone Number:</label>
-            @*<input id="phoneNumber" @bind-value="@contactDto.PhoneNumber" />*@
+            <input id="phoneNumber" @bind="contact.PhoneNumber" />
         </div>
         <div class="input-group">
             <label for="birthDate">Birth Date:</label>
-            @*<input id="birthDate" type="date" @bind-value="@contactDto.BirthDate" />*@
+            <input id="birthDate" type="date" pattern="yyyy-MM-dd" @bind="contact.BirthDate" />
+        </div>
+        <div class="input-group">
+            <label for="category">Category:</label>
+            @*<select @bind="contact.CategoryName">
+                @foreach (var category in Categories)
+                {
+                    <option value="@category.Name">@category.Name</option>
+                }
+           </select>*@
         </div>
     </div>
-    <button class="btn btn-success">
-        @*@onclick="() => AddNewContact_Click(new ContactDto{"*@
-    Create
+    <button class="btn btn-success" @onclick="AddNewContact_Click">
+        <b>Create</b>
     </button>
 </div>
+@code {
+    private ContactDto contact = new ContactDto();
+    private async Task AddNewContact_Click()
+    {
+        try
+        {
+            var addedContact = await ContactService.AddContact(contact);
+            if (addedContact != null)
+            {
+                NavigationManager.NavigateTo("");
+            }
+        }
+        catch (Exception ex)
+        {
+            // handle exception
+        }
+    }
+}

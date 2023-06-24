@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "qWtU+x52+UdckjB+P8lRTRa+0q01XVJXn5+lsaVynYwQFq7OTsvmj+eyEYrkayzkd7/Rbx/3oX1sRTfCQxLX3g==",
+  "dgSpecHash": "AvL9i5SbYML2sukMW7CUlZhCGoWZWs6x1IQhBw9Ezb1ZUQ7AeTJeo9runP7CJgjqwkIMR1R6gdsLxerdrLvVfQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Pioter\\Documents\\PhoneBook\\PhoneBook.Api\\PhoneBook.Api.csproj",
+  "projectFilePath": "C:\\Users\\Pioter\\Desktop\\PhoneBook\\PhoneBook.Api\\PhoneBook.Api.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Pioter\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\Pioter\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",

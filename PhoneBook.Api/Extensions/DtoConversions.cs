@@ -48,5 +48,14 @@ namespace PhoneBook.Api.Extensions
                 SubcategoryName = subcategory == null ? "" : subcategory.Name
             };
         }
+        //public static IEnumerable<CategoryDto> ConvertToDto(this IEnumerable<Category> categories)
+        //{
+        //    return (from category in categories
+        //            select new CategoryDto
+        //            {
+        //                Id = category.Id,
+        //                Name = category.Name
+        //            }).ToList();
+        //}
     }
 }
