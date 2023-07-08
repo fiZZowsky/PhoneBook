@@ -18,17 +18,9 @@ else
     </div>
     @if (Contacts.Any())
     {
-        const int itemsPerRow = 4;
-        var contactRowList = new List<ContactDto>();
-
-        @for (int i = 0; i < Contacts.Count(); i += itemsPerRow)
-        {
-            contactRowList = Contacts.Skip(i).Take(itemsPerRow).ToList();
-
-            <div class="row mt-3">
-                <DisplayContacts Contacts="@contactRowList"></DisplayContacts>
-            </div>
-        }
+        <div class="row mt-3">
+            <DisplayContacts Contacts="@Contacts"></DisplayContacts>
+        </div>
     }
     else
     {

@@ -78,6 +78,10 @@ namespace PhoneBook.Api.Migrations
 
                     b.HasKey("Id");
 
+                    b.HasIndex("CategoryId");
+
+                    b.HasIndex("SubcategoryId");
+
                     b.ToTable("Contacts");
                 });
 
@@ -98,23 +102,24 @@ namespace PhoneBook.Api.Migrations
 
                     b.HasKey("Id");
 
-                    b.HasIndex("CategoryId");
-
                     b.ToTable("Subcategories");
                 });
 
-            modelBuilder.Entity("PhoneBook.Api.Entities.Subcategory", b =>
+            modelBuilder.Entity("PhoneBook.Api.Entities.Contact", b =>
                 {
-                    b.HasOne("PhoneBook.Api.Entities.Category", null)
-                        .WithMany("Subcategories")
+                    b.HasOne("PhoneBook.Api.Entities.Category", "Category")
+                        .WithMany()
                         .HasForeignKey("CategoryId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
-                });
 
-            modelBuilder.Entity("PhoneBook.Api.Entities.Category", b =>
-                {
-                    b.Navigation("Subcategories");
+                    b.HasOne("PhoneBook.Api.Entities.Subcategory", "Subcategory")
+                        .WithMany()
+                        .HasForeignKey("SubcategoryId");
+
+                    b.Navigation("Category");
+
+                    b.Navigation("Subcategory");
                 });
 #pragma warning restore 612, 618
         }

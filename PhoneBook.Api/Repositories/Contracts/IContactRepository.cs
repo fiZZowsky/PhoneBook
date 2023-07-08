@@ -15,9 +15,5 @@ namespace PhoneBook.Api.Repositories.Contracts
         Task<Contact> AddContact(ContactDto contactDto);
         Task<Contact> UpdateContact(int Id, ContactDto contactDto);
         Task<bool> DeleteContact(int Id);
-
-        //Task<Subcategory> AddSubcategory(SubcategoryDto subcategoryDto);
-        //Task<Subcategory> UpdateSubcategory(int Id,  SubcategoryDto subcategoryDto);
-        //Task<Subcategory> DeleteSubcategory(int Id);
     }
 }

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Pioter\\Desktop\\PhoneBook\\PhoneBook.Api\\PhoneBook.Api.csproj": {}
+    "C:\\Users\\Pioter\\Desktop\\.NET\\PhoneBook.Api\\PhoneBook.Api.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Pioter\\Desktop\\PhoneBook\\PhoneBook.Api\\PhoneBook.Api.csproj": {
+    "C:\\Users\\Pioter\\Desktop\\.NET\\PhoneBook.Api\\PhoneBook.Api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Pioter\\Desktop\\PhoneBook\\PhoneBook.Api\\PhoneBook.Api.csproj",
+        "projectUniqueName": "C:\\Users\\Pioter\\Desktop\\.NET\\PhoneBook.Api\\PhoneBook.Api.csproj",
         "projectName": "PhoneBook.Api",
-        "projectPath": "C:\\Users\\Pioter\\Desktop\\PhoneBook\\PhoneBook.Api\\PhoneBook.Api.csproj",
+        "projectPath": "C:\\Users\\Pioter\\Desktop\\.NET\\PhoneBook.Api\\PhoneBook.Api.csproj",
         "packagesPath": "C:\\Users\\Pioter\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Pioter\\Desktop\\PhoneBook\\PhoneBook.Api\\obj\\",
+        "outputPath": "C:\\Users\\Pioter\\Desktop\\.NET\\PhoneBook.Api\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -33,8 +33,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\Pioter\\Desktop\\PhoneBook\\PhoneBook.Models\\PhoneBook.Models.csproj": {
-                "projectPath": "C:\\Users\\Pioter\\Desktop\\PhoneBook\\PhoneBook.Models\\PhoneBook.Models.csproj"
+              "C:\\Users\\Pioter\\Desktop\\.NET\\PhoneBook.Models\\PhoneBook.Models.csproj": {
+                "projectPath": "C:\\Users\\Pioter\\Desktop\\.NET\\PhoneBook.Models\\PhoneBook.Models.csproj"
               }
             }
           }
@@ -105,14 +105,14 @@
         }
       }
     },
-    "C:\\Users\\Pioter\\Desktop\\PhoneBook\\PhoneBook.Models\\PhoneBook.Models.csproj": {
+    "C:\\Users\\Pioter\\Desktop\\.NET\\PhoneBook.Models\\PhoneBook.Models.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Pioter\\Desktop\\PhoneBook\\PhoneBook.Models\\PhoneBook.Models.csproj",
+        "projectUniqueName": "C:\\Users\\Pioter\\Desktop\\.NET\\PhoneBook.Models\\PhoneBook.Models.csproj",
         "projectName": "PhoneBook.Models",
-        "projectPath": "C:\\Users\\Pioter\\Desktop\\PhoneBook\\PhoneBook.Models\\PhoneBook.Models.csproj",
+        "projectPath": "C:\\Users\\Pioter\\Desktop\\.NET\\PhoneBook.Models\\PhoneBook.Models.csproj",
         "packagesPath": "C:\\Users\\Pioter\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Pioter\\Desktop\\PhoneBook\\PhoneBook.Models\\obj\\",
+        "outputPath": "C:\\Users\\Pioter\\Desktop\\.NET\\PhoneBook.Models\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

@@ -22,3 +22,15 @@ C:\Users\Pioter\Desktop\PhoneBook\PhoneBook.Models\obj\Debug\net6.0\PhoneBook.Mo
 C:\Users\Pioter\Desktop\PhoneBook\PhoneBook.Models\obj\Debug\net6.0\refint\PhoneBook.Models.dll
 C:\Users\Pioter\Desktop\PhoneBook\PhoneBook.Models\obj\Debug\net6.0\PhoneBook.Models.pdb
 C:\Users\Pioter\Desktop\PhoneBook\PhoneBook.Models\obj\Debug\net6.0\ref\PhoneBook.Models.dll
+C:\Users\Pioter\Desktop\.NET\PhoneBook.Models\bin\Debug\net6.0\PhoneBook.Models.deps.json
+C:\Users\Pioter\Desktop\.NET\PhoneBook.Models\bin\Debug\net6.0\PhoneBook.Models.dll
+C:\Users\Pioter\Desktop\.NET\PhoneBook.Models\bin\Debug\net6.0\PhoneBook.Models.pdb
+C:\Users\Pioter\Desktop\.NET\PhoneBook.Models\obj\Debug\net6.0\PhoneBook.Models.csproj.AssemblyReference.cache
+C:\Users\Pioter\Desktop\.NET\PhoneBook.Models\obj\Debug\net6.0\PhoneBook.Models.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Pioter\Desktop\.NET\PhoneBook.Models\obj\Debug\net6.0\PhoneBook.Models.AssemblyInfoInputs.cache
+C:\Users\Pioter\Desktop\.NET\PhoneBook.Models\obj\Debug\net6.0\PhoneBook.Models.AssemblyInfo.cs
+C:\Users\Pioter\Desktop\.NET\PhoneBook.Models\obj\Debug\net6.0\PhoneBook.Models.csproj.CoreCompileInputs.cache
+C:\Users\Pioter\Desktop\.NET\PhoneBook.Models\obj\Debug\net6.0\PhoneBook.Models.dll
+C:\Users\Pioter\Desktop\.NET\PhoneBook.Models\obj\Debug\net6.0\refint\PhoneBook.Models.dll
+C:\Users\Pioter\Desktop\.NET\PhoneBook.Models\obj\Debug\net6.0\PhoneBook.Models.pdb
+C:\Users\Pioter\Desktop\.NET\PhoneBook.Models\obj\Debug\net6.0\ref\PhoneBook.Models.dll

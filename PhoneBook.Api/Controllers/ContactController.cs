@@ -86,6 +86,40 @@ namespace PhoneBook.Api.Controllers
             }
         }
 
+        [HttpPut("{id:int}")]
+        public async Task<ActionResult<ContactDto>> UpdateContact(int id, [FromBody] ContactDto contactDto)
+        {
+            try
+            {
+                var existingContact = await this.contactRepository.GetContact(id);
+
+                if (existingContact == null)
+                {
+                    return NotFound();
+                }
+
+                existingContact.FirstName = contactDto.FirstName;
+                existingContact.LastName = contactDto.LastName;
+                existingContact.Email = contactDto.Email;
+                existingContact.Password = contactDto.Password;
+                existingContact.CategoryId = contactDto.CategoryId;
+                existingContact.SubcategoryId = contactDto.SubcategoryId;
+                existingContact.PhoneNumber = contactDto.PhoneNumber;
+                existingContact.BirthDate = contactDto.BirthDate;
+
+                var updatedContact = await this.contactRepository.UpdateContact(id, contactDto);
+
+                return Ok(updatedContact);
+            }
+            catch (Exception)
+            {
+                return StatusCode(StatusCodes.Status500InternalServerError, "Error updating contact");
+            }
+        }
+
+
+
+
         [HttpDelete("{id:int}")]
         public async Task<ActionResult<ContactDto>> DeleteContact(int Id)
         {

@@ -85,7 +85,10 @@ namespace PhoneBook.Web.Services
                     {
                         return Enumerable.Empty<ContactDto>();
                     }
-                    return await response.Content.ReadFromJsonAsync<IEnumerable<ContactDto>>();
+                    else
+                    {
+                        return await response.Content.ReadFromJsonAsync<IEnumerable<ContactDto>>();
+                    }
                 }
                 else
                 {

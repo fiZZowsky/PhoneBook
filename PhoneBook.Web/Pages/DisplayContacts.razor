@@ -1,23 +1,24 @@
 ﻿@inherits DisplayContactsBase
 
-@foreach (var contact in Contacts)
-{
-    <div class="col-md-3 mb-2">
-        <a href="/ContactDetails/@contact.Id">
-            <div class="card">
-                <div class="card-body">
-                    <h5 class="card-title mb-3">
-                        @contact.FirstName
-                        @contact.LastName
-                    </h5>
-                    <p class="card-text">
-                        Phone: @contact.PhoneNumber
-                    </p>
-                    <p class="card-text">
-                        Email: @contact.Email
-                    </p>
+<div class="row">
+    @foreach (var contact in Contacts)
+    {
+        <div class="col-md-12 mb-3">
+            <a href="/ContactDetails/@contact.Id">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">
+                            @contact.FirstName @contact.LastName
+                        </h5>
+                        <p class="card-text">
+                            Phone: @contact.PhoneNumber
+                        </p>
+                        <p class="card-text">
+                            Email: @contact.Email
+                        </p>
+                    </div>
                 </div>
-            </div>
-        </a>
-    </div>
-}
+            </a>
+        </div>
+    }
+</div>

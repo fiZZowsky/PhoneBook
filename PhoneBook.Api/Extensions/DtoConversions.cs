@@ -13,7 +13,8 @@ namespace PhoneBook.Api.Extensions
                     join category in categories
                     on contact.CategoryId equals category.Id
                     join subcategory in subcategories
-                    on contact.SubcategoryId equals subcategory.Id
+                    on contact.SubcategoryId equals subcategory.Id into subcategoryGroup
+                    from subcategory in subcategoryGroup.DefaultIfEmpty()
                     select new ContactDto
                     {
                         Id = contact.Id,
@@ -29,6 +30,7 @@ namespace PhoneBook.Api.Extensions
                         SubcategoryName = subcategory == null ? "" : subcategory.Name
                     }).ToList();
         }
+
         public static ContactDto ConvertToDto(this Contact contact,
                                                    Category category,
                                                    Subcategory subcategory)
@@ -48,14 +50,5 @@ namespace PhoneBook.Api.Extensions
                 SubcategoryName = subcategory == null ? "" : subcategory.Name
             };
         }
-        //public static IEnumerable<CategoryDto> ConvertToDto(this IEnumerable<Category> categories)
-        //{
-        //    return (from category in categories
-        //            select new CategoryDto
-        //            {
-        //                Id = category.Id,
-        //                Name = category.Name
-        //            }).ToList();
-        //}
     }
 }

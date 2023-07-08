@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "sxqY1/w9J76fK6/o9KMDpJRxC8dyw/ij2vVV+E0hwn7dMSJEY0ThB4XAfRwJIDVazGqEnSRwCo3ur+8zV8I2dg==",
+  "dgSpecHash": "YfQhAcAHOqMdF20p8rA07O/KCZMRBcl0NBQ17XPHs0ujMvT6bznYz4RICiWC6SwIvZIIlQlqlUZ8yde+r0KJpw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Pioter\\Desktop\\PhoneBook\\PhoneBook.Models\\PhoneBook.Models.csproj",
+  "projectFilePath": "C:\\Users\\Pioter\\Desktop\\.NET\\PhoneBook.Models\\PhoneBook.Models.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Pioter\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.15\\microsoft.windowsdesktop.app.ref.6.0.15.nupkg.sha512",
     "C:\\Users\\Pioter\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.15\\microsoft.netcore.app.ref.6.0.15.nupkg.sha512",

@@ -43,27 +43,6 @@ namespace PhoneBook.Api.Repositories.Contracts
             return null;
         }
 
-        //public Task<Subcategory> AddSubcategory(SubcategoryDto subcategoryDto)
-        //{
-        //    Subcategory newSubcategory = new()
-        //    {
-        //        Id = subcategoryDto.Id,
-        //        Name = subcategoryDto.Name,
-        //        CategoryId = subcategoryDto.CategoryId
-        //    };
-
-        //    if(newSubcategory != null)
-        //    {
-        //        await this.phoneBookDbContext.AddAsync(newSubcategory);
-        //        await this.phoneBookDbContext.SaveChangesAsync();
-        //        return newSubcategory;
-        //    }
-        //    else
-        //    {
-        //        return null;
-        //    }
-        //}
-
         public async Task<bool> DeleteContact(int Id)
         {
             var contact = await phoneBookDbContext.Contacts.SingleOrDefaultAsync(c => c.Id == Id);
@@ -78,11 +57,6 @@ namespace PhoneBook.Api.Repositories.Contracts
 
             return true;
         }
-
-        //public Task<Subcategory> DeleteSubcategory(int Id)
-        //{
-        //    throw new NotImplementedException();
-        //}
 
         public async Task<IEnumerable<Category>> GetCategories()
         {
@@ -124,14 +98,28 @@ namespace PhoneBook.Api.Repositories.Contracts
             return subcategory;
         }
 
-        public Task<Contact> UpdateContact(int Id, ContactDto contactDto)
+        public async Task<Contact> UpdateContact(int id, ContactDto contactDto)
         {
-            throw new NotImplementedException();
+            var existingContact = await this.phoneBookDbContext.Contacts.FindAsync(id);
+
+            if (existingContact == null)
+            {
+                return null;
+            }
+
+            existingContact.FirstName = contactDto.FirstName;
+            existingContact.LastName = contactDto.LastName;
+            existingContact.Email = contactDto.Email;
+            existingContact.Password = contactDto.Password;
+            existingContact.PhoneNumber = contactDto.PhoneNumber;
+            existingContact.BirthDate = contactDto.BirthDate;
+            existingContact.CategoryId = contactDto.CategoryId;
+            existingContact.SubcategoryId = contactDto.SubcategoryId;
+
+            await this.phoneBookDbContext.SaveChangesAsync();
+
+            return existingContact;
         }
 
-        //public Task<Subcategory> UpdateSubcategory(int Id, SubcategoryDto subcategoryDto)
-        //{
-        //    throw new NotImplementedException();
-        //}
     }
 }
