@@ -28,7 +28,7 @@ else
             <p class="mb-4">Phone: @Contact.PhoneNumber</p>
             <p class="mb-4">BirthDate: @Contact.BirthDate.ToString("dd-MM-yyyy") r.</p>
             <div>
-                <a class="btn btn-primary">Edit</a>
+                <a href="/UpdateContact/@Contact.Id" class="btn btn-warning">Edit</a>
                 <div>
                     <button @onclick="(() => RemoveContact())"
                             class="btn btn-danger">

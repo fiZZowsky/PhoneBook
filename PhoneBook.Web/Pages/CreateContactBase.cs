@@ -42,24 +42,6 @@ namespace PhoneBook.Web.Pages
         {
             categories = await categoriesService.GetCategories();
             subcategories = await subcategoriesService.GetSubcategories();
-
-            if (string.IsNullOrEmpty(Id))
-            {
-                // Adding a new contact
-
-            }
-            else
-            {
-                // Updating a new contact
-                var contactId = Convert.ToInt32(Id);
-
-                var apiContact = await contactService.GetContact(contactId);
-
-                if (apiContact != null)
-                {
-                    contactDto = apiContact;
-                }
-            }
         }
 
         protected async void HandleFailedRequest()
@@ -69,45 +51,28 @@ namespace PhoneBook.Web.Pages
 
         protected async void HandleValidRequest()
         {
-            if (string.IsNullOrEmpty(Id))
+            // Add contact
+            if (SelectedCategory != null && SelectedSubcategory != null)
             {
-                // Add contact
-                if (SelectedCategory != null && SelectedSubcategory != null)
-                {
-                    contactDto.CategoryId = SelectedCategory.Id;
-                    contactDto.CategoryName = SelectedCategory.CategoryName;
-                    contactDto.SubcategoryId = SelectedSubcategory.Id;
-                    contactDto.SubcategoryName = SelectedSubcategory.SubcategoryName;
+                contactDto.CategoryId = SelectedCategory.Id;
+                contactDto.CategoryName = SelectedCategory.CategoryName;
+                contactDto.SubcategoryId = SelectedSubcategory.Id;
+                contactDto.SubcategoryName = SelectedSubcategory.SubcategoryName;
 
-                    var result = await contactService.AddContact(contactDto);
+                var result = await contactService.AddContact(contactDto);
 
-                    if (result != null)
-                    {
-                        NavigationManager.NavigateTo("../");
-                    }
-                    else
-                    {
-                        Message = "Something went wrong, contact not added :(";
-                    }
-                }
-                else
-                {
-                    Message = "Please select a category and subcategory.";
-                }
-            }
-            else
-            {
-                // Update contact
-                var result = await contactService.UpdateContact(contactDto);
-
-                if (result)
+                if (result != null)
                 {
                     NavigationManager.NavigateTo("../");
                 }
                 else
                 {
-                    Message = "Something went wrong, contact not updated :(";
+                    Message = "Something went wrong, contact not added :(";
                 }
+            }
+            else
+            {
+                Message = "Please select a category and subcategory.";
             }
         }
 

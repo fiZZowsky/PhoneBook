@@ -1,37 +1,42 @@
-﻿@page "/CreateContact"
-@inherits CreateContactBase
+﻿@page "/UpdateContact/{Id:int}"
+@inherits UpdateContactBase
 
-
-<PageTitle>Add New Contact</PageTitle>
-<h1>Add New Contact</h1>
+<PageTitle>Update Contact</PageTitle>
+<h1>Update Contact</h1>
 
 <div class="row">
-    <EditForm Model="@contactDto" OnValidSubmit="@HandleValidRequest" OnInvalidSubmit="@HandleFailedRequest">
+    <EditForm Model="@Contact" OnValidSubmit="@HandleValidRequest" OnInvalidSubmit="@HandleInvalidRequest">
         <div class="form-group">
             <label class="col-md-3">First name</label>
-            <InputText class="col-md-8 form-control" @bind-Value="@contactDto.FirstName"></InputText>
+            <InputText class="col-md-8 form-control" @bind-Value="@Contact.FirstName"></InputText>
         </div>
         <div class="form-group">
             <label class="col-md-3">Last name</label>
-            <InputText class="col-md-8 form-control" @bind-Value="@contactDto.LastName"></InputText>
+            <InputText class="col-md-8 form-control" @bind-Value="@Contact.LastName"></InputText>
         </div>
         <div class="form-group">
             <label class="col-md-3">Email</label>
-            <InputText class="col-md-8 form-control" @bind-Value="@contactDto.Email"></InputText>
+            <InputText class="col-md-8 form-control" @bind-Value="@Contact.Email"></InputText>
         </div>
         <div class="form-group">
             <label class="col-md-3">Password</label>
-            <InputText class="col-md-8 form-control" @bind-Value="@contactDto.Password"></InputText>
+            <InputText class="col-md-8 form-control" @bind-Value="@Contact.Password"></InputText>
         </div>
         <div class="form-group">
             <label class="col-md-3">Phone number</label>
-            <InputText class="col-md-8 form-control" @bind-Value="@contactDto.PhoneNumber"></InputText>
+            <InputText class="col-md-8 form-control" @bind-Value="@Contact.PhoneNumber"></InputText>
         </div>
         <div class="form-group">
             <label class="col-md-3">Birth date</label>
-            <InputDate class="col-md-8 form-control" @bind-Value="@contactDto.BirthDate"></InputDate>
+            <InputDate class="col-md-8 form-control" @bind-Value="@Contact.BirthDate"></InputDate>
         </div>
+        <br />
         <div class="form-group">
+            <button type="submit" class="btn btn-warning">Save Contact</button>
+            <a @onclick="@GoToContactDetails" class="btn btn-primary">back</a>
+            <br />
+        </div>
+@*        <div class="form-group">
             <label class="col-md-3">Category</label>
             <InputSelect @bind-Value="SelectedCategory" class="col-md-8">
                 <option value="">Select category</option>
@@ -50,13 +55,7 @@
                     <option value="@subcategory">@subcategory.SubcategoryName</option>
                 }
             </InputSelect>
-        </div>
-        <br />
-        <div class="form-group">
-            <button type="submit" class="btn btn-warning">Save Contact</button>
-            <a @onclick="@GoToContacts" class="btn btn-primary">back</a>
-            <br />
-        </div>
+        </div>*@
         <br />
         <p style="color: red">@Message</p>
     </EditForm>
