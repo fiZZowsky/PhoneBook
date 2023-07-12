@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Components;
 using PhoneBook.Models.Dtos;
+using PhoneBook.Web.Services;
 using PhoneBook.Web.Services.Contracts;
 
 namespace PhoneBook.Web.Pages
@@ -9,7 +10,7 @@ namespace PhoneBook.Web.Pages
         [Inject]
         public IContactService ContactService { get; set; }
    
-        public IEnumerable<ContactDto> Contacts { get; set; }
+        public List<ContactDto> Contacts { get; set; }
 
         protected override async Task OnInitializedAsync()
         {

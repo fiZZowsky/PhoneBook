@@ -29,7 +29,12 @@ else
             <p class="mb-4">BirthDate: @Contact.BirthDate.ToString("dd-MM-yyyy") r.</p>
             <div>
                 <a class="btn btn-primary">Edit</a>
-                <a class="btn btn-danger">Delete</a>
+                <div>
+                    <button @onclick="(() => RemoveContact())"
+                            class="btn btn-danger">
+                        Delete
+                    </button>
+                </div>
             </div>
         </div>
     </div>

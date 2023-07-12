@@ -1,18 +1,19 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using PhoneBook.Api.Entities;
+using PhoneBook.Api.Extensions;
 using PhoneBook.Api.Repositories.Contracts;
 
 namespace PhoneBook.Api.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class SubcategoriesController : ControllerBase
+    public class SubCategoriesController : Controller
     {
-        private readonly IContactRepository contactRepository;
+        private readonly ISubcategoriesRepository subcategoriesRepository;
 
-        public SubcategoriesController(IContactRepository contactRepository)
+        public SubCategoriesController(ISubcategoriesRepository subcategoriesRepository)
         {
-            this.contactRepository = contactRepository;
+            this.subcategoriesRepository = subcategoriesRepository;
         }
 
         [HttpGet]
@@ -20,7 +21,7 @@ namespace PhoneBook.Api.Controllers
         {
             try
             {
-                var subcategories = await this.contactRepository.GetSubcategories();
+                var subcategories = await this.subcategoriesRepository.GetSubcategories();
 
                 if (subcategories == null)
                 {
@@ -28,7 +29,8 @@ namespace PhoneBook.Api.Controllers
                 }
                 else
                 {
-                    return Ok(subcategories);
+                    var subcategoryDtos = subcategories.ConvertToDto();
+                    return Ok(subcategoryDtos);
                 }
             }
             catch (Exception)
@@ -42,7 +44,7 @@ namespace PhoneBook.Api.Controllers
         {
             try
             {
-                var subcategory = await this.contactRepository.GetSubcategory(id);
+                var subcategory = await this.subcategoriesRepository.GetSubcategory(id);
 
                 if (subcategory == null)
                 {

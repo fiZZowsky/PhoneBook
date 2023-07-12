@@ -4,9 +4,10 @@ namespace PhoneBook.Web.Services.Contracts
 {
     public interface IContactService
     {
-        Task<IEnumerable<ContactDto>> GetContacts();
-        Task<ContactDto> GetContact(int id);
-        Task<ContactDto> AddContact(ContactDto contact);
-        Task<ContactDto> DeleteContact(int id);
+        Task<List<ContactDto>?> GetContacts();
+        Task<ContactDto?> GetContact(int id);
+        Task<ContactDto?> AddContact(ContactDto contact);
+        Task<bool> UpdateContact(ContactDto contact);
+        Task<bool> DeleteContact(int id);
     }
 }

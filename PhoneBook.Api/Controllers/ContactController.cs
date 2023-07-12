@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using PhoneBook.Api.Entities;
 using PhoneBook.Api.Extensions;
 using PhoneBook.Api.Repositories.Contracts;
 using PhoneBook.Models.Dtos;
@@ -18,7 +19,7 @@ namespace PhoneBook.Api.Controllers
         }
 
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<ContactDto>>> GetContacts()
+        public async Task<ActionResult<List<ContactDto>>> GetContacts()
         {
             try
             {
@@ -26,7 +27,7 @@ namespace PhoneBook.Api.Controllers
                 var categories = await this.contactRepository.GetCategories();
                 var subcategories = await this.contactRepository.GetSubcategories();
 
-                if (contacts == null || categories == null)
+                if (contacts == null)
                 {
                     return NotFound();
                 }
@@ -82,7 +83,7 @@ namespace PhoneBook.Api.Controllers
             }
             catch (Exception)
             {
-                return StatusCode(StatusCodes.Status400BadRequest, "NotUniqueEmailError. Email already exists!");
+                return StatusCode(StatusCodes.Status400BadRequest, "In the entered data were errors");
             }
         }
 
@@ -117,28 +118,25 @@ namespace PhoneBook.Api.Controllers
             }
         }
 
-
-
-
         [HttpDelete("{id:int}")]
-        public async Task<ActionResult<ContactDto>> DeleteContact(int Id)
+        public async Task<ActionResult<ContactDto>> DeleteContact(int id)
         {
             try
             {
-                var isDeleted = await this.contactRepository.DeleteContact(Id);
+                var contactExist = await this.contactRepository.GetContact(id);
 
-                if (isDeleted)
-                {
-                    return NoContent();
-                }
-                else
+                if (contactExist == null)
                 {
                     return NotFound();
                 }
+
+                await this.contactRepository.DeleteContact(id);
+
+                return NoContent();
             }
-            catch (Exception)
+            catch (Exception ex)
             {
-                throw;
+                return StatusCode(StatusCodes.Status500InternalServerError, ex.Message);
             }
             
         }

@@ -1,50 +1,52 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using PhoneBook.Api.Entities;
+using PhoneBook.Api.Extensions;
 using PhoneBook.Api.Repositories.Contracts;
+using PhoneBook.Models.Dtos;
 
 namespace PhoneBook.Api.Controllers
 {
-    [Route("api/[controller]")]
+    [Route("api/Categories")]
     [ApiController]
     public class CategoriesController : ControllerBase
     {
-        private readonly IContactRepository contactRepository;
+        private readonly ICategoriesRepository categoriesRepository;
 
-        public CategoriesController(IContactRepository contactRepository)
+        public CategoriesController(ICategoriesRepository categoriesRepository)
         {
-            this.contactRepository = contactRepository;
+            this.categoriesRepository = categoriesRepository;
         }
 
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<Category>>> GetCategories()
+        public async Task<ActionResult<IEnumerable<CategoriesDto>>> GetCategories()
         {
             try
             {
-                var categories = await this.contactRepository.GetCategories();
+                var categories = await this.categoriesRepository.GetCategories();
 
-                if(categories == null)
+                if (categories == null)
                 {
                     return NotFound();
                 }
                 else
                 {
-                    return Ok(categories);
+                    var categoryDtos = categories.ConvertToDto();
+                    return Ok(categoryDtos);
                 }
             }
-            catch(Exception) 
+            catch (Exception)
             {
                 return StatusCode(StatusCodes.Status500InternalServerError, "Error retrieving data from database");
             }
         }
 
         [HttpGet("{id:int}")]
-        public async Task<ActionResult<Category>> GetCategory(int id)
+        public async Task<ActionResult<CategoriesDto>> GetCategory(int id)
         {
             try
             {
-                var category = await this.contactRepository.GetCategory(id);
+                var category = await this.categoriesRepository.GetCategory(id);
 
-                if(category == null)
+                if (category == null)
                 {
                     return BadRequest();
                 }

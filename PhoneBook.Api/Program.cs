@@ -17,6 +17,8 @@ builder.Services.AddDbContextPool<PhoneBookDbContext>(options =>
 );
 
 builder.Services.AddScoped<IContactRepository, ContactRepository>();
+builder.Services.AddScoped<ICategoriesRepository, CategoriesRepository>();
+builder.Services.AddScoped<ISubcategoriesRepository, SubcategoriesRepository>();
 
 var app = builder.Build();
 

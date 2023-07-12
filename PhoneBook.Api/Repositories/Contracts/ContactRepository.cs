@@ -1,5 +1,4 @@
-﻿using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.EntityFrameworkCore;
 using PhoneBook.Api.Data;
 using PhoneBook.Api.Entities;
 using PhoneBook.Models.Dtos;
@@ -20,9 +19,9 @@ namespace PhoneBook.Api.Repositories.Contracts
         }
         public async Task<Contact> AddContact(ContactDto contactDto)
         {
-            if(await emailExists(contactDto.Email) == false)
+            if (await emailExists(contactDto.Email) == false)
             {
-                Contact newContact = new()
+                var newContact = new Contact
                 {
                     Id = contactDto.Id,
                     FirstName = contactDto.FirstName,
@@ -35,27 +34,26 @@ namespace PhoneBook.Api.Repositories.Contracts
                     SubcategoryId = contactDto.SubcategoryId
                 };
 
-                await this.phoneBookDbContext.AddAsync(newContact);
+                await this.phoneBookDbContext.Contacts.AddAsync(newContact);
                 await this.phoneBookDbContext.SaveChangesAsync();
 
                 return newContact;
             }
+
             return null;
         }
 
-        public async Task<bool> DeleteContact(int Id)
+        public async Task<Contact> DeleteContact(int Id)
         {
-            var contact = await phoneBookDbContext.Contacts.SingleOrDefaultAsync(c => c.Id == Id);
+            var contact = await this.phoneBookDbContext.Contacts.FindAsync(Id);
 
-            if (contact == null)
+            if (contact != null)
             {
-                return false;
+                this.phoneBookDbContext.Contacts.Remove(contact);
+                await this.phoneBookDbContext.SaveChangesAsync();
             }
 
-            phoneBookDbContext.Contacts.Remove(contact);
-            await phoneBookDbContext.SaveChangesAsync();
-
-            return true;
+            return contact;
         }
 
         public async Task<IEnumerable<Category>> GetCategories()
