@@ -12,9 +12,11 @@ builder.RootComponents.Add<HeadOutlet>("head::after");
 builder.Services.AddHttpClient("PhoneBook.ServerAPI", client => client.BaseAddress = new Uri(builder.HostEnvironment.BaseAddress))
     .AddHttpMessageHandler<BaseAddressAuthorizationMessageHandler>();
 
-// Supply HttpClient instances that include access tokens when making requests to the server project
+builder.Services.AddHttpClient<PublicContactService>(client => client.BaseAddress = new Uri(builder.HostEnvironment.BaseAddress));
+
+//Supply HttpClient instances that include access tokens when making requests to the server project
 builder.Services.AddScoped(sp => sp.GetRequiredService<IHttpClientFactory>().CreateClient("PhoneBook.ServerAPI"));
-builder.Services.AddScoped<IContactService, ContactService>();
+builder.Services.AddScoped<IPrivateContactService, PrivateContactService>();
 
 builder.Services.AddApiAuthorization();
 

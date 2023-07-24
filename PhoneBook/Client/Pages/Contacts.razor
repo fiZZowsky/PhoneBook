@@ -1,25 +1,76 @@
 ﻿@page "/contacts"
-@inject IContactService ContactService
+@inject IPrivateContactService ContactService
 @inject NavigationManager NavigationManager
+@inject PublicContactService PublicContactService
 
 <PageTitle>Contacts</PageTitle>
 
+<h3>Contacts</h3>
+
+@if (data != null)
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Email</th>
+                <th>Password</th>
+                <th>Phone Number</th>
+                <th>Birth Date</th>
+                <th>Category</th>
+                <th>Subcategory</th>
+                <th>Custom Category</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var contact in data)
+            {
+                <tr>
+                    <td>@contact.FirstName</td>
+                    <td>@contact.LastName</td>
+                    <td>@contact.Email</td>
+                    <td>@contact.Password</td>
+                    <td>@contact.PhoneNumber</td>
+                    <td>@contact.BirthDate</td>
+                    <td>@contact.Category.Name</td>
+                    @if (contact.Subcategory != null)
+                    {
+                        <td>@contact.Subcategory.Name</td>
+                    }
+                    @if (contact.UserCategory != null)
+                    {
+                        <td>@contact.UserCategory.Name</td>
+                    }
+                    <AuthorizeView>
+                        <Authorized>
+                            <td>
+                                <button class="btn btn-primary" @onclick="(() => ShowContact(contact.Id))"><i class="oi oi-pencil"></i></button>
+                            </td>
+                        </Authorized>
+                    </AuthorizeView>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+else
+{
+    <p>No contacts available</p>
+}
 <AuthorizeView>
     <Authorized>
-        <div>
-            @RenderContactTable()
-            <button class="btn btn-primary" @onclick="CreateNewContact">Create New Contact</button>
-        </div>
+        <button class="btn btn-primary" @onclick="CreateNewContact">Create New Contact</button>
     </Authorized>
-    <NotAuthorized>
-        @RenderContactTable()
-    </NotAuthorized>
 </AuthorizeView>
 
+
 @code {
+    private List<Contact> data;
     protected override async Task OnInitializedAsync()
     {
-        await ContactService.GetContacts();
+        await PublicContactService.GetContacts();
+        data = PublicContactService.Contacts.ToList();
     }
 
     void ShowContact(int id)
@@ -31,61 +82,4 @@
     {
         NavigationManager.NavigateTo("/Contact");
     }
-
-    RenderFragment RenderContactTable() => builder =>
-    {
-        builder.AddMarkupContent(0, @"
-        <h3>Contacts</h3>
-        <table class=""table"">
-            <thead>
-                <tr>
-                    <th>First Name</th>
-                    <th>Last Name</th>
-                    <th>Email</th>
-                    <th>Password</th>
-                    <th>Phone Number</th>
-                    <th>Birth Date</th>
-                    <th>Category</th>
-                    <th>Subcategory</th>
-                    <th>Custom Category</th>
-                </tr>
-            </thead>
-            <tbody>");
-
-        foreach (var contact in ContactService.Contacts)
-        {
-            builder.OpenElement(1, "tr");
-            builder.AddContent(2, $@"
-                <td>{contact.FirstName}</td>
-                <td>{contact.LastName}</td>
-                <td>{contact.Email}</td>
-                <td>{contact.Password}</td>
-                <td>{contact.PhoneNumber}</td>
-                <td>{contact.BirthDate}</td>
-                <td>{contact.Category.Name}</td>");
-
-            if (contact.Subcategory != null)
-            {
-                builder.AddContent(3, $@"<td>{contact.Subcategory.Name}</td>");
-            }
-
-            if (contact.UserCategory != null)
-            {
-                builder.AddContent(4, $@"<td>{contact.UserCategory.Name}</td>");
-            }
-
-            builder.AddContent(5, $@"
-                <td>
-                    <button class=""btn btn-primary"" @onclick=""(() => ShowContact(contact.Id))"">
-                        <i class=""oi oi-pencil""></i>
-                    </button>
-                </td>
-            ");
-            builder.CloseElement();
-        }
-
-        builder.AddMarkupContent(6, @"
-            </tbody>
-        </table>");
-    };
 }

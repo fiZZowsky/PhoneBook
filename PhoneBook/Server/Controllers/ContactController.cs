@@ -1,8 +1,6 @@
 ﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore.SqlServer.Query.Internal;
 using PhoneBook.Server.Data;
-using PhoneBook.Shared;
 
 namespace PhoneBook.Server.Controllers
 {
@@ -18,16 +16,19 @@ namespace PhoneBook.Server.Controllers
         }
 
         [HttpGet]
+        [AllowAnonymous]
         public async Task<ActionResult<List<Contact>>> GetContacts()
         {
             var contacts = await _context.Contacts
                 .Include(c => c.Category)
                 .Include(s => s.Subcategory)
+                .Include(u => u.UserCategory)
                 .ToListAsync();
             return Ok(contacts);
         }
 
         [HttpGet("categories")]
+        [AllowAnonymous]
         public async Task<ActionResult<List<Category>>> GetCategories()
         {
             var categories = await _context.Categories.ToListAsync();
@@ -35,6 +36,7 @@ namespace PhoneBook.Server.Controllers
         }
 
         [HttpGet("subcategories")]
+        [AllowAnonymous]
         public async Task<ActionResult<List<Subcategory>>> GetSubcategories()
         {
             var subcategories = await _context.Subcategories.ToListAsync();
@@ -42,6 +44,7 @@ namespace PhoneBook.Server.Controllers
         }
 
         [HttpGet("usercategories")]
+        [AllowAnonymous]
         public async Task<ActionResult<List<UserCategory>>> GetUserCategories()
         {
             var userCategories = await _context.UserCategories.ToListAsync();
@@ -67,6 +70,11 @@ namespace PhoneBook.Server.Controllers
         [Authorize]
         public async Task<ActionResult<List<Contact>>> CreateContact(Contact contact)
         {
+            if (!User.Identity.IsAuthenticated)
+            {
+                return Unauthorized("You must be logged in to perform this action.");
+            }
+
             contact.Category = null;
             contact.Subcategory = null;
             contact.UserCategory = null;
@@ -78,7 +86,7 @@ namespace PhoneBook.Server.Controllers
         }
 
         [HttpPost]
-        [Authorize]
+        [AllowAnonymous]
         public async Task<ActionResult<List<UserCategory>>> CreateNewCategory(UserCategory userCategory)
         {
             _context.UserCategories.Add(userCategory);

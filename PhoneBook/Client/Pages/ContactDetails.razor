@@ -1,6 +1,6 @@
 ﻿@page "/contact"
 @page "/contact/{id:int}"
-@inject IContactService ContactService
+@inject IPrivateContactService PrivateContactService
 @using Microsoft.AspNetCore.Authorization
 @using Microsoft.AspNetCore.Components.WebAssembly.Authentication
 @attribute [Authorize]
@@ -16,78 +16,71 @@ else
     <h3>Edit @contact.FirstName @contact.LastName</h3>
 }
 
-@*<AuthorizeView>
-    <Authorized>*@
-        <EditForm Model="contact" OnSubmit="HandleSubmit">
-            <div>
-                <label for="firstname">First Name</label>
-                <InputText id="firstname" @bind-Value="contact.FirstName" class="form-control"></InputText>
-            </div>
-            <div>
-                <label for="lastname">Last Name</label>
-                <InputText id="lastname" @bind-Value="contact.LastName" class="form-control"></InputText>
-            </div>
-            <div>
-                <label for="email">Email</label>
-                <InputText id="email" @bind-Value="contact.Email" class="form-control"></InputText>
-            </div>
-            <div>
-                <label for="password">Password</label>
-                <InputText id="password" @bind-Value="contact.Password" class="form-control"></InputText>
-            </div>
-            <div>
-                <label for="phonenumber">Phone Number</label>
-                <InputText id="phonenumber" @bind-Value="contact.PhoneNumber" class="form-control"></InputText>
-            </div>
-            <div>
-                <label for="birthdate">Birth Date</label>
-                <InputDate id="birthdate" @bind-Value="contact.BirthDate" class="form-control"></InputDate>
-            </div>
-            <div>
-                <label for="category">Category</label><br />
-                <InputSelect @bind-Value="contact.CategoryId" class="form-select">
-                    @foreach (var category in ContactService.Categories)
-                    {
-                        <option value="@category.Id">@category.Name</option>
-                    }
-                </InputSelect>
-            </div>
-            @if (selectedCategory != null)
+    <EditForm Model="contact" OnSubmit="HandleSubmit">
+        <div>
+            <label for="firstname">First Name</label>
+            <InputText id="firstname" @bind-Value="contact.FirstName" class="form-control"></InputText>
+        </div>
+        <div>
+            <label for="lastname">Last Name</label>
+            <InputText id="lastname" @bind-Value="contact.LastName" class="form-control"></InputText>
+        </div>
+        <div>
+            <label for="email">Email</label>
+            <InputText id="email" @bind-Value="contact.Email" class="form-control"></InputText>
+        </div>
+        <div>
+            <label for="password">Password</label>
+            <InputText id="password" @bind-Value="contact.Password" class="form-control"></InputText>
+        </div>
+        <div>
+            <label for="phonenumber">Phone Number</label>
+            <InputText id="phonenumber" @bind-Value="contact.PhoneNumber" class="form-control"></InputText>
+        </div>
+        <div>
+            <label for="birthdate">Birth Date</label>
+            <InputDate id="birthdate" @bind-Value="contact.BirthDate" class="form-control"></InputDate>
+        </div>
+        <div>
+            <label for="category">Category</label><br />
+            <InputSelect @bind-Value="contact.CategoryId" class="form-select">
+                @foreach (var category in PrivateContactService.Categories)
+                {
+                    <option value="@category.Id">@category.Name</option>
+                }
+            </InputSelect>
+        </div>
+        @if (selectedCategory != null)
+        {
+            if (selectedCategory.Name == "służbowy")
             {
-                if (selectedCategory.Name == "służbowy")
-                {
-                    <div>
-                        <label for="subcategory">Subcategory</label><br />
-                        <InputSelect @bind-Value="contact.SubcategoryId" class="form-select">
-                            @foreach (var subcategory in ContactService.Subcategories)
-                            {
-                                <option value="@subcategory.Id">@subcategory.Name</option>
-                            }
-                        </InputSelect>
-                    </div>
-                }
-                else if (selectedCategory.Name == "inny")
-                {
-                    <div>
-                        <label for="usercategory">Other category</label><br />
-                        <InputText id="usercategory" @bind-Value="contact.UserCategory.Name" class="form-control"></InputText>
-                    </div>
-                }
-                else
-                {
-                    contact.SubcategoryId = null;
-                    contact.UserCategoryId = null;
-                }
+                <div>
+                    <label for="subcategory">Subcategory</label><br />
+                    <InputSelect @bind-Value="contact.SubcategoryId" class="form-select">
+                        @foreach (var subcategory in PrivateContactService.Subcategories)
+                        {
+                            <option value="@subcategory.Id">@subcategory.Name</option>
+                        }
+                    </InputSelect>
+                </div>
             }
-            <br />
-            <button type="submit" class="btn btn-primary">@btnText</button>
-            <button type="button" class="btn btn-danger" @onclick="DeleteContact">Delete Contact</button>
-        </EditForm>
-@*    </Authorized>
-    <NotAuthorized>
-        <p>Proszę się zalogować, aby wyświetlić szczegóły kontaktu.</p>
-    </NotAuthorized>
-</AuthorizeView>*@
+            else if (selectedCategory.Name == "inny")
+            {
+                <div>
+                    <label for="usercategory">Other category</label><br />
+                    <InputText id="usercategory" @bind-Value="contact.UserCategory.Name" class="form-control"></InputText>
+                </div>
+            }
+            else
+            {
+                contact.SubcategoryId = null;
+                contact.UserCategoryId = null;
+            }
+        }
+        <br />
+        <button type="submit" class="btn btn-primary">@btnText</button>
+        <button type="button" class="btn btn-danger" @onclick="DeleteContact">Delete Contact</button>
+    </EditForm>
 
 @code {
     [Parameter]
@@ -104,9 +97,9 @@ else
         try
         {
             btnText = Id == null ? "Save New Contact" : "Update Contact";
-            await ContactService.GetCategories();
-            await ContactService.GetSubcategories();
-            await ContactService.GetUserCategories();
+            await PrivateContactService.GetCategories();
+            await PrivateContactService.GetSubcategories();
+            await PrivateContactService.GetUserCategories();
         }
         catch (AccessTokenNotAvailableException exception)
         {
@@ -118,34 +111,34 @@ else
     {
         if (Id == null)
         {
-            contact.Category = ContactService.Categories[0];
+            contact.Category = PrivateContactService.Categories[0];
             contact.CategoryId = contact.Category.Id;
         }
         else
         {
-            contact = await ContactService.GetContact((int)Id);
+            contact = await PrivateContactService.GetContact((int)Id);
         }
     }
 
     protected override void OnParametersSet()
     {
-        selectedCategory = ContactService.Categories.FirstOrDefault(c => c.Id == contact.CategoryId);
+        selectedCategory = PrivateContactService.Categories.FirstOrDefault(c => c.Id == contact.CategoryId);
     }
 
     async Task HandleSubmit()
     {
         if (Id == null)
         {
-            await ContactService.CreateContact(contact);
+            await PrivateContactService.CreateContact(contact);
         }
         else
         {
-            await ContactService.UpdateContact(contact);
+            await PrivateContactService.UpdateContact(contact);
         }
     }
 
     async Task DeleteContact()
     {
-        await ContactService.DeleteContact(contact.Id);
+        await PrivateContactService.DeleteContact(contact.Id);
     }
 }
