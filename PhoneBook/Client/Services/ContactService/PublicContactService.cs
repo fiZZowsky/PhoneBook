@@ -28,5 +28,11 @@ namespace PhoneBook.Client.Services.ContactService
                 Console.WriteLine(ex.Message);
             }
         }
+
+        public async Task SetContacts(HttpResponseMessage result)
+        {
+            var response = await result.Content.ReadFromJsonAsync<List<Contact>>();
+            Contacts = response;
+        }
     }
 }

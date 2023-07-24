@@ -66,15 +66,10 @@ namespace PhoneBook.Server.Controllers
             return Ok(contact);
         }
 
-        [HttpPost]
+        [HttpPost("contact")]
         [Authorize]
         public async Task<ActionResult<List<Contact>>> CreateContact(Contact contact)
         {
-            if (!User.Identity.IsAuthenticated)
-            {
-                return Unauthorized("You must be logged in to perform this action.");
-            }
-
             contact.Category = null;
             contact.Subcategory = null;
             contact.UserCategory = null;
@@ -85,7 +80,7 @@ namespace PhoneBook.Server.Controllers
             return Ok(await GetDbContacts());
         }
 
-        [HttpPost]
+        [HttpPost("usercategory")]
         [AllowAnonymous]
         public async Task<ActionResult<List<UserCategory>>> CreateNewCategory(UserCategory userCategory)
         {

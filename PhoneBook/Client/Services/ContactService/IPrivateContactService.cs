@@ -7,6 +7,7 @@
         List<Subcategory> Subcategories { get; set; }
         List<UserCategory> UserCategories { get; set; }
 
+        Task GetContacts();
         Task<Contact> GetContact(int id);
         Task GetCategories();
         Task GetSubcategories();

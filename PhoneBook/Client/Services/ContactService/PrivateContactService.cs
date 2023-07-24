@@ -19,17 +19,34 @@ namespace PhoneBook.Client.Services.ContactService
         public List<Subcategory> Subcategories { get; set; } = new List<Subcategory>();
         public List<UserCategory> UserCategories { get; set; } = new List<UserCategory>();
 
-        public async Task CreateContact(Contact contact)
+        public async Task SetContacts(HttpResponseMessage result)
         {
-            var result = await _httpClient.PostAsJsonAsync("api/contact", contact);
-            await SetContacts(result);
-        }
-
-        private async Task SetContacts(HttpResponseMessage result)
-        {
+            await GetContacts();
             var response = await result.Content.ReadFromJsonAsync<List<Contact>>();
             Contacts = response;
-            _navigationManager.NavigateTo("contacts");
+            _navigationManager.NavigateTo("/contacts");
+        }
+
+        public async Task GetContacts()
+        {
+            try
+            {
+                var result = await _httpClient.GetFromJsonAsync<List<Contact>>("api/contact");
+                if (result != null)
+                {
+                    Contacts = result;
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
+        }
+
+        public async Task CreateContact(Contact contact)
+        {
+            var result = await _httpClient.PostAsJsonAsync("api/contact/contact", contact);
+            await SetContacts(result);
         }
 
         public async Task DeleteContact(int id)
@@ -56,8 +73,9 @@ namespace PhoneBook.Client.Services.ContactService
 
         public async Task CreateNewCategory(UserCategory userCategory)
         {
-            var result = await _httpClient.PostAsJsonAsync("api/contact/usercategories", userCategory);
+            var result = await _httpClient.PostAsJsonAsync("api/contact/usercategory", userCategory);
             await SetContacts(result);
+            _navigationManager.NavigateTo("contacts");
         }
 
         public async Task GetCategories()
