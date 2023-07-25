@@ -6,66 +6,68 @@
 
 <PageTitle>Contacts</PageTitle>
 
-<h3>Contacts</h3>
+<div class="d-flex justify-content-end">
+    <AuthorizeView>
+        <Authorized>
+            <button class="btn btn-dark" @onclick="CreateNewContact">Create New Contact</button>
+        </Authorized>
+    </AuthorizeView>
+</div>
 
-@if (data != null)
+<h3 class="text-dark pb-2 fw-bold">Contacts</h3>
+
+@if (data != null && data.Any())
 {
-    <table class="table">
-        <thead>
-            <tr>
-                <th>First Name</th>
-                <th>Last Name</th>
-                <th>Email</th>
-                <th>Phone Number</th>
-                <th>Birth Date</th>
-                <th>Category</th>
-                <th>Subcategory</th>
-                <th>Custom Category</th>
-            </tr>
-        </thead>
-        <tbody>
-            @foreach (var contact in data)
-            {
-                <tr>
-                    <td>@contact.FirstName</td>
-                    <td>@contact.LastName</td>
-                    <td>@contact.Email</td>
-                    <td>@contact.PhoneNumber</td>
-                    <td>@contact.BirthDate</td>
-                    <td>@contact.Category.Name</td>
-                    @if (contact.Subcategory != null)
-                    {
-                        <td>@contact.Subcategory.Name</td>
-                    }
-                    @if (contact.UserCategory != null)
-                    {
-                        <td>@contact.UserCategory.Name</td>
-                    }
-                    <AuthorizeView>
-                        <Authorized>
-                            <td>
-                                <button class="btn btn-primary" @onclick="(() => ShowContact(contact.Id))"><i class="oi oi-pencil"></i></button>
-                            </td>
-                        </Authorized>
-                    </AuthorizeView>
-                </tr>
-            }
-        </tbody>
-    </table>
+    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+        @foreach (var contact in data)
+        {
+            <div class="col mb-4">
+                <div class="card contact-card" style="height: 100%; border-radius: 10px;">
+                    <div class="card-body" style="background-color: #ffffff; box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19); border-radius: 15px;">
+                        <h5 class="card-title fw-bold" style="font-size: 1.5rem;">@($"{contact.FirstName} {contact.LastName}")</h5>
+                        <p class="card-text"><strong>Phone Number:</strong> @contact.PhoneNumber</p>
+                        <AuthorizeView>
+                            <Authorized>
+                                <p class="card-text"><strong>Email:</strong> @contact.Email</p>
+                                <p class="card-text"><strong>Birth Date:</strong> @contact.BirthDate.ToString("dd-MM-yyyy")</p>
+                            </Authorized>
+                        </AuthorizeView>
+                        <p class="card-text"><strong>Category:</strong> @contact.Category.Name</p>
+                        @if (contact.Subcategory != null)
+                        {
+                            <p class="card-text"><strong>Subcategory:</strong> @contact.Subcategory.Name</p>
+                        }
+                        @if (contact.UserCategory != null)
+                        {
+                            <p class="card-text"><strong>Custom Category:</strong> @contact.UserCategory.Name</p>
+                        }
+                        <AuthorizeView>
+                            <Authorized>
+                                <button class="btn btn-dark" @onclick="(() => ShowContact(contact.Id))">
+                                    <i class="oi oi-pencil"></i> Edit
+                                </button>
+                            </Authorized>
+                        </AuthorizeView>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
 }
 else
 {
     <p>No contacts available</p>
 }
-<AuthorizeView>
-    <Authorized>
-        <button class="btn btn-primary" @onclick="CreateNewContact">Create New Contact</button>
-    </Authorized>
-</AuthorizeView>
 
+<style>
+    .contact-card:hover {
+        border: 3px solid #27272f;
+    }
+</style>
 
 @code {
     private List<Contact> data;
+
     protected override async Task OnInitializedAsync()
     {
         await PublicContactService.GetContacts();

@@ -202,14 +202,14 @@
       "netstandard.dll": "sha256-bbx+pnJNmXZyPqAgESJnWLJsbfuAl0UflLCdl9slPYE=",
       "System.Private.CoreLib.dll": "sha256-pUYF+nr8SzfBMCLc3FM2i\/YivXJlzztdLin+aUsoqP0=",
       "PhoneBook.Shared.dll": "sha256-fRcuk7kKYS7RmNbyq31IgpJnm51RXEkcdTUQyvBi9\/E=",
-      "PhoneBook.Client.dll": "sha256-MlfURPcJHFJC8lzhe+zaVrLp6Zm2h6A717fipSq\/A34="
+      "PhoneBook.Client.dll": "sha256-nKT0js1e3GX1RbVhkfkOZF86MS6aKTgO3smAkl\/wIuI="
     },
     "extensions": null,
     "lazyAssembly": null,
     "libraryInitializers": null,
     "pdb": {
       "PhoneBook.Shared.pdb": "sha256-az5UlPVz0zO5D6fh623YV6FjBa6f3isDs4Ra4MADOpo=",
-      "PhoneBook.Client.pdb": "sha256-j91gplaluJmM6tXRcbSI3Xf7M222DbdP2b6ajNI9HZ8="
+      "PhoneBook.Client.pdb": "sha256-4Iv0o+ZaBNPWva46TKRDsqcLmQ\/fLuIxsPoggaSKCW0="
     },
     "runtime": {
       "dotnet.7.0.4.3xc0iusk05.js": "sha256-3l+4ZYRWpGMbBjNqeIqO9T\/65euaOzIvRlVX2SySvFQ=",

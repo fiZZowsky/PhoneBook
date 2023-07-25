@@ -1,13 +1,15 @@
-﻿<div class="top-row ps-3 navbar navbar-dark">
+﻿<div style="background-color: #0d1b2a" class="top-row ps-3 navbar navbar-dark">
     <div class="container-fluid">
-        <a class="navbar-brand" href="contacts">PhoneBook</a>
+        <a class="navbar-brand" href="contacts">
+            <span class="oi oi-book pt-1" aria-hidden="true"></span> PhoneBook
+        </a>
         <button title="Navigation menu" class="navbar-toggler" @onclick="ToggleNavMenu">
             <span class="navbar-toggler-icon"></span>
         </button>
     </div>
 </div>
 
-<div class="@NavMenuCssClass nav-scrollable" @onclick="ToggleNavMenu">
+<div style="background-color: #1b263b" class="@NavMenuCssClass nav-scrollable" @onclick="ToggleNavMenu">
     <nav class="flex-column">
         <div class="nav-item px-3">
             <NavLink class="nav-link" href="contacts" Match="NavLinkMatch.All">

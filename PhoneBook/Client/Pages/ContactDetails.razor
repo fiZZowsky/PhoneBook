@@ -16,65 +16,81 @@ else
     <h3>Edit @contact.FirstName @contact.LastName</h3>
 }
 
-<EditForm Model="contact" OnSubmit="HandleSubmit">
-    <div>
-        <label for="firstname">First Name</label>
-        <InputText id="firstname" @bind-Value="contact.FirstName" class="form-control"></InputText>
-    </div>
-    <div>
-        <label for="lastname">Last Name</label>
-        <InputText id="lastname" @bind-Value="contact.LastName" class="form-control"></InputText>
-    </div>
-    <div>
-        <label for="email">Email</label>
-        <InputText id="email" @bind-Value="contact.Email" class="form-control"></InputText>
-    </div>
-    <div>
-        <label for="phonenumber">Phone Number</label>
-        <InputText id="phonenumber" @bind-Value="contact.PhoneNumber" class="form-control"></InputText>
-    </div>
-    <div>
-        <label for="birthdate">Birth Date</label>
-        <InputDate id="birthdate" @bind-Value="contact.BirthDate" class="form-control"></InputDate>
-    </div>
-    <div>
-        <label for="category">Category</label><br />
-        <InputSelect @bind-Value="selectedCategoryId" class="form-select" @onclick="SetCategory">
-            <option value="">-- Select Category --</option>
-            @foreach (var category in PrivateContactService.Categories)
-            {
-                <option value="@category.Id">@category.Name</option>
-            }
-        </InputSelect>
-    </div>
+<div class="justify-content-start">
+    <div class="col-md-6">
+        <EditForm Model="contact" OnSubmit="HandleSubmit">
+            <div class="mb-3">
+                <label for="firstname">First Name</label>
+                <InputText id="firstname" @bind-Value="contact.FirstName" class="form-control"></InputText>
+            </div>
+            <div class="mb-3">
+                <label for="lastname">Last Name</label>
+                <InputText id="lastname" @bind-Value="contact.LastName" class="form-control"></InputText>
+            </div>
+            <div class="mb-3">
+                <label for="email">Email</label>
+                <InputText id="email" @bind-Value="contact.Email" class="form-control"></InputText>
+            </div>
+            <div class="mb-3">
+                <label for="phonenumber">Phone Number</label>
+                <InputText id="phonenumber" @bind-Value="contact.PhoneNumber" class="form-control"></InputText>
+            </div>
+            <div class="mb-3">
+                <label for="birthdate">Birth Date</label>
+                <InputDate id="birthdate" @bind-Value="contact.BirthDate" class="form-control"></InputDate>
+            </div>
+            <div class="mb-3">
+                <label for="category">Category</label><br />
+                <InputSelect @bind-Value="selectedCategoryId" class="form-select" @onclick="SetCategory">
+                    <option value="">-- Select Category --</option>
+                    @foreach (var category in PrivateContactService.Categories)
+                    {
+                        <option value="@category.Id">@category.Name</option>
+                    }
+                </InputSelect>
+            </div>
 
-    @if (selectedCategoryName == "służbowy")
-    {
-        <div id="subcategory">
-            <label for="subcategory">Subcategory</label><br />
-            <InputSelect @bind-Value="contact.SubcategoryId" class="form-select">
-                <option value="">-- Select Subcategory --</option>
-                @foreach (var subcategory in PrivateContactService.Subcategories)
+            @if (selectedCategoryName == "służbowy")
+            {
+                <div id="subcategory" class="mb-3">
+                    <label for="subcategory">Subcategory</label><br />
+                    <InputSelect @bind-Value="contact.SubcategoryId" class="form-select">
+                        <option value="">-- Select Subcategory --</option>
+                        @foreach (var subcategory in PrivateContactService.Subcategories)
+                        {
+                            <option value="@subcategory.Id">@subcategory.Name</option>
+                        }
+                    </InputSelect>
+                </div>
+            }
+            else if (selectedCategoryName == "inny")
+            {
+                <div id="usercategory" class="mb-3">
+                    <label for="usercategory">Other category</label><br />
+                    <InputText id="usercategory" @bind-Value="customCategory" class="form-control"></InputText>
+                </div>
+            }
+            <br class="mb-3">
+            <button type="submit" class="btn btn-primary">
+                @if (btnText == "Save New Contact")
                 {
-                    <option value="@subcategory.Id">@subcategory.Name</option>
+                    <span class="oi oi-plus pe-1"></span>
                 }
-            </InputSelect>
-        </div>
-    }
-    else if (selectedCategoryName == "inny")
-    {
-        <div id="usercategory">
-            <label for="usercategory">Other category</label><br />
-            <InputText id="usercategory" @bind-Value="customCategory" class="form-control"></InputText>
-        </div>
-    }
-    <br />
-    <button type="submit" class="btn btn-primary">@btnText</button>
-    @if (Id != null)
-    {
-        <button type="button" class="btn btn-danger" @onclick="DeleteContact">Delete Contact</button>
-    }
-</EditForm>
+                else
+                {
+                    <span class="oi oi-loop-circular pe-1"></span>
+                }
+                @btnText
+            </button>
+            @if (Id != null)
+            {
+                <span class="ms-2">
+                    <button type="button" class="btn btn-danger" @onclick="DeleteContact"><span class="oi oi-trash pe-1"></span>Delete Contact</button>
+                </span>
+            }
+        </EditForm>
+    </div>
+</div>
 
 @code {
     [Parameter]
@@ -143,6 +159,7 @@ else
 
                 case "prywatny":
                     contact.UserCategoryId = null;
+                    contact.SubcategoryId = null;
                     break;
 
                 case "inny":
@@ -168,7 +185,7 @@ else
                 }
                 else
                 {
-                    if(contact.UserCategoryId == null)
+                    if (contact.UserCategoryId == null)
                     {
                         //Custom category doesn't existed before for this contact
                         await CreateNewCustomCategory();
@@ -253,5 +270,4 @@ else
             throw new Exception("An error occurred while deleting a contact.");
         }
     }
-
 }
