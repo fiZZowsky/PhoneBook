@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Authorization;
+﻿using AutoMapper.Configuration.Annotations;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using PhoneBook.Server.Data;
 
@@ -51,7 +52,7 @@ namespace PhoneBook.Server.Controllers
             return Ok(userCategories);
         }
 
-        [HttpGet("{id}")]
+        [HttpGet("contact/{id}")]
         [Authorize]
         public async Task<ActionResult<Contact>> GetContact(int id)
         {
@@ -82,15 +83,52 @@ namespace PhoneBook.Server.Controllers
 
         [HttpPost("usercategory")]
         [Authorize]
-        public async Task<ActionResult<List<UserCategory>>> CreateNewCategory(UserCategory userCategory)
+        public async Task<ActionResult<int>> CreateNewCategory(UserCategory userCategory)
         {
             _context.UserCategories.Add(userCategory);
             await _context.SaveChangesAsync();
 
-            return Ok(await GetUserCategories());
+            return Ok(userCategory.Id);
         }
 
-        [HttpPut("{id}")]
+        [HttpPut("usercategory/{id}")]
+        [Authorize]
+        public async Task<ActionResult> UpdateCustomCategory(UserCategory userCategory, int id)
+        {
+            var dbUserCategory = await _context.UserCategories
+                .FirstOrDefaultAsync(u => u.Id == id);
+
+            if(dbUserCategory == null)
+            {
+                return NotFound("Sorry, but no here user categories for you. :'");
+            }
+
+            dbUserCategory.Name = userCategory.Name;
+
+            await _context.SaveChangesAsync();
+
+            return Ok();
+        }
+
+        [HttpDelete("usercategory/{id}")]
+        [Authorize]
+        public async Task<ActionResult> DeleteCustomCategory(int id)
+        {
+            var dbUserCategory = await _context.UserCategories
+                .FirstOrDefaultAsync(u => u.Id == id);
+
+            if (dbUserCategory == null)
+            {
+                return NotFound("Sorry, but no here user categories for you. :/");
+            }
+
+            _context.UserCategories.Remove(dbUserCategory);
+            await _context.SaveChangesAsync();
+
+            return Ok();
+        }
+
+        [HttpPut("contact/{id}")]
         [Authorize]
         public async Task<ActionResult<List<Contact>>> UpdateContact(Contact contact, int id)
         {
@@ -119,7 +157,7 @@ namespace PhoneBook.Server.Controllers
             return Ok(await GetDbContacts());
         }
 
-        [HttpDelete("{id}")]
+        [HttpDelete("contact/{id}")]
         [Authorize]
         public async Task<ActionResult<List<Contact>>> DeleteContact(int id)
         {

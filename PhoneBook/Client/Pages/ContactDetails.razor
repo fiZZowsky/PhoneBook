@@ -70,7 +70,10 @@ else
     }
     <br />
     <button type="submit" class="btn btn-primary">@btnText</button>
-    <button type="button" class="btn btn-danger" @onclick="DeleteContact">Delete Contact</button>
+    @if (Id != null)
+    {
+        <button type="button" class="btn btn-danger" @onclick="DeleteContact">Delete Contact</button>
+    }
 </EditForm>
 
 @code {
@@ -84,6 +87,8 @@ else
     private int selectedCategoryId;
     private string? selectedCategoryName;
     private string? customCategory;
+    private int? customCategoryId;
+    private int? createdCustomCategoryId;
 
     protected override async Task OnInitializedAsync()
     {
@@ -93,11 +98,26 @@ else
             await PrivateContactService.GetCategories();
             await PrivateContactService.GetSubcategories();
             await PrivateContactService.GetUserCategories();
+
+            if (Id != null)
+            {
+                // Set value of existing category and user category of the contact
+                contact = await PrivateContactService.GetContact((int)Id);
+                selectedCategoryId = contact.CategoryId;
+                selectedCategoryName = PrivateContactService.Categories.FirstOrDefault(c => c.Id == selectedCategoryId)?.Name;
+                if (selectedCategoryName == "inny")
+                {
+                    customCategoryId = contact.UserCategoryId;
+                    customCategory = PrivateContactService.UserCategories.FirstOrDefault(u => u.Id == customCategoryId)?.Name;
+                }
+            }
         }
         catch (AccessTokenNotAvailableException exception)
         {
             exception.Redirect();
         }
+
+
     }
 
     protected override async Task OnParametersSetAsync()
@@ -119,17 +139,35 @@ else
 
     protected async Task SetUserCategory()
     {
-        if(selectedCategoryName == "inny")
+        if (selectedCategoryName == "inny")
         {
-            if(customCategory != null)
+            if (customCategory != null)
             {
-                try
+                if (Id == null)
                 {
-                    await PrivateContactService.CreateNewCategory(new UserCategory{Name=customCategory});
+                    try
+                    {
+                        // Creating new custom category
+                        createdCustomCategoryId = await PrivateContactService.CreateNewCategory(
+                            new UserCategory { Name = customCategory }
+                        );
+
+                        // Adding created category Id to the created contact
+                        contact.UserCategoryId = createdCustomCategoryId;
+                    }
+                    catch (Exception)
+                    {
+                        throw new Exception("An error occurred while creating a new category. ");
+                    }
                 }
-                catch(Exception e)
+                else
                 {
-                    throw new Exception("Błąd tworzenia nowej kategorii. " + e);
+                    // Checking if custom category has changed
+                    if (isCustomCategoryChanged())
+                    {
+                        // Update custom category name field
+                        await PrivateContactService.UpdateUserCategory(new UserCategory { Id = customCategoryId.Value, Name = customCategory });
+                    }
                 }
             }
             else
@@ -137,9 +175,18 @@ else
                 throw new Exception("user category field can't be empty");
             }
         }
+    }
+
+    private bool isCustomCategoryChanged()
+    {
+        string customCategoryNameFromDb = PrivateContactService.UserCategories.FirstOrDefault(c => c.Id == customCategoryId)?.Name;
+        if (customCategory.Equals(customCategoryNameFromDb))
+        {
+            return false;
+        }
         else
         {
-            
+            return true;
         }
     }
 
@@ -158,6 +205,20 @@ else
 
     async Task DeleteContact()
     {
-        await PrivateContactService.DeleteContact(contact.Id);
+        try
+        {
+            await PrivateContactService.DeleteContact(contact.Id);
+
+            // Check if UserCategoryId has a value before calling DeleteUserCategory
+            if (customCategoryId.HasValue)
+            {
+                await PrivateContactService.DeleteUserCategory(customCategoryId.Value);
+            }
+        }
+        catch (Exception)
+        {
+            throw new Exception("An error occurred while deleting a contact.");
+        }
     }
+
 }

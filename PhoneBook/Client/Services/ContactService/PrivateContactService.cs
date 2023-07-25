@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Components;
+using PhoneBook.Shared;
 using System.Net.Http.Json;
 
 namespace PhoneBook.Client.Services.ContactService
@@ -51,13 +52,13 @@ namespace PhoneBook.Client.Services.ContactService
 
         public async Task DeleteContact(int id)
         {
-            var result = await _httpClient.DeleteAsync($"api/contact/{id}");
+            var result = await _httpClient.DeleteAsync($"api/contact/contact/{id}");
             await SetContacts(result);
         }
 
         public async Task<Contact> GetContact(int id)
         {
-            var result = await _httpClient.GetFromJsonAsync<Contact>($"api/contact/{id}");
+            var result = await _httpClient.GetFromJsonAsync<Contact>($"api/contact/contact/{id}");
             if (result != null)
             {
                 return result;
@@ -67,13 +68,16 @@ namespace PhoneBook.Client.Services.ContactService
 
         public async Task UpdateContact(Contact contact)
         {
-            var result = await _httpClient.PutAsJsonAsync($"api/contact/{contact.Id}", contact);
+            var result = await _httpClient.PutAsJsonAsync($"api/contact/contact/{contact.Id}", contact);
             await SetContacts(result);
         }
 
-        public async Task CreateNewCategory(UserCategory userCategory)
+        public async Task<int> CreateNewCategory(UserCategory userCategory)
         {
-            var result = await _httpClient.PostAsJsonAsync("api/contact/usercategory", userCategory);
+            var response = await _httpClient.PostAsJsonAsync("api/contact/usercategory", userCategory);
+
+            int newCategoryId = await response.Content.ReadFromJsonAsync<int>();
+            return newCategoryId;
         }
 
         public async Task GetCategories()
@@ -102,6 +106,16 @@ namespace PhoneBook.Client.Services.ContactService
             {
                 UserCategories = result;
             }
+        }
+
+        public async Task UpdateUserCategory(UserCategory userCategory)
+        {
+            var result = await _httpClient.PutAsJsonAsync($"api/contact/usercategory/{userCategory.Id}", userCategory);
+        }
+
+        public async Task DeleteUserCategory(int id)
+        {
+            var result = await _httpClient.DeleteAsync($"api/contact/usercategory/{id}");
         }
     }
 }

@@ -13,8 +13,10 @@
         Task GetSubcategories();
         Task GetUserCategories();
         Task CreateContact(Contact contact);
-        Task CreateNewCategory(UserCategory userCategory);
+        Task<int> CreateNewCategory(UserCategory userCategory);
         Task UpdateContact(Contact contact);
         Task DeleteContact(int id);
+        Task UpdateUserCategory(UserCategory userCategory);
+        Task DeleteUserCategory(int id);
     }
 }
