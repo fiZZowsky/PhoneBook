@@ -81,7 +81,7 @@ namespace PhoneBook.Server.Controllers
         }
 
         [HttpPost("usercategory")]
-        [AllowAnonymous]
+        [Authorize]
         public async Task<ActionResult<List<UserCategory>>> CreateNewCategory(UserCategory userCategory)
         {
             _context.UserCategories.Add(userCategory);
@@ -108,7 +108,6 @@ namespace PhoneBook.Server.Controllers
             dbContact.FirstName = contact.FirstName;
             dbContact.LastName = contact.LastName;
             dbContact.Email = contact.Email;
-            dbContact.Password = contact.Password;
             dbContact.PhoneNumber = contact.PhoneNumber;
             dbContact.BirthDate = contact.BirthDate;
             dbContact.CategoryId = contact.CategoryId;

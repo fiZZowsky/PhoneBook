@@ -74,8 +74,6 @@ namespace PhoneBook.Client.Services.ContactService
         public async Task CreateNewCategory(UserCategory userCategory)
         {
             var result = await _httpClient.PostAsJsonAsync("api/contact/usercategory", userCategory);
-            await SetContacts(result);
-            _navigationManager.NavigateTo("contacts");
         }
 
         public async Task GetCategories()
