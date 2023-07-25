@@ -117,7 +117,6 @@ else
             exception.Redirect();
         }
 
-
     }
 
     protected override async Task OnParametersSetAsync()
@@ -134,8 +133,28 @@ else
         {
             contact.CategoryId = await Task.FromResult(selectedCategoryId);
             selectedCategoryName = PrivateContactService.Categories.FirstOrDefault(c => c.Id == selectedCategoryId)?.Name;
+
+            // Reset other fields based on the selected category
+            switch (selectedCategoryName)
+            {
+                case "służbowy":
+                    contact.UserCategoryId = null;
+                    break;
+
+                case "prywatny":
+                    contact.UserCategoryId = null;
+                    break;
+
+                case "inny":
+                    contact.SubcategoryId = null;
+                    break;
+
+                default:
+                    break;
+            }
         }
     }
+
 
     protected async Task SetUserCategory()
     {
@@ -145,28 +164,24 @@ else
             {
                 if (Id == null)
                 {
-                    try
-                    {
-                        // Creating new custom category
-                        createdCustomCategoryId = await PrivateContactService.CreateNewCategory(
-                            new UserCategory { Name = customCategory }
-                        );
-
-                        // Adding created category Id to the created contact
-                        contact.UserCategoryId = createdCustomCategoryId;
-                    }
-                    catch (Exception)
-                    {
-                        throw new Exception("An error occurred while creating a new category. ");
-                    }
+                    await CreateNewCustomCategory();
                 }
                 else
                 {
-                    // Checking if custom category has changed
-                    if (isCustomCategoryChanged())
+                    if(contact.UserCategoryId == null)
                     {
-                        // Update custom category name field
-                        await PrivateContactService.UpdateUserCategory(new UserCategory { Id = customCategoryId.Value, Name = customCategory });
+                        //Custom category doesn't existed before for this contact
+                        await CreateNewCustomCategory();
+                    }
+                    else
+                    {
+                        // Custom category existed before for this contact
+                        // Checking if custom category has changed
+                        if (isCustomCategoryChanged())
+                        {
+                            // Update custom category name field
+                            await PrivateContactService.UpdateUserCategory(new UserCategory { Id = customCategoryId.Value, Name = customCategory });
+                        }
                     }
                 }
             }
@@ -174,6 +189,24 @@ else
             {
                 throw new Exception("user category field can't be empty");
             }
+        }
+    }
+
+    private async Task CreateNewCustomCategory()
+    {
+        try
+        {
+            // Creating new custom category
+            createdCustomCategoryId = await PrivateContactService.CreateNewCategory(
+                new UserCategory { Name = customCategory }
+            );
+
+            // Adding created category Id to the created contact
+            contact.UserCategoryId = createdCustomCategoryId;
+        }
+        catch (Exception)
+        {
+            throw new Exception("An error occurred while creating a new category. ");
         }
     }
 
