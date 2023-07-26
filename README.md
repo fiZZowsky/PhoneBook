@@ -8,7 +8,7 @@ In order to test the operation of the application, a sample database file has be
 It can be found in a folder:
 > PhoneBook/Example Database
 
-# Features
+### Features
 1. Contacts List:
    - The application presents users with a visually appealing list of contacts, displaying their basic information.
    - If user is logged in, it allows to add new contacts and view the details of existing ones.
