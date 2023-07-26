@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "ZpoT6yecCcXbUd/IUxT+Nm4/fVw8hcPCvcmstU5zhxw4ZDqlnjuLV8uheHbVkV/aUu62H34VZiYvE7BS3GWZMw==",
+  "dgSpecHash": "OXDPJmleLRExBZ+krGsJv0NMf3KFQALYgoFX1wG5w2tIb5/yRg38rEwC/pRj1oLaox5wntRmOFPRA4Y57Dsugw==",
   "success": true,
   "projectFilePath": "C:\\Users\\Pioter\\Desktop\\.NET\\PhoneBook\\Client\\PhoneBook.Client.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\Pioter\\.nuget\\packages\\blazored.toast\\4.1.0\\blazored.toast.4.1.0.nupkg.sha512",
     "C:\\Users\\Pioter\\.nuget\\packages\\microsoft.aspnetcore.authorization\\7.0.4\\microsoft.aspnetcore.authorization.7.0.4.nupkg.sha512",
     "C:\\Users\\Pioter\\.nuget\\packages\\microsoft.aspnetcore.components\\7.0.4\\microsoft.aspnetcore.components.7.0.4.nupkg.sha512",
     "C:\\Users\\Pioter\\.nuget\\packages\\microsoft.aspnetcore.components.analyzers\\7.0.4\\microsoft.aspnetcore.components.analyzers.7.0.4.nupkg.sha512",

@@ -1,6 +1,7 @@
 ﻿@page "/contact"
 @page "/contact/{id:int}"
 @inject IPrivateContactService PrivateContactService
+@inject IToastService toastService
 @using Microsoft.AspNetCore.Authorization
 @using Microsoft.AspNetCore.Components.WebAssembly.Authentication
 @attribute [Authorize]
@@ -21,30 +22,34 @@ else
         <EditForm Model="contact" OnValidSubmit="HandleSubmit">
             <DataAnnotationsValidator />
 
-            <div class="mb-3">
-                <label for="firstname">First Name</label>
-                <InputText id="firstname" @bind-Value="contact.FirstName" class="form-control"></InputText>
-                <ValidationMessage For="@(() => contact.FirstName)" />
-            </div>
-            <div class="mb-3">
-                <label for="lastname">Last Name</label>
-                <InputText id="lastname" @bind-Value="contact.LastName" class="form-control"></InputText>
-                <ValidationMessage For="@(() => contact.LastName)" />
+            <div class="mb-3 row">
+                <div class="col-md-6">
+                    <label for="firstname">First Name</label>
+                    <InputText id="firstname" @bind-Value="contact.FirstName" class="form-control"></InputText>
+                    <ValidationMessage For="@(() => contact.FirstName)" />
+                </div>
+                <div class="col-md-6">
+                    <label for="lastname">Last Name</label>
+                    <InputText id="lastname" @bind-Value="contact.LastName" class="form-control"></InputText>
+                    <ValidationMessage For="@(() => contact.LastName)" />
+                </div>
             </div>
             <div class="mb-3">
                 <label for="email">Email</label>
                 <InputText id="email" @bind-Value="contact.Email" class="form-control"></InputText>
                 <ValidationMessage For="@(() => contact.Email)" />
             </div>
-            <div class="mb-3">
-                <label for="phonenumber">Phone Number</label>
-                <InputText id="phonenumber" @bind-Value="contact.PhoneNumber" class="form-control"></InputText>
-                <ValidationMessage For="@(() => contact.PhoneNumber)" />
-            </div>
-            <div class="mb-3">
-                <label for="birthdate">Birth Date</label>
-                <InputDate id="birthdate" @bind-Value="contact.BirthDate" class="form-control"></InputDate>
-                <ValidationMessage For="@(() => contact.BirthDate)" />
+            <div class="mb-3 row">
+                <div class="col-md-6">
+                    <label for="phonenumber">Phone Number</label>
+                    <InputText id="phonenumber" @bind-Value="contact.PhoneNumber" class="form-control"></InputText>
+                    <ValidationMessage For="@(() => contact.PhoneNumber)" />
+                </div>
+                <div class="col-md-6">
+                    <label for="birthdate">Birth Date</label>
+                    <InputDate id="birthdate" @bind-Value="contact.BirthDate" class="form-control"></InputDate>
+                    <ValidationMessage For="@(() => contact.BirthDate)" />
+                </div>
             </div>
             <div class="mb-3">
                 <label for="category">Category</label><br />
@@ -58,7 +63,7 @@ else
                 <ValidationMessage For="@(() => contact.CategoryId)" />
             </div>
 
-            @if (selectedCategoryName == "służbowy")
+            @if (selectedCategoryName == "business")
             {
                 <div id="subcategory" class="mb-3">
                     <label for="subcategory">Subcategory</label><br />
@@ -71,7 +76,7 @@ else
                     </InputSelect>
                 </div>
             }
-            else if (selectedCategoryName == "inny")
+            else if (selectedCategoryName == "other")
             {
                 <div id="usercategory" class="mb-3">
                     <label for="usercategory">Other category</label><br />
@@ -129,7 +134,7 @@ else
                 contact = await PrivateContactService.GetContact((int)Id);
                 selectedCategoryId = contact.CategoryId;
                 selectedCategoryName = PrivateContactService.Categories.FirstOrDefault(c => c.Id == selectedCategoryId)?.Name;
-                if (selectedCategoryName == "inny")
+                if (selectedCategoryName == "other")
                 {
                     customCategoryId = contact.UserCategoryId;
                     customCategory = PrivateContactService.UserCategories.FirstOrDefault(u => u.Id == customCategoryId)?.Name;
@@ -160,16 +165,16 @@ else
             // Reset other fields based on the selected category
             switch (selectedCategoryName)
             {
-                case "służbowy":
+                case "business":
                     contact.UserCategoryId = null;
                     break;
 
-                case "prywatny":
+                case "private":
                     contact.UserCategoryId = null;
                     contact.SubcategoryId = null;
                     break;
 
-                case "inny":
+                case "other":
                     contact.SubcategoryId = null;
                     break;
 
@@ -182,7 +187,7 @@ else
 
     protected async Task SetUserCategory()
     {
-        if (selectedCategoryName == "inny")
+        if (selectedCategoryName == "other")
         {
             if (customCategory != null)
             {
@@ -211,7 +216,7 @@ else
             }
             else
             {
-                throw new Exception("user category field can't be empty");
+                toastService.ShowError("user category field can't be empty");
             }
         }
     }
@@ -230,7 +235,7 @@ else
         }
         catch (Exception)
         {
-            throw new Exception("An error occurred while creating a new category. ");
+            toastService.ShowError("An error occurred while creating a new category");
         }
     }
 
@@ -249,15 +254,31 @@ else
 
     async Task HandleSubmit()
     {
-            await SetUserCategory();
-            if (Id == null)
+        await SetUserCategory();
+        if (Id == null)
+        {
+            try
             {
                 await PrivateContactService.CreateContact(contact);
+                toastService.ShowSuccess("Contact successfully created");
             }
-            else
+            catch (Exception)
+            {
+                toastService.ShowError("An error occurred when creating new contact");
+            }
+        }
+        else
+        {
+            try
             {
                 await PrivateContactService.UpdateContact(contact);
+                toastService.ShowSuccess("Contact successfully updated");
             }
+            catch (Exception)
+            {
+                toastService.ShowError("An error occurred when updating a contact");
+            }
+        }
     }
 
     async Task DeleteContact()
@@ -271,10 +292,11 @@ else
             {
                 await PrivateContactService.DeleteUserCategory(customCategoryId.Value);
             }
+            toastService.ShowSuccess("Contact successfully deleted");
         }
         catch (Exception)
         {
-            throw new Exception("An error occurred while deleting a contact.");
+            toastService.ShowError("An error occurred when deleting a contact");
         }
     }
 }

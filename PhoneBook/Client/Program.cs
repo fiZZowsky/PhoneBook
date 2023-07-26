@@ -1,5 +1,6 @@
 global using PhoneBook.Client.Services.ContactService;
 global using PhoneBook.Shared;
+using Blazored.Toast;
 using Microsoft.AspNetCore.Components.Web;
 using Microsoft.AspNetCore.Components.WebAssembly.Authentication;
 using Microsoft.AspNetCore.Components.WebAssembly.Hosting;
@@ -19,5 +20,7 @@ builder.Services.AddScoped(sp => sp.GetRequiredService<IHttpClientFactory>().Cre
 builder.Services.AddScoped<IPrivateContactService, PrivateContactService>();
 
 builder.Services.AddApiAuthorization();
+
+builder.Services.AddBlazoredToast();
 
 await builder.Build().RunAsync();

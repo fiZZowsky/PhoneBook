@@ -1694,3 +1694,7 @@ C:\Users\Pioter\Desktop\.NET\PhoneBook\Client\obj\Debug\net7.0\PhoneBook.Client.
 C:\Users\Pioter\Desktop\.NET\PhoneBook\Client\obj\Debug\net7.0\refint\PhoneBook.Client.dll
 C:\Users\Pioter\Desktop\.NET\PhoneBook\Client\obj\Debug\net7.0\PhoneBook.Client.pdb
 C:\Users\Pioter\Desktop\.NET\PhoneBook\Client\obj\Debug\net7.0\ref\PhoneBook.Client.dll
+C:\Users\Pioter\Desktop\.NET\PhoneBook\Client\bin\Debug\net7.0\wwwroot\_framework\Blazored.Toast.dll
+C:\Users\Pioter\Desktop\.NET\PhoneBook\Client\bin\Debug\net7.0\wwwroot\_framework\Blazored.Toast.dll.gz
+C:\Users\Pioter\Desktop\.NET\PhoneBook\Client\bin\Debug\net7.0\Blazored.Toast.dll
+C:\Users\Pioter\Desktop\.NET\PhoneBook\Client\obj\Debug\net7.0\build-gz\zEF7Kboz.gz

@@ -3,6 +3,8 @@ global using PhoneBook.Shared;
 using Microsoft.AspNetCore.Authentication;
 using PhoneBook.Server.Data;
 using PhoneBook.Server.Models;
+using Microsoft.AspNetCore.Identity;
+using Blazored.Toast;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -24,7 +26,7 @@ builder.Services.AddAuthentication()
 
 builder.Services.AddControllersWithViews();
 builder.Services.AddRazorPages();
-
+builder.Services.AddBlazoredToast();
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.

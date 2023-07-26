@@ -7,6 +7,7 @@
   "linkerEnabled": false,
   "resources": {
     "assembly": {
+      "Blazored.Toast.dll": "sha256-6wGoA8FmxkQCTFIXEM+U+Y2kJJnSTJXRYwuByAUPWGU=",
       "Microsoft.AspNetCore.Authorization.dll": "sha256-QP+9ib2tHpYrkwMTIkh60aO49DKTGwJBAA5RaITVGDE=",
       "Microsoft.AspNetCore.Components.dll": "sha256-sCo2GmgrMtZQSY+teWT1XlU93C\/x75FDwL155zjC5TI=",
       "Microsoft.AspNetCore.Components.Authorization.dll": "sha256-4A3xfSXbXCOljaAH7EEquSyZ2gZx51tJEFcy+IDkIa8=",
@@ -202,14 +203,14 @@
       "netstandard.dll": "sha256-bbx+pnJNmXZyPqAgESJnWLJsbfuAl0UflLCdl9slPYE=",
       "System.Private.CoreLib.dll": "sha256-pUYF+nr8SzfBMCLc3FM2i\/YivXJlzztdLin+aUsoqP0=",
       "PhoneBook.Shared.dll": "sha256-1qTSflU3VvHPTvG5GfMPL8q0Yf\/UT+mBtznm0Oh6kss=",
-      "PhoneBook.Client.dll": "sha256-GHsvMl35Az3dyj5r7AfJ8uBl8WYTyD9EIfYady2odAY="
+      "PhoneBook.Client.dll": "sha256-PbXr57G\/hbBlLXjlHAv4M32tX1Xsn+3\/E2axoF+kMsM="
     },
     "extensions": null,
     "lazyAssembly": null,
     "libraryInitializers": null,
     "pdb": {
       "PhoneBook.Shared.pdb": "sha256-9SqJFmkRBhDxTXtTxtr7GlA1zvCfRXFTn7aSoKfQx6k=",
-      "PhoneBook.Client.pdb": "sha256-P8L40J5BFn6RjZTZLer\/+HJDpCNIzk75E4rb7HojGEY="
+      "PhoneBook.Client.pdb": "sha256-DWma23c6YUiza2sKTXRapU+ENDOtsoFHOaUAYyTbHlM="
     },
     "runtime": {
       "dotnet.7.0.4.3xc0iusk05.js": "sha256-3l+4ZYRWpGMbBjNqeIqO9T\/65euaOzIvRlVX2SySvFQ=",
