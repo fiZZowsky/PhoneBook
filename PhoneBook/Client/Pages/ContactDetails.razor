@@ -18,26 +18,33 @@ else
 
 <div class="justify-content-start">
     <div class="col-md-6">
-        <EditForm Model="contact" OnSubmit="HandleSubmit">
+        <EditForm Model="contact" OnValidSubmit="HandleSubmit">
+            <DataAnnotationsValidator />
+
             <div class="mb-3">
                 <label for="firstname">First Name</label>
                 <InputText id="firstname" @bind-Value="contact.FirstName" class="form-control"></InputText>
+                <ValidationMessage For="@(() => contact.FirstName)" />
             </div>
             <div class="mb-3">
                 <label for="lastname">Last Name</label>
                 <InputText id="lastname" @bind-Value="contact.LastName" class="form-control"></InputText>
+                <ValidationMessage For="@(() => contact.LastName)" />
             </div>
             <div class="mb-3">
                 <label for="email">Email</label>
                 <InputText id="email" @bind-Value="contact.Email" class="form-control"></InputText>
+                <ValidationMessage For="@(() => contact.Email)" />
             </div>
             <div class="mb-3">
                 <label for="phonenumber">Phone Number</label>
                 <InputText id="phonenumber" @bind-Value="contact.PhoneNumber" class="form-control"></InputText>
+                <ValidationMessage For="@(() => contact.PhoneNumber)" />
             </div>
             <div class="mb-3">
                 <label for="birthdate">Birth Date</label>
                 <InputDate id="birthdate" @bind-Value="contact.BirthDate" class="form-control"></InputDate>
+                <ValidationMessage For="@(() => contact.BirthDate)" />
             </div>
             <div class="mb-3">
                 <label for="category">Category</label><br />
@@ -48,6 +55,7 @@ else
                         <option value="@category.Id">@category.Name</option>
                     }
                 </InputSelect>
+                <ValidationMessage For="@(() => contact.CategoryId)" />
             </div>
 
             @if (selectedCategoryName == "służbowy")
@@ -132,7 +140,6 @@ else
         {
             exception.Redirect();
         }
-
     }
 
     protected override async Task OnParametersSetAsync()
@@ -242,15 +249,15 @@ else
 
     async Task HandleSubmit()
     {
-        await SetUserCategory();
-        if (Id == null)
-        {
-            await PrivateContactService.CreateContact(contact);
-        }
-        else
-        {
-            await PrivateContactService.UpdateContact(contact);
-        }
+            await SetUserCategory();
+            if (Id == null)
+            {
+                await PrivateContactService.CreateContact(contact);
+            }
+            else
+            {
+                await PrivateContactService.UpdateContact(contact);
+            }
     }
 
     async Task DeleteContact()

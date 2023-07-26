@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "Dxt8ZfHPhIO5xU9ZUudpXdUOv+6V0uLljyTi9/vnZFs=",
+  "Hash": "ltN8IvuNGbUn2iSHVpfl/Evt93A5SGaC3Z6WgxpBCZk=",
   "Source": "PhoneBook.Client",
   "BasePath": "/",
   "Mode": "Root",
@@ -119,23 +119,6 @@
       "OriginalItemSpec": "C:\\Users\\Pioter\\.nuget\\packages\\microsoft.netcore.app.runtime.mono.browser-wasm\\7.0.4\\runtimes\\browser-wasm\\native\\dotnet.wasm"
     },
     {
-      "Identity": "C:\\Users\\Pioter\\Desktop\\.NET\\PhoneBook\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\icudt.dat",
-      "SourceId": "PhoneBook.Client",
-      "SourceType": "Computed",
-      "ContentRoot": "C:\\Users\\Pioter\\Desktop\\.NET\\PhoneBook\\Client\\bin\\Debug\\net7.0\\wwwroot\\",
-      "BasePath": "/",
-      "RelativePath": "_framework/icudt.dat",
-      "AssetKind": "Build",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "BlazorWebAssemblyResource",
-      "AssetTraitValue": "native",
-      "CopyToOutputDirectory": "PreserveNewest",
-      "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "C:\\Users\\Pioter\\.nuget\\packages\\microsoft.netcore.app.runtime.mono.browser-wasm\\7.0.4\\runtimes\\browser-wasm\\native\\icudt.dat"
-    },
-    {
       "Identity": "C:\\Users\\Pioter\\Desktop\\.NET\\PhoneBook\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\icudt_CJK.dat",
       "SourceId": "PhoneBook.Client",
       "SourceType": "Computed",
@@ -185,6 +168,23 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\Users\\Pioter\\.nuget\\packages\\microsoft.netcore.app.runtime.mono.browser-wasm\\7.0.4\\runtimes\\browser-wasm\\native\\icudt_no_CJK.dat"
+    },
+    {
+      "Identity": "C:\\Users\\Pioter\\Desktop\\.NET\\PhoneBook\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\icudt.dat",
+      "SourceId": "PhoneBook.Client",
+      "SourceType": "Computed",
+      "ContentRoot": "C:\\Users\\Pioter\\Desktop\\.NET\\PhoneBook\\Client\\bin\\Debug\\net7.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/icudt.dat",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "BlazorWebAssemblyResource",
+      "AssetTraitValue": "native",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\Users\\Pioter\\.nuget\\packages\\microsoft.netcore.app.runtime.mono.browser-wasm\\7.0.4\\runtimes\\browser-wasm\\native\\icudt.dat"
     },
     {
       "Identity": "C:\\Users\\Pioter\\Desktop\\.NET\\PhoneBook\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Authorization.dll",
@@ -7140,6 +7140,23 @@
       "OriginalItemSpec": "wwwroot\\css\\bootstrap\\bootstrap.min.css.map"
     },
     {
+      "Identity": "C:\\Users\\Pioter\\Desktop\\.NET\\PhoneBook\\Client\\wwwroot\\css\\open-iconic\\FONT-LICENSE",
+      "SourceId": "PhoneBook.Client",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Pioter\\Desktop\\.NET\\PhoneBook\\Client\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "css/open-iconic/FONT-LICENSE",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\open-iconic\\FONT-LICENSE"
+    },
+    {
       "Identity": "C:\\Users\\Pioter\\Desktop\\.NET\\PhoneBook\\Client\\wwwroot\\css\\open-iconic\\font\\css\\open-iconic-bootstrap.min.css",
       "SourceId": "PhoneBook.Client",
       "SourceType": "Discovered",
@@ -7240,23 +7257,6 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.woff"
-    },
-    {
-      "Identity": "C:\\Users\\Pioter\\Desktop\\.NET\\PhoneBook\\Client\\wwwroot\\css\\open-iconic\\FONT-LICENSE",
-      "SourceId": "PhoneBook.Client",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Pioter\\Desktop\\.NET\\PhoneBook\\Client\\wwwroot\\",
-      "BasePath": "/",
-      "RelativePath": "css/open-iconic/FONT-LICENSE",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\css\\open-iconic\\FONT-LICENSE"
     },
     {
       "Identity": "C:\\Users\\Pioter\\Desktop\\.NET\\PhoneBook\\Client\\wwwroot\\css\\open-iconic\\ICON-LICENSE",
