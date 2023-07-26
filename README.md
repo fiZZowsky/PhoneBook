@@ -20,23 +20,31 @@ It can be found in a folder:
    - These pages enable user authentication.
 
 ## App screenshots
+
+- View of the home page for an unregistered user.
 ![View of the home page for an unregistered user.](./Screenshots/contacts_unauthorized_page.png)
-<br>View of the home page for an unregistered user.
+<br>
 
+- View of the home page for the logged-in user.
 ![View of the home page for the logged in user.](./Screenshots/contacts_authorized_page.png)
-<br>View of the home page for the logged-in user.
+<br>
 
+- Login view.
 ![Login view.](./Screenshots/login_page.png)
-<br>Login view.
+<br>
 
+- Register view.
 ![Register view.](./Screenshots/register_page.png)
-<br>Register view.
+<br>
 
+- Contact details view.
 ![Contact details view.](./Screenshots/details_page.png)
-<br>Contact details view.
+<br>
 
+- Contact editing view.
 ![Contact editing view.](./Screenshots/updating_contact_page.png)
-<br>Contact editing view.
+<br>
 
+- New contact creation view.
 ![New contact creation view.](./Screenshots/create_contact_page.png)
-<br>New contact creation view.
+<br>
