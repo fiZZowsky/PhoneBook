@@ -20,37 +20,23 @@ It can be found in a folder:
    - These pages enable user authentication.
 
 ## App screenshots
-<kbd>
-   ![View of the home page for an unregistered user.](./Screenshots/contacts_unauthorized_page.png)
-</kbd>
+![View of the home page for an unregistered user.](./Screenshots/contacts_unauthorized_page.png)
 <br>View of the home page for an unregistered user.
 
-<kbd>
-   ![View of the home page for the logged in user.](./Screenshots/contacts_authorized_page.png)
-</kbd>
+![View of the home page for the logged in user.](./Screenshots/contacts_authorized_page.png)
 <br>View of the home page for the logged-in user.
 
-<kbd>
-   ![Login view.](./Screenshots/login_page.png)
-</kbd>
+![Login view.](./Screenshots/login_page.png)
 <br>Login view.
 
-<kbd>
-   ![Register view.](./Screenshots/register_page.png)
-</kbd>
+![Register view.](./Screenshots/register_page.png)
 <br>Register view.
 
-<kbd>
-   ![Contact details view.](./Screenshots/details_page.png)
-</kbd>
+![Contact details view.](./Screenshots/details_page.png)
 <br>Contact details view.
 
-<kbd>
-   ![Contact editing view.](./Screenshots/updating_contact_page.png)
-</kbd>
+![Contact editing view.](./Screenshots/updating_contact_page.png)
 <br>Contact editing view.
 
-<kbd>
-   ![New contact creation view.](./Screenshots/create_contact_page.png)
-</kbd>
+![New contact creation view.](./Screenshots/create_contact_page.png)
 <br>New contact creation view.
